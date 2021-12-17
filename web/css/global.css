@@ -5,7 +5,7 @@ html, body, div, span, applet, object, h1, h2, h3, h4, h5, h6, p, blockquote, pr
   font-size: 100%;
   font: inherit;
   font-weight: normal;
-  vertical-align: baseline; }
+  vertical-align: middle; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -44,6 +44,20 @@ input:focus, select:focus, textarea:focus {
   width: 1200px;
   margin: 0 auto; }
 
+.mob {
+  display: none; }
+
+@media (max-width: 768px) {
+  .pc {
+    display: none !important; }
+
+  .mob {
+    display: block !important; }
+
+  .container {
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box; } }
 .footer {
   box-sizing: border-box;
   height: 336px;
@@ -57,7 +71,7 @@ input:focus, select:focus, textarea:focus {
       .footer-cnt ._left::after {
         position: absolute;
         right: -56px;
-        bottom: 35px;
+        bottom: 56px;
         content: "";
         width: 74px;
         height: 39px;
@@ -72,6 +86,7 @@ input:focus, select:focus, textarea:focus {
         .footer-cnt ._right_list li > p {
           font: normal normal bold 14px/22px Inter;
           color: rgba(115, 119, 125, 0.6);
+          letter-spacing: -0.02em;
           margin-bottom: 13px; }
         .footer-cnt ._right_list li > a {
           margin-top: 11px;
@@ -90,7 +105,19 @@ input:focus, select:focus, textarea:focus {
       font: normal normal 500 14px/22px Inter;
       color: rgba(115, 119, 125, 0.6); }
 
-.header {
+.footer-mob {
+  display: none; }
+
+@media (max-width: 768px) {
+  .footer {
+    height: initial;
+    padding: 17px 0 36px 0;
+    text-align: center; }
+    .footer .footer-cnt ._right_list {
+      flex-direction: column; }
+      .footer .footer-cnt ._right_list li {
+        margin-top: 27px; } }
+.header-pc {
   position: fixed;
   top: 0;
   left: 0;
@@ -102,13 +129,14 @@ input:focus, select:focus, textarea:focus {
   padding: 0 9.2vw 0 18.7vw;
   background: rgba(0, 0, 0, 0.8);
   z-index: 99;
-  backdrop-filter: blur(66px); }
-  .header .nav-logo {
+  backdrop-filter: blur(66px);
+  transition: all 1.2s; }
+  .header-pc .nav-logo {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center; }
-    .header .nav-logo::after {
+    .header-pc .nav-logo::after {
       position: absolute;
       right: -30px;
       bottom: 11px;
@@ -116,14 +144,50 @@ input:focus, select:focus, textarea:focus {
       width: 34px;
       height: 18px;
       background: url("../../web/images/logo-smile.svg") no-repeat; }
-  .header .nav-btns ul {
+  .header-pc .nav-btns ul {
     display: flex; }
-    .header .nav-btns ul li {
+    .header-pc .nav-btns ul li {
       margin-right: 32px; }
-      .header .nav-btns ul li a {
+      .header-pc .nav-btns ul li a {
         font: normal normal 600 16px/66px Inter;
         color: #fff; }
 
+.header-mob {
+  display: none; }
+
+@media (max-width: 768px) {
+  .header-pc {
+    display: none; }
+
+  .header-mob {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 66px;
+    background-color: #000;
+    padding: 0 23px 0 15px;
+    box-sizing: border-box;
+    z-index: 99; }
+    .header-mob .nav-logo {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .header-mob .nav-logo::after {
+        position: absolute;
+        right: -22px;
+        bottom: 9px;
+        content: "";
+        width: 26px;
+        height: 18px;
+        background: url("../../web/images/logo-smile-mob.png") no-repeat; }
+    .header-mob .nav-btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
 @font-face {
   font-family: "Lora";
   font-weight: 400;

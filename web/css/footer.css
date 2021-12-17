@@ -11,7 +11,7 @@
       .footer-cnt ._left::after {
         position: absolute;
         right: -56px;
-        bottom: 35px;
+        bottom: 56px;
         content: "";
         width: 74px;
         height: 39px;
@@ -26,6 +26,7 @@
         .footer-cnt ._right_list li > p {
           font: normal normal bold 14px/22px Inter;
           color: rgba(115, 119, 125, 0.6);
+          letter-spacing: -0.02em;
           margin-bottom: 13px; }
         .footer-cnt ._right_list li > a {
           margin-top: 11px;
@@ -43,5 +44,18 @@
       margin-top: 16px;
       font: normal normal 500 14px/22px Inter;
       color: rgba(115, 119, 125, 0.6); }
+
+.footer-mob {
+  display: none; }
+
+@media (max-width: 768px) {
+  .footer {
+    height: initial;
+    padding: 17px 0 36px 0;
+    text-align: center; }
+    .footer .footer-cnt ._right_list {
+      flex-direction: column; }
+      .footer .footer-cnt ._right_list li {
+        margin-top: 27px; } }
 
 /*# sourceMappingURL=footer.css.map */
