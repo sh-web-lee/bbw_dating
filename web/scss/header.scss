@@ -1,0 +1,123 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 66px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 9.2vw 0 18.7vw;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+    backdrop-filter: blur(66px);
+    .nav-logo {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &::after {
+            position: absolute;
+            right: -30px;
+            bottom: 11px;
+            content: "";
+            width: 34px;
+            height: 18px;
+            background: url('../../web/images/logo-smile.svg') no-repeat;
+        }
+    }
+    .nav-btns {
+        ul {
+            display: flex;
+            li {
+                margin-right: 32px;
+                a {
+                    font: normal normal 600 16px/66px Inter;
+                    color: #fff;
+                    // &.nav-button {
+                    //     position: relative;
+                    //     top: 10px;
+                    //     left: 0;
+                    //     display: block;
+                    //     width: 172px;
+                    //     height: 46px;
+
+                    //     background: #FF90E8;
+                    //     border-radius: 4px;
+                    //     padding: 0 23px 0 57px;
+                    //     box-sizing: border-box;
+                    //     &::before {
+                    //         position: absolute;
+                    //         top: 10px;
+                    //         left: 19px;
+                    //         width: 23px;
+                    //         height: 25px;
+                    //         content: "";
+                    //         background: url('../images/download-google.svg') no-repeat center center;
+                    //     }
+                    //     &::after {
+                    //         position: absolute;
+                    //         top: 16px;
+                    //         left: 55px;
+                    //         width: 95px;
+                    //         height: 14px;
+                    //         content: 'GET THE APP';
+                    //         color: #000;
+                    //         font: normal normal bold 14px/100% Inter;
+                    //         transition: all .3s;
+                    //         transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+                    //     }
+                    //     span {
+                    //         position: relative;
+                    //         top: -22px;
+                    //         left: -2px;
+                    //         color: #000;
+                    //         font: normal normal bold 14px/100% Inter;
+                    //         letter-spacing: -4.2px;
+                    //         opacity: 0;
+                    //         transition: all .3s;
+                    //         transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+                    //     }
+                    //     &:hover {
+                    //         &::after {
+                    //             opacity: 0;
+                    //             transform: translate3d(0, 20px, 0);
+                    //         }
+                    //         span {
+                    //             opacity: 1;
+                    //             top: -11px;
+                    //             &:nth-child(1) {
+                    //                 transition-delay: 0.025s;
+                    //             }
+                    //             &:nth-child(2) {
+                    //                 transition-delay: 0.05s;
+                    //             }
+                    //             &:nth-child(3) {
+                    //                 transition-delay: 0.075s;
+                    //             }
+                    //             &:nth-child(4) {
+                    //                 transition-delay: 0.1s;
+                    //             }
+                    //             &:nth-child(5) {
+                    //                 transition-delay: 0.125s;
+                    //             }
+                    //             &:nth-child(6) {
+                    //                 transition-delay: 0.15s;
+                    //             }
+                    //             &:nth-child(7) {
+                    //                 transition-delay: 0.175s;
+                    //             }
+                    //             &:nth-child(8) {
+                    //                 transition-delay: 0.2s;
+                    //             }
+                    //             &:nth-child(9) {
+                    //                 transition-delay: 0.225s;
+                    //             }
+                    //         }
+                    //     }
+                    // }
+                }
+            }
+        }
+    }
+}

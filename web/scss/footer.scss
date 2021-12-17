@@ -1,0 +1,59 @@
+.footer {
+    box-sizing: border-box;
+    height: 336px;
+    background-color: #000;
+    padding-top: 46px;
+    &-cnt {
+        display: flex;
+        justify-content: space-between;
+        ._left {
+            position: relative;
+            &::after {
+                position: absolute;
+                right: -56px;
+                bottom: 35px;
+                content: "";
+                width: 74px;
+                height: 39px;
+                background: url('../images/footer-smile.png') no-repeat;
+            }
+        }
+        ._right {
+            &_list {
+                display: flex;
+                justify-content: space-between;
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 118px;
+                    &>p {
+                        font: normal normal bold 14px/22px Inter;
+                        color: rgba(115, 119, 125, .6);
+                        margin-bottom: 13px;
+                    }
+                    &>a {
+                        margin-top: 11px;
+                        font: normal normal 600 16px/24px Inter;
+                        color: #fff;
+                        letter-spacing: -.02rem;
+                    }
+                }
+            }
+        }
+    }
+    &-copy {
+        margin-top: 56px;
+        .tp {
+            color: rgba(115, 119, 125, .6);
+            a {
+                font: normal normal 500 14px/22px Inter;
+                color: rgba(115, 119, 125, .6);
+            }
+        }
+        .copy {
+            margin-top: 16px;
+            font: normal normal 500 14px/22px Inter;
+            color: rgba(115, 119, 125, .6);
+        }
+    }
+}

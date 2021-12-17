@@ -1,0 +1,46 @@
+/*
+Error: Invalid CSS after "    src: ": expected "{", was "url('../font/Lo..."
+        on line 7 of E:\SH\Project\bbw_dating\web\scss\fonts.scss
+
+2:     font-family: "Lora";
+3:     font-weight: 400;
+4:     font-style: normal;
+5:     font-display: swap;
+6: <<<<<<< HEAD
+7:     src: url('../font/Lora-Regular.ttf'), /* IE9 Compat Mode *\/
+8:     url('../font/Lora-Regular.ttf') format("ttf");
+9: }
+10: 
+11: =======
+12:     src: url('../../font/Lora-Regular.ttf'),
+
+Backtrace:
+E:\SH\Project\bbw_dating\web\scss\fonts.scss:7
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:225:in `directive_body'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:217:in `directive'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+D:/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+D:/koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+D:/koala/bin/sass:22:in `load'
+D:/koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"    src: \": expected \"{\", was \"url('../font/Lo...\"\A         on line 7 of E:\SH\Project\bbw_dating\web\scss\fonts.scss\A \A 2:     font-family: \"Lora\";\A 3:     font-weight: 400;\A 4:     font-style: normal;\A 5:     font-display: swap;\A 6: <<<<<<< HEAD\A 7:     src: url('../font/Lora-Regular.ttf'), /* IE9 Compat Mode */\A 8:     url('../font/Lora-Regular.ttf') format(\"ttf\");\A 9: }\A 10: \A 11: =======\A 12:     src: url('../../font/Lora-Regular.ttf'),"; }
