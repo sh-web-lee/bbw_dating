@@ -1,38 +1,302 @@
-/*
-Error: Invalid CSS after "...animation.scss'": expected "{", was ";"
-        on line 2 of E:\SH\Project\bbw_dating\web\scss\global.scss
+html, body, div, span, applet, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-weight: normal;
+  vertical-align: baseline; }
 
-1: <<<<<<< HEAD
-2: @import './global/animation.scss';
-3: @import './global/reset.scss';
-4: @import './global/footer.scss';
-5: @import './global/header.scss';
-6: @import './global/fonts.scss';
-7: =======
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-Backtrace:
-E:\SH\Project\bbw_dating\web\scss\global.scss:2
-D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
-D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
-D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
-D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-D:/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-D:/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-D:/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-D:/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-D:/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-D:/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-D:/koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-D:/koala/bin/sass:22:in `load'
-D:/koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...animation.scss'\": expected \"{\", was \";\"\A         on line 2 of E:\SH\Project\bbw_dating\web\scss\global.scss\A \A 1: <<<<<<< HEAD\A 2: @import './global/animation.scss';\A 3: @import './global/reset.scss';\A 4: @import './global/footer.scss';\A 5: @import './global/header.scss';\A 6: @import './global/fonts.scss';\A 7: ======="; }
+ol, ul, li {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th, td {
+  vertical-align: middle; }
+
+/* custom */
+a {
+  outline: none;
+  text-decoration: none; }
+
+a:focus {
+  outline: none; }
+
+input:focus, select:focus, textarea:focus {
+  outline: -webkit-focus-ring-color auto 0; }
+
+.container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto; }
+
+.footer {
+  box-sizing: border-box;
+  height: 336px;
+  background-color: #000;
+  padding-top: 46px; }
+  .footer-cnt {
+    display: flex;
+    justify-content: space-between; }
+    .footer-cnt ._left {
+      position: relative; }
+      .footer-cnt ._left::after {
+        position: absolute;
+        right: -56px;
+        bottom: 35px;
+        content: "";
+        width: 74px;
+        height: 39px;
+        background: url("../images/footer-smile.png") no-repeat; }
+    .footer-cnt ._right_list {
+      display: flex;
+      justify-content: space-between; }
+      .footer-cnt ._right_list li {
+        display: flex;
+        flex-direction: column;
+        margin-left: 118px; }
+        .footer-cnt ._right_list li > p {
+          font: normal normal bold 14px/22px Inter;
+          color: rgba(115, 119, 125, 0.6);
+          margin-bottom: 13px; }
+        .footer-cnt ._right_list li > a {
+          margin-top: 11px;
+          font: normal normal 600 16px/24px Inter;
+          color: #fff;
+          letter-spacing: -.02rem; }
+  .footer-copy {
+    margin-top: 56px; }
+    .footer-copy .tp {
+      color: rgba(115, 119, 125, 0.6); }
+      .footer-copy .tp a {
+        font: normal normal 500 14px/22px Inter;
+        color: rgba(115, 119, 125, 0.6); }
+    .footer-copy .copy {
+      margin-top: 16px;
+      font: normal normal 500 14px/22px Inter;
+      color: rgba(115, 119, 125, 0.6); }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 66px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 9.2vw 0 18.7vw;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  backdrop-filter: blur(66px); }
+  .header .nav-logo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .header .nav-logo::after {
+      position: absolute;
+      right: -30px;
+      bottom: 11px;
+      content: "";
+      width: 34px;
+      height: 18px;
+      background: url("../../web/images/logo-smile.svg") no-repeat; }
+  .header .nav-btns ul {
+    display: flex; }
+    .header .nav-btns ul li {
+      margin-right: 32px; }
+      .header .nav-btns ul li a {
+        font: normal normal 600 16px/66px Inter;
+        color: #fff; }
+
+@font-face {
+  font-family: "Lora";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../../font/Lora-Regular.ttf"), url("../../font/Lora-Regular.ttf") format("ttf"); }
+@font-face {
+  font-family: "Lora";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("../font/Lora-SemiBold.ttf"), url("../font/Lora-SemiBold.ttf") format("ttf"); }
+@font-face {
+  font-family: "Lora";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../font/Lora-Bold.ttf"), url("../font/Lora-Bold.ttf") format("ttf"); }
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../font/Inter-Regular.ttf"), url("../font/Inter-Regular.ttf") format("ttf"); }
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("../font/Inter-SemiBold.ttf"), url("../font/Inter-SemiBold.ttf") format("ttf"); }
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../font/Inter-Bold.ttf"), url("../font/Inter-Bold.ttf") format("ttf"); }
+.hover-logo {
+  position: relative;
+  top: 10px;
+  left: 0;
+  display: block;
+  width: 172px;
+  height: 46px;
+  background: #FF90E8;
+  border-radius: 4px;
+  padding: 0 23px 0 57px;
+  box-sizing: border-box;
+  transition: all .3s;
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
+  .hover-logo::before {
+    position: absolute;
+    top: 10px;
+    left: 19px;
+    width: 23px;
+    height: 25px;
+    content: "";
+    background: url("../images/download-google.svg") no-repeat center center; }
+  .hover-logo::after {
+    position: absolute;
+    top: 16px;
+    left: 55px;
+    width: 95px;
+    height: 14px;
+    content: 'GET THE APP';
+    color: #000;
+    font: normal normal bold 14px/100% Inter;
+    transition: all .3s;
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
+  .hover-logo span {
+    position: relative;
+    top: -22px;
+    left: -2px;
+    color: #000;
+    font: normal normal bold 14px/100% Inter;
+    letter-spacing: -4.2px;
+    opacity: 0;
+    transition: all .3s;
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
+  .hover-logo:hover {
+    background: #FFA2EC; }
+    .hover-logo:hover::after {
+      opacity: 0;
+      transform: translate3d(0, 20px, 0); }
+    .hover-logo:hover span {
+      opacity: 1;
+      top: -11px; }
+      .hover-logo:hover span:nth-child(1) {
+        transition-delay: 0.025s; }
+      .hover-logo:hover span:nth-child(2) {
+        transition-delay: 0.05s; }
+      .hover-logo:hover span:nth-child(3) {
+        transition-delay: 0.075s; }
+      .hover-logo:hover span:nth-child(4) {
+        transition-delay: 0.1s; }
+      .hover-logo:hover span:nth-child(5) {
+        transition-delay: 0.125s; }
+      .hover-logo:hover span:nth-child(6) {
+        transition-delay: 0.15s; }
+      .hover-logo:hover span:nth-child(7) {
+        transition-delay: 0.175s; }
+      .hover-logo:hover span:nth-child(8) {
+        transition-delay: 0.2s; }
+      .hover-logo:hover span:nth-child(9) {
+        transition-delay: 0.225s; }
+
+.hover-black {
+  position: relative;
+  margin: 16px auto 0;
+  display: block;
+  width: 180px;
+  height: 38px;
+  background: #000000;
+  box-shadow: 0px 9px 72px rgba(117, 18, 103, 0.46), 0px 3.75998px 30.0799px rgba(117, 18, 103, 0.330673), 0px 2.01027px 16.0821px rgba(117, 18, 103, 0.274209), 0px 1.12694px 9.01552px rgba(117, 18, 103, 0.23), 0px 0.598509px 4.78807px rgba(117, 18, 103, 0.185791), 0px 0.249053px 1.99242px rgba(117, 18, 103, 0.129327);
+  border-radius: 4px;
+  text-align: center;
+  transition: all .3s; }
+  .hover-black span {
+    display: inline-block;
+    letter-spacing: -4.7px;
+    transform: translate3d(0, -20px, 0);
+    opacity: 0;
+    color: #fff;
+    font: normal normal bold 14px/38px Inter;
+    transition: all .3s; }
+  .hover-black::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 14px;
+    content: 'Free Download Now';
+    text-align: center;
+    font: normal normal bold 14px/38px Inter;
+    color: #fff;
+    transition: all .3s; }
+  .hover-black:hover {
+    box-shadow: none; }
+    .hover-black:hover::before {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0); }
+    .hover-black:hover span {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+      color: #FF90E8; }
+      .hover-black:hover span:nth-child(1) {
+        transition-delay: 0s; }
+      .hover-black:hover span:nth-child(2) {
+        transition-delay: 0.025s; }
+      .hover-black:hover span:nth-child(3) {
+        transition-delay: 0.05s; }
+      .hover-black:hover span:nth-child(4) {
+        transition-delay: 0.075s; }
+      .hover-black:hover span:nth-child(5) {
+        transition-delay: 0.1s; }
+      .hover-black:hover span:nth-child(6) {
+        transition-delay: 0.125s; }
+      .hover-black:hover span:nth-child(7) {
+        transition-delay: 0.15s; }
+      .hover-black:hover span:nth-child(8) {
+        transition-delay: 0.175s; }
+      .hover-black:hover span:nth-child(9) {
+        transition-delay: 0.2s; }
+      .hover-black:hover span:nth-child(10) {
+        transition-delay: 0.225s; }
+      .hover-black:hover span:nth-child(11) {
+        transition-delay: 0.25s; }
+      .hover-black:hover span:nth-child(12) {
+        transition-delay: 0.275s; }
+      .hover-black:hover span:nth-child(13) {
+        transition-delay: 0.3s; }
+      .hover-black:hover span:nth-child(14) {
+        transition-delay: 0.325s; }
+      .hover-black:hover span:nth-child(15) {
+        transition-delay: 0.375s; }
+
+/*# sourceMappingURL=global.css.map */
