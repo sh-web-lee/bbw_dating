@@ -110,7 +110,7 @@
             color: rgba(0, 0, 0, 0.6);
             font: normal normal 500 16px/21px Inter; }
           ._hot_arti ._arti-content ._arti-items._arti-card ._arti-card-txt > a {
-            z-index: 99; }
+            z-index: 10; }
         ._hot_arti ._arti-content ._arti-items._arti-card::before {
           z-index: 1;
           position: absolute;
