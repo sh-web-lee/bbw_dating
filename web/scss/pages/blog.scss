@@ -9,6 +9,7 @@
         font: normal normal bold 56px/68px Inter;
         color: #fff;
         letter-spacing: -.02rem;
+        transition-duration: 1.2s;
     }
 }
 .nav {
@@ -50,22 +51,26 @@
         ._arti-items {
             margin-top: 32px;
             width: 389px;
+            transition: all 1.2s;
             &>img {
                 width: 100%;
                 image-rendering: -webkit-optimize-contrast;
             }
             ._arti_txt {
+                transition: all 1.2s;
                 &>b {
                     margin-top: 16px;
                     color: #000;
-                    font: normal normal bold 18px Inter;
+                    font: normal normal bold 18px/22px Inter;
                     letter-spacing: -0.02rem;
                     display: block;
                 }
                 &>p {
                     margin-top: 6px;
                     color: rgba(0, 0, 0, .6);
-                    font: normal normal normal 14px Inter;
+                    font: normal normal normal 14px/20px Inter;
+
+                    transition: all 1.2s;
                 }
                 &>span {
                     margin-top: 16px;
@@ -88,12 +93,13 @@
                     bottom: 0;
                     left: 0;
                     width: 100%;
-                    height: 108px;
+                    padding: 16px 8px 15px 23px;
 
-                    padding-left: 23px;
                     box-sizing: border-box;
 
                     background-color: #000;
+
+                    transition: none;
                     &>span {
                         width: 62px;
                         height: 23px;
@@ -117,7 +123,9 @@
             &._arti-card {
                 position: relative;
                 background-color: #FF90E8;
+                transition: all 1.2s;
                 ._arti-card-txt {
+                    position: relative;
                     z-index: 10;
                     margin-top: 32px;
                     padding: 0 64px;
@@ -133,6 +141,21 @@
                     }
                     &>a {
                         z-index: 10;
+                    }
+                }
+                ._card-txt-images {
+                    position: relative;
+                    height: 251px;
+                    img {
+                        position: absolute;
+                        &:nth-child(1) {
+                            top: 21px;
+                            left: 21px;
+                        }
+                        &:nth-child(2) {
+                            bottom: 0;
+                            left: 86px;
+                        }
                     }
                 }
                 &::before {
@@ -153,6 +176,68 @@
                     height: 203px;
                     content: "";
                     background: url('../../images/blog/card-shadow3.png') no-repeat;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-banner {
+        background: url('../../images/blog/blog-bannerbg-mob.png') no-repeat center 0;
+        background-size: cover;
+        &-title {
+            font: normal normal bold 32px/39px Inter;
+        }
+    }
+    .nav {
+        .nav_selects {
+            text-align: center;
+            ._pick {
+                font: normal normal bold 16px/41px Inter;
+                color: #000;
+                img {
+                    margin-left: 13px;
+                }
+            }
+        }
+    }
+    ._hot_arti {
+        padding: 32px 0 0 0;
+        ._hot-title {
+            font: normal normal bold 24px/29px Inter;
+        }
+        ._arti-content {
+            flex-direction: column;
+            ._arti-items {
+                width: 100%;
+                padding: 0 8px 22px 0;
+                ._arti_txt {
+                    padding: 22px 18px 14px 18px;
+                    background-color: rgba(0, 0, 0, 0.06);
+                    overflow: hidden;
+                    &>b {
+                        margin-top: 7px;
+                        font: normal normal bold 18px/22px Inter;
+                        letter-spacing: -0.02em;
+                    }
+                    &>p {
+                        font: normal normal 500 12px/17px Inter;
+                    }
+                    &>span {
+                        width: 84px;
+                        height: 23px;
+                        font: normal normal bold 12px/23px Inter;
+                    }
+                }
+                &._show {
+                    width: 100%;
+                    ._show-txt {
+                        position: initial;
+                    }
+                }
+                &>a>img {
+                    width: 100%;
                 }
             }
         }
