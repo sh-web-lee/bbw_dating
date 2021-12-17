@@ -1,0 +1,132 @@
+.blog-banner {
+  overflow: hidden;
+  margin-top: 66px;
+  height: 217px;
+  background: url("../../images/blog/blog-bannerbg.jpg") no-repeat center -61px;
+  text-align: center; }
+  .blog-banner-title {
+    margin-top: 54px;
+    font: normal normal bold 56px/68px Inter;
+    color: #fff;
+    letter-spacing: -.02rem; }
+
+.nav {
+  height: 41px;
+  background: #FF90E8; }
+  .nav-list {
+    display: flex;
+    justify-content: space-between; }
+    .nav-list li {
+      width: 297px;
+      text-align: center; }
+      .nav-list li a {
+        display: block;
+        font: normal normal 500 16px/41px Inter;
+        color: rgba(0, 0, 0, 0.5);
+        transition: all .3s;
+        background: #FF90E8; }
+        .nav-list li a:hover {
+          font: normal normal bold 16px/41px Inter;
+          color: #000;
+          background: rgba(255, 255, 255, 0.3); }
+
+._hot_arti {
+  padding: 52px 0 90px 0; }
+  ._hot_arti ._hot-title {
+    font: normal normal bold 32px Inter;
+    color: #000;
+    text-align: center; }
+  ._hot_arti ._arti-content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    ._hot_arti ._arti-content ._arti-items {
+      margin-top: 32px;
+      width: 389px; }
+      ._hot_arti ._arti-content ._arti-items > img {
+        width: 100%;
+        image-rendering: -webkit-optimize-contrast; }
+      ._hot_arti ._arti-content ._arti-items ._arti_txt > b {
+        margin-top: 16px;
+        color: #000;
+        font: normal normal bold 18px Inter;
+        letter-spacing: -0.02rem;
+        display: block; }
+      ._hot_arti ._arti-content ._arti-items ._arti_txt > p {
+        margin-top: 6px;
+        color: rgba(0, 0, 0, 0.6);
+        font: normal normal normal 14px Inter; }
+      ._hot_arti ._arti-content ._arti-items ._arti_txt > span {
+        margin-top: 16px;
+        display: block;
+        width: 91px;
+        height: 24px;
+        background: #000000;
+        border-radius: 14px;
+        font: normal normal bold 14px/24px Inter;
+        color: #fff;
+        text-align: center; }
+      ._hot_arti ._arti-content ._arti-items._show {
+        position: relative;
+        width: 795px; }
+        ._hot_arti ._arti-content ._arti-items._show ._arti_txt {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 108px;
+          padding-left: 23px;
+          box-sizing: border-box;
+          background-color: #000; }
+          ._hot_arti ._arti-content ._arti-items._show ._arti_txt > span {
+            width: 62px;
+            height: 23px;
+            border-radius: 17px;
+            background-color: #FF90E8;
+            color: #000;
+            font: normal normal bold 12px/23px Inter; }
+          ._hot_arti ._arti-content ._arti-items._show ._arti_txt > b {
+            margin-top: 8px;
+            color: #fff;
+            font: normal normal bold 20px Inter; }
+          ._hot_arti ._arti-content ._arti-items._show ._arti_txt > p {
+            margin-top: 4px;
+            color: rgba(255, 255, 255, 0.6);
+            font: normal normal 500 14px Inter; }
+      ._hot_arti ._arti-content ._arti-items._arti-card {
+        position: relative;
+        background-color: #FF90E8; }
+        ._hot_arti ._arti-content ._arti-items._arti-card ._arti-card-txt {
+          z-index: 10;
+          margin-top: 32px;
+          padding: 0 64px;
+          text-align: center; }
+          ._hot_arti ._arti-content ._arti-items._arti-card ._arti-card-txt > b {
+            color: #000;
+            font: normal normal bold 28px/34px Inter; }
+          ._hot_arti ._arti-content ._arti-items._arti-card ._arti-card-txt > p {
+            margin-top: 8px;
+            color: rgba(0, 0, 0, 0.6);
+            font: normal normal 500 16px/21px Inter; }
+          ._hot_arti ._arti-content ._arti-items._arti-card ._arti-card-txt > a {
+            z-index: 99; }
+        ._hot_arti ._arti-content ._arti-items._arti-card::before {
+          z-index: 1;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 228px;
+          content: "";
+          background: url("../../images/blog/card-shadow1.png") no-repeat 0 0, url("../../images/blog/card-shadow2.png") no-repeat right 0; }
+        ._hot_arti ._arti-content ._arti-items._arti-card::after {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 218px;
+          height: 203px;
+          content: "";
+          background: url("../../images/blog/card-shadow3.png") no-repeat; }
+
+/*# sourceMappingURL=blog.css.map */
