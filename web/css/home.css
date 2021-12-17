@@ -252,4 +252,26 @@
               font-size: 1rem;
               line-height: 150%;
               margin: .875rem 0;
-              width: 20.3rem; } }
+              width: 20.3rem; }
+  .home .confirm_pop {
+    height: 8.5rem; }
+    .home .confirm_pop .container {
+      width: 100%;
+      padding: 0 1rem;
+      box-sizing: border-box; }
+      .home .confirm_pop .container .warp {
+        display: block;
+        margin-top: 1rem; }
+        .home .confirm_pop .container .warp p {
+          font-size: .75rem;
+          font-weight: normal;
+          line-height: 150%; }
+          .home .confirm_pop .container .warp p .brbr {
+            display: none; }
+        .home .confirm_pop .container .warp button {
+          width: 73px;
+          height: 34px;
+          font-weight: 600;
+          font-size: .75rem;
+          line-height: 150%;
+          margin-top: .85rem; } }
