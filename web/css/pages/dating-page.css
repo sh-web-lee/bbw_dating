@@ -60,6 +60,9 @@
           .dp-content .container .dp_left .dp_sticky .dp_left_ap > a:active {
             color: #23A094;
             text-decoration: underline; }
+          .dp-content .container .dp_left .dp_sticky .dp_left_ap > a:hover {
+            color: #23A094;
+            text-decoration: underline; }
   .dp-content .container .dp_right {
     width: 811px;
     padding: 24px 0 120px; }
