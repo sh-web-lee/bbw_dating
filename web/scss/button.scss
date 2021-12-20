@@ -176,3 +176,109 @@
         }
     }
 } 
+.hover-1 {
+    position: relative;
+    display: flex;
+    padding: 20px 36px;
+    span {
+        font: normal normal 600 18px/100% Inter;
+        color: #000;
+        letter-spacing: -.02em;
+    }
+    &::before {
+        position: absolute;
+        top: 20px;
+        left: 36px;
+        content: "Download PlusCupid Now";
+        font: normal normal 600 18px/100% Inter;
+        color: #000;
+        letter-spacing: -.02em;
+        transition: all .3s;
+        transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    }
+}
+.hover-2 {
+    position: relative;
+    display: flex;
+    span {
+        font: normal normal bold 16px/100% Inter;
+        letter-spacing: -.02em;
+        color: #000;
+    }
+    &::before {
+        position: absolute;
+        top: 12px;
+        left: 24px;
+        content: "Join PlusCupid Now";
+        font: normal normal bold 16px/100% Inter;
+        letter-spacing: -.02em;
+        color: #000;
+        transition: all .3s;
+        transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    }
+}
+
+
+.transopac-20 {
+    transition: all .3s;
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    span {
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: all .3s;
+        transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    }
+    &:hover {
+        background: #FFA2EC;
+        box-shadow: initial;
+        &::before {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+        span {
+            opacity: 1;
+            transform: translateY(0);
+            &:nth-child(1) {
+                transition-delay: 0s;
+            }
+            &:nth-child(2) {
+                transition-delay: 0.025s;
+            }
+            &:nth-child(3) {
+                transition-delay: 0.05s;
+            }
+            &:nth-child(4) {
+                transition-delay: 0.075s;
+            }
+            &:nth-child(5) {
+                transition-delay: 0.1s;
+            }
+            &:nth-child(6) {
+                transition-delay: 0.125s;
+            }
+            &:nth-child(7) {
+                transition-delay: 0.15s;
+            }
+            &:nth-child(8) {
+                transition-delay: 0.175s;
+            }
+            &:nth-child(9) {
+                transition-delay: 0.2s;
+            }
+            &:nth-child(10) {
+                transition-delay: 0.225s;
+            }
+            &:nth-child(11) {
+                transition-delay: 0.25s;
+            }
+            &:nth-child(12) {
+                transition-delay: 0.275s;
+            }
+        }
+    }
+}
+.s-bg-button {
+    box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
+    background: #FF90E8;
+    border-radius: 4px;
+}

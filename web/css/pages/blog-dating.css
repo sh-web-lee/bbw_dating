@@ -1,0 +1,178 @@
+.blog-banner {
+  overflow: hidden;
+  margin-top: 66px;
+  height: 217px;
+  background: url("../../images/blog/blog-bannerbg.jpg") no-repeat center -61px;
+  text-align: center; }
+  .blog-banner-title {
+    margin-top: 48px;
+    font: normal normal bold 40px/48px Inter;
+    color: #fff;
+    letter-spacing: -.04em; }
+  .blog-banner-txt {
+    margin-top: 8px;
+    font: normal normal normal 14px/19px Inter;
+    color: rgba(255, 255, 255, 0.6); }
+  .blog-banner-link {
+    display: block;
+    margin-top: 24px;
+    text-decoration: underline;
+    font: normal normal normal 16px/19px Inter;
+    color: #fff; }
+
+.content {
+  padding: 42px 0 88px 0; }
+  .content .container .bd_navs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px; }
+    .content .container .bd_navs a {
+      display: inline-block;
+      border-radius: 6px;
+      background: rgba(255, 144, 232, 0.25);
+      margin: 16px 0 0 24px;
+      padding: 0 48px;
+      text-align: center;
+      font: normal normal bold 16px/48px Inter;
+      color: #000; }
+      .content .container .bd_navs a.active-tag {
+        background: #FF90E8;
+        transition: all .3s; }
+  .content .container .bd_carousel {
+    position: relative;
+    height: 451px;
+    margin-top: 41px;
+    background-color: #eee;
+    overflow: hidden; }
+    .content .container .bd_carousel .bd_carousel-list {
+      display: flex; }
+      .content .container .bd_carousel .bd_carousel-list li {
+        position: relative; }
+        .content .container .bd_carousel .bd_carousel-list li .car-txt {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          padding: 17px 0 18px 23px;
+          box-sizing: border-box;
+          background: #000; }
+          .content .container .bd_carousel .bd_carousel-list li .car-txt > span {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 17px;
+            background: #FF90E8;
+            font: normal normal bold 12px/15px Inter;
+            color: #000; }
+          .content .container .bd_carousel .bd_carousel-list li .car-txt > h3 {
+            margin-top: 8px;
+            font: normal normal bold 20px/22px Inter;
+            color: #fff; }
+    .content .container .bd_carousel .change_arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+      .content .container .bd_carousel .change_arrow.prev-btn {
+        left: 20px; }
+      .content .container .bd_carousel .change_arrow.next-btn {
+        right: 20px; }
+      .content .container .bd_carousel .change_arrow a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.18); }
+    .content .container .bd_carousel .paginations {
+      position: absolute;
+      right: 36px;
+      bottom: 22px;
+      display: flex; }
+      .content .container .bd_carousel .paginations > span {
+        display: inline-block;
+        margin-left: 8px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.24); }
+        .content .container .bd_carousel .paginations > span.active {
+          background: #fff; }
+  .content .container .bd_articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 32px; }
+    .content .container .bd_articles .bd_arti_item {
+      width: 32.4%; }
+      .content .container .bd_articles .bd_arti_item .item-img img {
+        width: 100%;
+        image-rendering: -moz-crisp-edges;
+        /* Firefox */
+        image-rendering: -o-crisp-edges;
+        /* Opera */
+        image-rendering: -webkit-optimize-contrast;
+        /*Webkit (non-standard naming) */
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor;
+        /* IE (non-standard property) */ }
+      .content .container .bd_articles .bd_arti_item .item-txt {
+        color: #000;
+        background: transparent;
+        padding: 16px 5px 32px 0; }
+        .content .container .bd_articles .bd_arti_item .item-txt > span {
+          display: inline-block;
+          padding: 4px 8px;
+          margin: 0 0 6px 0;
+          border-radius: 17px;
+          background: #FF90E8;
+          font: normal normal bold 12px/100% Inter;
+          text-transform: uppercase; }
+        .content .container .bd_articles .bd_arti_item .item-txt-desc {
+          font: normal normal 600 18px/22px Inter;
+          letter-spacing: -.02em; }
+
+@media (max-width: 768px) {
+  .blog-banner {
+    background: url("../../images/blog/blog-bannerbg-mob.png") no-repeat center 0;
+    background-size: cover; }
+    .blog-banner-title {
+      font: normal normal bold 32px/39px Inter; }
+    .blog-banner-txt {
+      margin-top: 16px;
+      font: normal normal normal 16px/19px Inter; }
+    .blog-banner-link {
+      margin-top: 16px; }
+
+  .content {
+    padding: 22px 0 16px; }
+    .content .container .bd_navs {
+      flex-wrap: nowrap;
+      justify-content: initial;
+      overflow: auto; }
+      .content .container .bd_navs a {
+        margin: 0 0 0 16px; }
+        .content .container .bd_navs a:nth-child(1) {
+          margin: 0; }
+    .content .container .bd_carousel {
+      margin-top: 23px;
+      height: initial; }
+      .content .container .bd_carousel .bd_carousel-list li .car-txt {
+        position: initial;
+        padding: 23px 19px 57px 18px; }
+        .content .container .bd_carousel .bd_carousel-list li .car-txt > h3 {
+          margin-top: 7px;
+          font: normal normal bold 18px/20px Inter; }
+      .content .container .bd_carousel .paginations {
+        right: 50%;
+        transform: translateX(50%); }
+    .content .container .bd_articles {
+      padding-top: initial; }
+      .content .container .bd_articles .bd_arti_item {
+        width: 100%;
+        margin-top: 16px; }
+        .content .container .bd_articles .bd_arti_item .item-txt {
+          background: rgba(0, 0, 0, 0.06);
+          padding: 22px 15px 20px 19px; } }
+
+/*# sourceMappingURL=blog-dating.css.map */
