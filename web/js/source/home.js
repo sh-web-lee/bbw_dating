@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
     var interval;
-    // timeInterval();
+    timeInterval();
     //自动轮播
     function timeInterval() {
         var i = 0;
@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
         if (i == 0) {
             interval = setInterval(function() {
                 moveRight();
-            }, 3000);
+            }, 5000);
 
             i = 1;
         } else {
@@ -45,38 +45,45 @@ jQuery(document).ready(function($) {
         timeInterval();
     });
 
-    $('.slider ul li:first-child').appendTo('.slider ul');
-    $('.slider ul').css('left', '');
-    //mobile 左右滑动
-    window.addEventListener('touchstart', function(e) {
-        e.preventDefault();
-        // clearInterval(interval);
-        startX = e.touches[0].pageX,
-            startY = e.touches[0].pageY;
-    }, { passive: false })
-    window.addEventListener('touchmove', function(e) {
-        e.preventDefault();
-        moveEndX = e.touches[0].pageX,
-            moveEndY = e.touches[0].pageY,
-            X = moveEndX - startX,
-            Y = moveEndY - startY;
-        console.log(X)
-        if (X > 0) {
 
-            $('.slider ul').animate({
-                left: '100%'
-            }, 200);
-        } else {
-            $('.slider ul').animate({
-                left: '-100%'
-            }, 200);
 
+    document.addEventListener("visibilitychange", function() {
+        if (document.hidden) {
+            clearInterval(interval);
         }
-    }, { passive: false })
-    window.addEventListener('touchend', function(e) {
-        e.preventDefault();
-        // timeInterval();
-    }, { passive: false })
+    });
+
+
+    // //mobile 左右滑动
+    // window.addEventListener('touchstart', function(e) {
+    //     e.preventDefault();
+    //     // clearInterval(interval);
+    //     startX = e.touches[0].pageX,
+    //         startY = e.touches[0].pageY;
+    // }, { passive: false })
+    // window.addEventListener('touchmove', function(e) {
+    //     e.preventDefault();
+    //     moveEndX = e.touches[0].pageX,
+    //         moveEndY = e.touches[0].pageY,
+    //         X = moveEndX - startX,
+    //         Y = moveEndY - startY;
+    //     console.log(X)
+    //     if (X > 0) {
+
+    //         $('.slider ul').animate({
+    //             left: '100%'
+    //         }, 200);
+    //     } else {
+    //         $('.slider ul').animate({
+    //             left: '-100%'
+    //         }, 200);
+
+    //     }
+    // }, { passive: false })
+    // window.addEventListener('touchend', function(e) {
+    //     e.preventDefault();
+    //     // timeInterval();
+    // }, { passive: false })
 
 
 
