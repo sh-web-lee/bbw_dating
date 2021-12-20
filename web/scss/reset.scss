@@ -129,7 +129,7 @@ input:focus,select:focus,textarea:focus {
 	margin: 0 auto;
 }
 .mob {
-	display: none;
+	display: none !important;
 }
 @media (max-width: 768px) {
 	.pc {

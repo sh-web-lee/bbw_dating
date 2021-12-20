@@ -5,12 +5,14 @@
         padding: 75px 0 80px;
         display: flex;
         justify-content: space-between;
+        transition: all 1.2s;
         .dp-banner-left {
             width: 54%;
             .dp-banner-title {
                 font: normal normal bold 28px/34px Inter;
                 letter-spacing: -.02em;
                 color: #fff;
+                transition: all 1.2s;
             }
             .dp-banner-cupid {
                 display: flex;
@@ -49,32 +51,34 @@
         justify-content: space-between;
         .dp_left {
             margin-top: 252px;
-            position: sticky;
-            top: 20px;
             text-align: left;
-            &>p {
-                font: normal normal bold 16px/19px Inter;
-                color: #000;
-            }
-            .dp_left_ap {
-                margin-top: 8px;
-                display: flex;
-                flex-direction: column;
-                &>a {
-                    display: block;
-                    margin-top: 16px;
-                    font: normal normal normal 14px/17px Inter;
-                    color: rgba(0, 0, 0, .5);
-                    &:active {
-                        color: #23A094;
-                        text-decoration: underline;
+            .dp_sticky {
+                position: sticky;
+                top: 80px;
+                &>p {
+                    font: normal normal bold 16px/19px Inter;
+                    color: #000;
+                }
+                .dp_left_ap {
+                    margin-top: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    &>a {
+                        display: block;
+                        margin-top: 16px;
+                        font: normal normal normal 14px/17px Inter;
+                        color: rgba(0, 0, 0, .5);
+                        &:active {
+                            color: #23A094;
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
         }
         .dp_right {
             width: 811px;
-            padding-top: 24px;
+            padding: 24px 0 120px;
             .dp-crumbs {
                 a {
                     font: normal normal 600 13px/16px Inter;
@@ -143,6 +147,12 @@
                             color: rgba(255, 255, 255, .6);
                             font: normal normal 500 16px/21px Inter;
                             text-indent: 24px;
+                            img {
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                margin-right: 9px;
+                            }
                         }
                         &.dc-reading {
                             li::before {
@@ -158,9 +168,11 @@
                         &.dc-find {
                             li {
                                 color: rgba(0, 0, 0, .6);
-                                img {
-                                    margin-right: 9px;
-                                }
+                            }
+                        }
+                        &.dc-make {
+                            li {
+                                color: rgba(0, 0, 0, .6);
                             }
                         }
                     }
@@ -180,6 +192,155 @@
                     }
                     &.card-3 {
                         background: url('../../images/blog/essay-2.png') no-repeat center center;
+                    }
+                }
+                .download-btn {
+                    padding: 12px 0;
+                    text-align: center;
+                    &>p {
+                        margin-top: 20px;
+                        color: rgba(0, 0, 0, .5);
+                        font: normal normal normal 14px/14px Inter;
+                    }
+                }
+            }
+            .dp-related {
+                margin-top: 70px;
+                text-align: left;
+                &>h2 {
+                    font: normal normal 600 24px/29px Inter;
+                }
+                &-articles {
+                    margin-top: 24px;
+                    display: flex;
+                    justify-content: space-between;
+                    .dp-re-item {
+                        width: 32%;
+                        &-txt {
+                            padding: 10px 10px 10px 0;
+                            span {
+                                padding: 4px 8px;
+                                box-sizing: border-box;
+                                background: #FF90E8;
+                                border-radius: 17px;
+                                font: normal normal bold 11px/100% Inter;
+                            }
+                            p {
+                                margin-top: 7px;
+                                font: normal normal 600 14px/17px Inter;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .dp-banner {
+        background: url('../../images/blog/dp-bannerbg-mob.png') no-repeat center center;
+        .container {
+            flex-direction: column;
+            padding: 37px 0 55px;
+            .dp-banner-left {
+                width: 100%;
+                .dp-banner-title {
+                    font: normal normal bold 27px/33px Inter;
+                    color: #fff;
+                    letter-spacing: -.02em;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .dp-content {
+        .container {
+            .dp_right {
+                width: 100%;
+                padding: 20px 0 49px 0;
+                .dp-essay {
+                    margin: 0;
+                    &>h1 {
+                        font: normal normal bold 28px/34px Inter;
+                    }
+                    &>h2 {
+                        font: normal normal bold 24px/29px Inter;
+                        margin-top: 24px;
+                    }
+                    .dp-essay-inf {
+                        flex-direction: column;
+                        margin-top: 26px;
+                        .author {
+                            justify-content: start;
+                            .split-line {
+                                margin: 0 9px;
+                            }
+                        }
+                        .share {
+                            margin-top: 26px;
+                            span {
+                                margin-left: 0;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                    .dp-img {
+                        // width: 100%;
+                        margin-top: 25ox;
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                    .dp-txt {
+                        margin: 24px 0;
+                        font: normal normal normal 14px/20px Inter;
+                    }
+                    .download-card {
+                        padding: 26px 14px 131px 30px;
+                        ul {
+                            li {
+                                margin-top: 16px;
+                            }
+                            &.dc-reading {
+                                li {
+                                    &::before {
+                                        content: none;
+                                    }
+                                    img {
+                                        margin-top: 10px;
+                                    }
+                                }
+                            }
+                        }
+                        .dc-button {
+                            margin-top: 25px;
+                        }
+                        &.card-1 {
+                            background: url('../../images/blog/essay-1-mob.png') no-repeat center center;
+                        }
+                        &.card-2 {
+                            background: url('../../images/blog/essay-5-mob.png') no-repeat center center;
+                        }                   
+                        &.card-3 {
+                            background: url('../../images/blog/essay-2-mob.png') no-repeat center center;
+                        }                    }
+                }
+                .dp-related {
+                    .dp-related-articles {
+                        margin-top: 0;
+                        flex-direction: column;
+                        .dp-re-item {
+                            margin-top: 24px;
+                            width: 100%;
+                            img {
+                                width: 100%;
+                            }
+                            .dp-re-item-txt {
+                                padding: 22px 18px;
+                                background: rgba(0, 0, 0, .06);
+                            }
+                        }
                     }
                 }
             }
