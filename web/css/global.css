@@ -122,7 +122,7 @@ input:focus, select:focus, textarea:focus {
   margin: 0 auto; }
 
 .mob {
-  display: none; }
+  display: none !important; }
 
 @media (max-width: 768px) {
   .pc {
@@ -301,16 +301,34 @@ input:focus, select:focus, textarea:focus {
   font-style: normal;
   font-display: swap;
   src: url("../font/Inter-Bold.ttf"), url("../font/Inter-Bold.ttf") format("ttf"); }
+.nav-button {
+  width: 172px;
+  height: 46px;
+  padding: 0 23px 0 57px; }
+  .nav-button span {
+    left: -2px;
+    letter-spacing: -4.2px; }
+  .nav-button::after {
+    position: absolute;
+    top: 16px;
+    left: 55px;
+    width: 95px;
+    height: 14px;
+    content: 'GET THE APP';
+    color: #000;
+    font: normal normal bold 14px/100% Inter;
+    transition: all .3s;
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
+  .nav-button:hover span {
+    top: -11px; }
+
 .hover-logo {
   position: relative;
   top: 10px;
   left: 0;
   display: block;
-  width: 172px;
-  height: 46px;
   background: #FF90E8;
   border-radius: 4px;
-  padding: 0 23px 0 57px;
   box-sizing: border-box;
   transition: all .3s;
   transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
@@ -336,10 +354,8 @@ input:focus, select:focus, textarea:focus {
   .hover-logo span {
     position: relative;
     top: -22px;
-    left: -2px;
     color: #000;
     font: normal normal bold 14px/100% Inter;
-    letter-spacing: -4.2px;
     opacity: 0;
     transition: all .3s;
     transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
@@ -349,8 +365,7 @@ input:focus, select:focus, textarea:focus {
       opacity: 0;
       transform: translate3d(0, 20px, 0); }
     .hover-logo:hover span {
-      opacity: 1;
-      top: -11px; }
+      opacity: 1; }
       .hover-logo:hover span:nth-child(1) {
         transition-delay: 0.025s; }
       .hover-logo:hover span:nth-child(2) {
@@ -369,6 +384,10 @@ input:focus, select:focus, textarea:focus {
         transition-delay: 0.2s; }
       .hover-logo:hover span:nth-child(9) {
         transition-delay: 0.225s; }
+      .hover-logo:hover span:nth-child(10) {
+        transition-delay: 0.25s; }
+      .hover-logo:hover span:nth-child(11) {
+        transition-delay: 0.275s; }
 
 .hover-black {
   position: relative;
@@ -448,6 +467,8 @@ input:focus, select:focus, textarea:focus {
     font: normal normal 600 18px/100% Inter;
     color: #000;
     letter-spacing: -.02em; }
+  .hover-1:hover {
+    background: #FFA2EC; }
   .hover-1::before {
     position: absolute;
     top: 20px;
@@ -466,6 +487,8 @@ input:focus, select:focus, textarea:focus {
     font: normal normal bold 16px/100% Inter;
     letter-spacing: -.02em;
     color: #000; }
+  .hover-2:hover {
+    background: #FFA2EC; }
   .hover-2::before {
     position: absolute;
     top: 12px;
@@ -477,6 +500,83 @@ input:focus, select:focus, textarea:focus {
     transition: all .3s;
     transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
 
+.hover-3 {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  width: 134px; }
+  .hover-3 span {
+    font: normal normal bold 16px/100% Inter;
+    letter-spacing: -.02em;
+    color: #000; }
+  .hover-3::before {
+    position: absolute;
+    top: 12px;
+    left: 24px;
+    content: "Match Now";
+    font: normal normal bold 16px/100% Inter;
+    letter-spacing: -.02em;
+    color: #000;
+    transition: all .3s;
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
+
+.hover-4 {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  width: 118px;
+  background: #000000;
+  box-shadow: 0px 9px 72px rgba(117, 18, 103, 0.46), 0px 3.75998px 30.0799px rgba(117, 18, 103, 0.330673), 0px 2.01027px 16.0821px rgba(117, 18, 103, 0.274209), 0px 1.12694px 9.01552px rgba(117, 18, 103, 0.23), 0px 0.598509px 4.78807px rgba(117, 18, 103, 0.185791), 0px 0.249053px 1.99242px rgba(117, 18, 103, 0.129327);
+  border-radius: 4px; }
+  .hover-4 span {
+    font: normal normal bold 16px/100% Inter;
+    color: #fff;
+    letter-spacing: -.02em; }
+  .hover-4::before {
+    position: absolute;
+    top: 12px;
+    left: 24px;
+    content: "Join Now";
+    font: normal normal bold 16px/100% Inter;
+    color: #fff;
+    letter-spacing: -.02em;
+    transition: all .3s;
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
+
+.edc-button {
+  margin: 0 auto;
+  width: 178px;
+  height: 46px;
+  padding-left: 30px; }
+  .edc-button span {
+    left: 3px;
+    letter-spacing: -4.7px; }
+  .edc-button::after {
+    position: absolute;
+    top: 16px;
+    left: 55px;
+    width: 105px;
+    height: 14px;
+    content: 'Download App';
+    color: #000;
+    font: normal normal bold 14px/100% Inter;
+    transition: all .3s;
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
+  .edc-button:hover span {
+    top: 10px; }
+
+.dp-bannerbtn-mob {
+  display: block;
+  width: 217px;
+  height: 42px;
+  margin: 16px auto 0;
+  background: #FF90E8;
+  box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
+  border-radius: 4px;
+  font: normal normal 600 18px/42px Inter;
+  text-align: center;
+  color: #000; }
+
 .transopac-20 {
   transition: all .3s;
   transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
@@ -486,7 +586,6 @@ input:focus, select:focus, textarea:focus {
     transition: all .3s;
     transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
   .transopac-20:hover {
-    background: #FFA2EC;
     box-shadow: initial; }
     .transopac-20:hover::before {
       transform: translateY(20px);
