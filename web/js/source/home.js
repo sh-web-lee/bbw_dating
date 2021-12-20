@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
         if (i == 0) {
             interval = setInterval(function() {
                 moveRight();
-            }, 3000);
+            }, 5000);
 
             i = 1;
         } else {
@@ -44,6 +44,15 @@ jQuery(document).ready(function($) {
     $('.slider').mouseleave(function() {
         timeInterval();
     });
+
+
+
+    document.addEventListener("visibilitychange", function() {
+        if (document.hidden) {
+            clearInterval(interval);
+        }
+    });
+
 
     // //mobile 左右滑动
     // window.addEventListener('touchstart', function(e) {
