@@ -16,3 +16,19 @@ function getCookie(c_name) {
     }
     return "";
 }
+
+//回到顶部
+
+function goBack(_dom) {
+    $(_dom).hide();
+    $(window).bind('scroll', function() {
+        if ($(window).scrollTop() <= 700) {
+            $(_dom).slideUp();
+        } else {
+            $(_dom).slideDown();
+        }
+    });
+    $(_dom).bind("click", function() {
+        $('html, body').animate({ scrollTop: 0 }, 300);
+    });
+}
