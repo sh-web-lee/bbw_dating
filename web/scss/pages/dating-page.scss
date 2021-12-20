@@ -1,0 +1,188 @@
+.dp-banner {
+    margin-top: 66px;
+    background: url('../../images/blog/dp-banner-bg.png') no-repeat center center;
+    .container {
+        padding: 75px 0 80px;
+        display: flex;
+        justify-content: space-between;
+        .dp-banner-left {
+            width: 54%;
+            .dp-banner-title {
+                font: normal normal bold 28px/34px Inter;
+                letter-spacing: -.02em;
+                color: #fff;
+            }
+            .dp-banner-cupid {
+                display: flex;
+                justify-content: start;
+                flex-wrap: wrap;
+                margin-top: 16px;
+                li {
+                    position: relative;
+                    width: 46%;
+                    margin-top: 16px;
+                    font: normal normal 600 14px/17px Inter;
+                    color: rgba(255, 255, 255, .6);
+                    text-indent: 22px;
+                    &::before {
+                        position: absolute;
+                        top: 2px;
+                        left: 0;
+                        content: "";
+                        width: 16px;
+                        height: 13px;
+                        background: url('../../images/icon/dp-vector.svg') no-repeat center center;
+                    }
+                }
+            }
+        }
+        .dp-banner-right {
+            .dp-banner-button {
+                margin: 47px 0 0 233px;
+            }
+        }
+    }
+}
+.dp-content {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .dp_left {
+            margin-top: 252px;
+            position: sticky;
+            top: 20px;
+            text-align: left;
+            &>p {
+                font: normal normal bold 16px/19px Inter;
+                color: #000;
+            }
+            .dp_left_ap {
+                margin-top: 8px;
+                display: flex;
+                flex-direction: column;
+                &>a {
+                    display: block;
+                    margin-top: 16px;
+                    font: normal normal normal 14px/17px Inter;
+                    color: rgba(0, 0, 0, .5);
+                    &:active {
+                        color: #23A094;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .dp_right {
+            width: 811px;
+            padding-top: 24px;
+            .dp-crumbs {
+                a {
+                    font: normal normal 600 13px/16px Inter;
+                    color: #23A094;
+                }
+            }
+            .dp-essay {
+                margin-top: 52px;
+                &>h1 {
+                    font: normal normal bold 40px/48px Inter;
+                    color: #000;
+                }
+                &>h2 {
+                    margin-top: 16px;
+                    font: normal normal bold 32px/38px Inter;
+                    color: #000;
+                }
+                &>h3 {
+                    margin-top: 16px;
+                    font: normal normal bold 24px/38px Inter;
+                    color: #000;
+                }
+                .dp-essay-inf {
+                    margin-top: 24px;
+                    display: flex;
+                    justify-content: space-between;
+                    .author {
+                        display: flex;
+                        justify-content: space-between;
+                        color: rgba(0, 0, 0, .6);
+                        font: normal normal normal 14px/17px Inter;
+                    }
+                    .share {
+                        display: flex;
+                        color: #000;
+                        font: normal normal normal 12px/14px Inter;
+                        span {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .dp-img {
+                    margin-top: 19px;
+                }
+                .dp-txt {
+                    margin: 16px 0;
+                    color: rgba(0, 0, 0, .8);
+                    font: normal normal normal 16px/22px Inter;
+                }
+                .download-card {
+                    padding: 41px 0 35px 64px;
+                    border-radius: 12px;
+                    .dc-title {
+                        font: normal normal bold 24px/29px Inter;
+                        &.cl-w {
+                            color: #fff;
+                        }
+                        &.cl-b {
+                            color: #000;
+                        }
+                    }
+                    ul {
+                        li {
+                            position: relative;
+                            margin-top: 8px;
+                            color: rgba(255, 255, 255, .6);
+                            font: normal normal 500 16px/21px Inter;
+                            text-indent: 24px;
+                        }
+                        &.dc-reading {
+                            li::before {
+                                position: absolute;
+                                top: 3px;
+                                left: 0;
+                                content: "";
+                                width: 16px;
+                                height: 13px;
+                                background: url('../../images/icon/dp-vector.svg') no-repeat center center;
+                            }
+                        }
+                        &.dc-find {
+                            li {
+                                color: rgba(0, 0, 0, .6);
+                                img {
+                                    margin-right: 9px;
+                                }
+                            }
+                        }
+                    }
+                    .dc-button {
+                        padding: 12px 24px;
+                        margin-top: 24px;
+                    }
+                    &.card-1 {
+                        background: url('../../images/blog/essay-1.png') no-repeat center center;
+                        &>a {
+                            width: 199px;
+                            box-sizing: border-box;
+                        }
+                    }
+                    &.card-2 {
+                        background: url('../../images/blog/essay-5.png') no-repeat center center;
+                    }
+                    &.card-3 {
+                        background: url('../../images/blog/essay-2.png') no-repeat center center;
+                    }
+                }
+            }
+        }
+    }
+}
