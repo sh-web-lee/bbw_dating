@@ -86,10 +86,9 @@
                     }
                     &.vcodeblock {
                         .fd-submit-form-row-item {
-                            // width: 190px;
+                            flex-direction: row;
                             label {
-                                margin-top: 16px;
-                                width: 57.5vw;
+                                width: 220px;
                                 input {
                                     width: 100%;
                                     padding: 0 12px;
@@ -187,11 +186,20 @@
                         &.upload-row {
                             margin-top: 16px;
                         }
+                        &.vcodeblock {
+                            .fd-submit-form-row-item {
+                                label {
+                                    margin-top: 16px;
+                                    width: 57.5vw;
+                                }
+                                
+                            }
+                        }
                     }
                     .btnzone {
                         button {
                             width: 100%;
-                            padding: 22px 41vw;
+                            padding: 22px 0;
                             &::before {
                                 left: 41vw;
                             }

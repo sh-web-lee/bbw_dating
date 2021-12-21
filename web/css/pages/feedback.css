@@ -95,20 +95,21 @@
               border-radius: 6px; }
       .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.double .fd-submit-form-row-item {
         width: 48%; }
-      .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.vcodeblock .fd-submit-form-row-item label {
-        margin-top: 16px;
-        width: 57.5vw; }
-        .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.vcodeblock .fd-submit-form-row-item label input {
-          width: 100%;
-          padding: 0 12px; }
-      .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.vcodeblock .fd-submit-form-row-item .vcode {
-        position: relative;
-        display: flex;
-        margin-left: 12px;
-        justify-content: center;
-        align-items: center; }
-        .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.vcodeblock .fd-submit-form-row-item .vcode img {
-          margin-top: 13px; }
+      .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.vcodeblock .fd-submit-form-row-item {
+        flex-direction: row; }
+        .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.vcodeblock .fd-submit-form-row-item label {
+          width: 220px; }
+          .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.vcodeblock .fd-submit-form-row-item label input {
+            width: 100%;
+            padding: 0 12px; }
+        .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.vcodeblock .fd-submit-form-row-item .vcode {
+          position: relative;
+          display: flex;
+          margin-left: 12px;
+          justify-content: center;
+          align-items: center; }
+          .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.vcodeblock .fd-submit-form-row-item .vcode img {
+            margin-top: 13px; }
       .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.upload-row .fd-submit-form-row-item {
         flex-direction: row; }
         .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.upload-row .fd-submit-form-row-item > div {
@@ -162,9 +163,12 @@
           width: 100%; }
         .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.upload-row {
           margin-top: 16px; }
+        .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.vcodeblock .fd-submit-form-row-item label {
+          margin-top: 16px;
+          width: 57.5vw; }
       .fd-submit .container .fd-submit-content .fd-submit-form .btnzone button {
         width: 100%;
-        padding: 22px 41vw; }
+        padding: 22px 0; }
         .fd-submit .container .fd-submit-content .fd-submit-form .btnzone button::before {
           left: 41vw; } }
 

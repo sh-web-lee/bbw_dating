@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 @charset "UTF-8";
+=======
+>>>>>>> lijianyang
 .home {
   width: 100%;
   height: auto; }
@@ -193,10 +196,13 @@
   padding-bottom: 122px; }
   .section2 h2 {
     margin-top: 80px; }
+<<<<<<< HEAD
   .section2 .sec2_h2 {
     display: block; }
   .section2 .sec2_h2_mob {
     display: none; }
+=======
+>>>>>>> lijianyang
   .section2 .sec2_word {
     margin-top: 24px;
     font-family: Inter;
@@ -233,8 +239,11 @@
       display: flex;
       justify-content: center;
       align-items: center; }
+<<<<<<< HEAD
   .section2 .ulul_slider {
     display: none; }
+=======
+>>>>>>> lijianyang
   .section2 .ulul {
     width: 100%;
     display: flex;
@@ -265,8 +274,11 @@
         color: rgba(0, 0, 0, 0.5);
         width: 274px;
         display: inline-block; }
+<<<<<<< HEAD
   .section2 .sec2_con_mob {
     display: none; }
+=======
+>>>>>>> lijianyang
   .section2 .sec2_con {
     margin-top: 90px;
     display: flex;
@@ -418,8 +430,11 @@
       margin-top: 22px; }
     .section3 .sec3_match .sec1_p {
       margin-top: 14px; }
+<<<<<<< HEAD
     .section3 .sec3_match .sec3_match_mob {
       display: none; }
+=======
+>>>>>>> lijianyang
     .section3 .sec3_match button {
       outline: none;
       border: none;
@@ -446,8 +461,11 @@
         align-items: center;
         width: 100%;
         height: 100%; }
+<<<<<<< HEAD
     .section3 .sec3_match .sec3_match_aa {
       display: none; }
+=======
+>>>>>>> lijianyang
 
 .section4 {
   width: 100%;
@@ -537,8 +555,11 @@
       letter-spacing: -0.02em;
       color: #000000;
       display: inline-block; }
+<<<<<<< HEAD
     .section4 .sec4_info .ulul_slider2 {
       display: none; }
+=======
+>>>>>>> lijianyang
     .section4 .sec4_info ul {
       width: 100%;
       display: flex;
@@ -625,6 +646,7 @@
   cursor: pointer;
   background: url(../../images/icon/top.png) no-repeat center center; }
 
+<<<<<<< HEAD
 @media (max-width: 768px) {
   .home {
     width: 100%;
@@ -1352,4 +1374,6 @@
     cursor: pointer;
     background: url(../../images/icon/top.png) no-repeat center center/100%; } }
 
+=======
+>>>>>>> lijianyang
 /*# sourceMappingURL=bbws.css.map */
