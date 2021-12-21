@@ -40,6 +40,9 @@ a:focus {
 input:focus, select:focus, textarea:focus {
   outline: -webkit-focus-ring-color auto 0; }
 
+html {
+  scroll-behavior: smooth; }
+
 .fadeInUp {
   transition-duration: 0.5s;
   transition-property: all;
@@ -122,7 +125,7 @@ input:focus, select:focus, textarea:focus {
   margin: 0 auto; }
 
 .mob {
-  display: none; }
+  display: none !important; }
 
 @media (max-width: 768px) {
   .pc {

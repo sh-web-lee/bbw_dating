@@ -1,0 +1,99 @@
+.fp-banner {
+  margin-top: 66px;
+  height: 216px;
+  background: url("../../images/ab-banner.png") no-repeat center -66px;
+  text-align: left;
+  transition-duration: 1.2s; }
+  .fp-banner .container {
+    padding-top: 52px;
+    width: 794px;
+    transition-duration: 1.2s; }
+    .fp-banner .container .fp-banner-title {
+      font: normal normal bold 48px/58px Inter;
+      color: #fff;
+      transition-duration: 1.2s; }
+    .fp-banner .container .fp-banner-txt {
+      margin-top: 8px;
+      font: normal normal normal 18px/23px Inter;
+      color: rgba(255, 255, 255, 0.6);
+      transition-duration: 1.2s; }
+
+@media (max-width: 768px) {
+  .fp-banner {
+    background: url("../../images/ab-banner-mob.png") no-repeat center center;
+    background-size: cover;
+    text-align: center; }
+    .fp-banner .container {
+      width: 100%;
+      padding: 24px 13px 43px; }
+      .fp-banner .container .fp-banner-title {
+        font: normal normal bold 32px/38px Inter; }
+      .fp-banner .container .fp-banner-txt {
+        margin-top: 16px;
+        font: normal normal normal 16px/19px Inter; } }
+.at-txt .container {
+  padding: 45px 0 192px;
+  width: 794px; }
+  .at-txt .container .at-txt-item {
+    margin-top: 35px;
+    color: rgba(0, 0, 0, 0.8);
+    font: normal normal normal 16px/24px Inter; }
+
+.confirm_pop {
+  width: 100vw;
+  height: 88px;
+  background: rgba(0, 0, 0, 0.83);
+  backdrop-filter: blur(98px);
+  padding: 20px 0;
+  box-sizing: border-box; }
+  .confirm_pop .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .confirm_pop .wrap p {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      color: rgba(255, 255, 255, 0.8); }
+      .confirm_pop .wrap p a {
+        color: #FF90E8;
+        text-decoration: underline; }
+    .confirm_pop .wrap button {
+      width: 135px;
+      height: 48px;
+      background: #FF90E8;
+      border-radius: 6px;
+      cursor: pointer;
+      color: #000000;
+      font-weight: 600;
+      border: none; }
+
+@media (max-width: 768px) {
+  .fp-banner .container .fp-banner-txt {
+    padding: 0 15px; }
+
+  .at-txt .container {
+    width: 100%;
+    padding: 0 10px 40px;
+    overflow: hidden; }
+
+  .confirm_pop {
+    padding: 14px;
+    height: auto; }
+    .confirm_pop .container {
+      padding: 0; }
+      .confirm_pop .container .wrap {
+        display: block; }
+        .confirm_pop .container .wrap p {
+          font: normal normal normal 12px/18px Inter; }
+        .confirm_pop .container .wrap button {
+          width: 73px;
+          height: 34px;
+          font-weight: 600;
+          font-size: .75rem;
+          line-height: 150%;
+          margin-top: .85rem; } }
+
+/*# sourceMappingURL=about.css.map */

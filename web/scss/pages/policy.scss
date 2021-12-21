@@ -1,0 +1,39 @@
+@import './banner.scss';
+
+.py-content {
+    padding: 52px 0 130px;
+    .container {
+        width: 794px;
+        .py-title {
+            font: normal normal bold 22px/22px Inter;
+            margin-bottom: 16px;
+        }
+        .py-subtitle {
+            font: normal normal 600 16px/24px Inter;
+            margin-bottom: 4px;
+        }
+        .py-txt {
+            margin-bottom: 16px;
+            font: normal normal 400 16px/24px Inter;
+            color: rgba(0, 0, 0, .6);
+            .py-txt-title {
+                font: normal normal 600 16px/23px Inter;
+                color: #000;
+            }
+            .g-link {
+                text-decoration: underline;
+                color: #23A094;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .py-content {
+        padding: 32px 0 72px;
+        .container {
+            width: 100%;
+            padding: 0 11px 0 14px;
+        }
+    }
+}
