@@ -673,117 +673,117 @@ html {
 
 .animate .ani1 {
   transition: all .2s;
-  animation: ani_up .6s 0s ease-in forwards;
+  animation: ani_up .6s 0s ease forwards;
   opacity: 0; }
 
 .animate .ani2 {
   transition: all .2s;
-  animation: ani_up .6s .5s ease-in forwards;
+  animation: ani_up .6s .5s ease forwards;
   opacity: 0; }
 
 .animate .ani3 {
   transition: all .2s;
-  animation: ani_up .6s .9s ease-in forwards;
+  animation: ani_up .6s .9s ease forwards;
   opacity: 0; }
 
 .animate .ani4 {
   transition: all .2s;
-  animation: ani_up .6s 1.1s ease-in forwards;
+  animation: ani_up .6s 1.1s ease forwards;
   opacity: 0; }
 
 .animate .ani5 {
   transition: all .2s;
-  animation: ani_up .6s 1.2s ease-in forwards;
+  animation: ani_up .6s 1.2s ease forwards;
   opacity: 0; }
 
 .animate .ani6 {
   transition: all .2s;
-  animation: ani_up .6s 1.3s ease-in forwards;
+  animation: ani_up .6s 1.3s ease forwards;
   opacity: 0; }
 
 .animate .ani7 {
   transition: all .2s;
-  animation: ani_up .6s 1.4s ease-in forwards;
+  animation: ani_up .6s 1.4s ease forwards;
   opacity: 0; }
 
 .animate .ani8 {
   transition: all .2s;
-  animation: ani_up .6s 1.5s ease-in forwards;
+  animation: ani_up .6s 1.5s ease forwards;
   opacity: 0; }
 
 .animate .ani9 {
   transition: all .2s;
-  animation: ani_up .6s 1.6s ease-in forwards;
+  animation: ani_up .6s 1.6s ease forwards;
   opacity: 0; }
 
 .animate .ani10 {
   transition: all .2s;
-  animation: ani_up .6s 1.7s ease-in forwards;
+  animation: ani_up .6s 1.7s ease forwards;
   opacity: 0; }
 
 .animate .ani11 {
   transition: all .2s;
-  animation: ani_up .6s 1.8s ease-in forwards;
+  animation: ani_up .6s 1.8s ease forwards;
   opacity: 0; }
 
 .animate .ani12 {
   transition: all .2s;
-  animation: ani_up .6s 1.9s ease-in forwards;
+  animation: ani_up .6s 1.9s ease forwards;
   opacity: 0; }
 
 .animate .ani13 {
   transition: all .2s;
-  animation: ani_up .6s 2s ease-in forwards;
+  animation: ani_up .6s 2s ease forwards;
   opacity: 0; }
 
 .animate .ani14 {
   transition: all .2s;
-  animation: ani_up .6s 2.1s ease-in forwards;
+  animation: ani_up .6s 2.1s ease forwards;
   opacity: 0; }
 
 .animate .ani15 {
   transition: all .2s;
-  animation: ani_up .6s 2.2s ease-in forwards;
+  animation: ani_up .6s 2.2s ease forwards;
   opacity: 0; }
 
 .animate .ani16 {
   transition: all .2s;
-  animation: ani_up .6s 2.3s ease-in forwards;
+  animation: ani_up .6s 2.3s ease forwards;
   opacity: 0; }
 
 .animate .ani17 {
   transition: all .2s;
-  animation: ani_up .6s 2.4s ease-in forwards;
+  animation: ani_up .6s 2.4s ease forwards;
   opacity: 0; }
 
 .animate .ani18 {
   transition: all .2s;
-  animation: ani_up .6s 2.6s ease-in forwards;
+  animation: ani_up .6s 2.6s ease forwards;
   opacity: 0; }
 
 .animate .ani19 {
   transition: all .2s;
-  animation: ani_up .6s 2.7s ease-in forwards;
+  animation: ani_up .6s 2.7s ease forwards;
   opacity: 0; }
 
 .animate .ani20 {
   transition: all .2s;
-  animation: ani_up .6s 2.8s ease-in forwards;
+  animation: ani_up .6s 2.8s ease forwards;
   opacity: 0; }
 
 .animate .ani21 {
   transition: all .2s;
-  animation: ani_up .6s 2.9s ease-in forwards;
+  animation: ani_up .6s 2.9s ease forwards;
   opacity: 0; }
 
 .animate .ani22 {
   transition: all .2s;
-  animation: ani_up .6s 3s ease-in forwards;
+  animation: ani_up .6s 3s ease forwards;
   opacity: 0; }
 
 .animate .ani23 {
   transition: all .2s;
-  animation: ani_up .6s 3.1s ease-in forwards;
+  animation: ani_up .6s 3.1s ease forwards;
   opacity: 0; }
 
 .ani1 {
@@ -857,32 +857,32 @@ html {
 
 .animate .ani_left1 {
   transition: all .2s;
-  animation: ani_left .6s .7s ease-in forwards;
+  animation: ani_left .6s .7s ease forwards;
   opacity: 0; }
 
 .animate .ani_left2 {
   transition: all .2s;
-  animation: ani_left .6s .9s ease-in forwards;
+  animation: ani_left .6s .9s ease forwards;
   opacity: 0; }
 
 .animate .ani_left3 {
   transition: all .2s;
-  animation: ani_left .6s 1.2s ease-in forwards;
+  animation: ani_left .6s 1.2s ease forwards;
   opacity: 0; }
 
 .animate .ani_left4 {
   transition: all .2s;
-  animation: ani_left .6s 2.2s ease-in forwards;
+  animation: ani_left .6s 2.2s ease forwards;
   opacity: 0; }
 
 .animate .ani_right {
   transition: all .2s;
-  animation: ani_right .6s 1.1s ease-in forwards;
+  animation: ani_right .6s 1.1s ease forwards;
   opacity: 0; }
 
 .animate .ani_right2 {
   transition: all .2s;
-  animation: ani_right .6s 2.6s ease-in forwards;
+  animation: ani_right .6s 2.6s ease forwards;
   opacity: 0; }
 
 .ani_left1 {
@@ -924,5 +924,3 @@ html {
   100% {
     opacity: 1;
     transform: translateX(0px); } }
-
-/*# sourceMappingURL=global.css.map */
