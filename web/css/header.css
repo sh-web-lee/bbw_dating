@@ -28,7 +28,7 @@
   .header-pc .nav-btns ul {
     display: flex; }
     .header-pc .nav-btns ul li {
-      margin-right: 32px; }
+      margin-right: 1.6vw; }
       .header-pc .nav-btns ul li a {
         font: normal normal 600 16px/66px Inter;
         color: #fff; }
