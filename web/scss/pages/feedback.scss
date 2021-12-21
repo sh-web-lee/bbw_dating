@@ -76,17 +76,22 @@
                         .fd-submit-form-row-item {
                             // width: 190px;
                             label {
-                                width: 190px;
+                                margin-top: 16px;
+                                width: 57.5vw;
                                 input {
                                     width: 100%;
                                     padding: 0 12px;
                                 }
                             }
                             .vcode {
+                                position: relative;
                                 display: flex;
                                 margin-left: 12px;
                                 justify-content: center;
                                 align-items: center;
+                                img {
+                                    margin-top: 13px;
+                                }
                             }
                         }
                     }
