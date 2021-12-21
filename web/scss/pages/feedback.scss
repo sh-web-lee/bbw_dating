@@ -27,6 +27,7 @@
                     justify-content: space-between;
                     .fd-submit-form-row-item {
                         display: flex;
+                        flex-direction: column;
                         width: 100%;
                         label {
                             position: relative;
@@ -36,10 +37,17 @@
                                 height: 51px;
                                 border: 2px solid #dcdce4;
                                 border-radius: 6px;
-                                color: #2a2a2a;
+                                color: rgba(0, 0, 0, .48);
                                 font: normal normal 500 14px/100% Inter;
                                 padding: 0 12px;
                                 box-sizing: border-box;
+                                &:focus {
+                                    border: 2px solid #FF90E8;
+                                    color: #000;
+                                }
+                                &:filled {
+                                    background: #EFEFF4;
+                                }
                             }
                             select {
                                 appearance: none;
@@ -49,6 +57,10 @@
                                     font: normal normal 500 14px/100% Inter;
                                 }
                             }
+                        }
+                        .warning {
+                            color: #FF7676;
+                            font: normal normal normal 13px/24px Inter;
                         }
                         &.item-textarea {
                             flex: 1;
@@ -97,6 +109,7 @@
                     }
                     &.upload-row {
                         .fd-submit-form-row-item {
+                            flex-direction: row;
                             &>div {
                                 position: relative;
                                 width: 88px;

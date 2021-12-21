@@ -53,9 +53,11 @@
     height: initial;
     padding: 17px 0 36px 0;
     text-align: center; }
-    .footer .footer-cnt ._right_list {
-      flex-direction: column; }
-      .footer .footer-cnt ._right_list li {
-        margin-top: 27px; } }
+    .footer .footer-cnt ._right {
+      width: 100%; }
+      .footer .footer-cnt ._right ._right_list {
+        flex-direction: column; }
+        .footer .footer-cnt ._right ._right_list li {
+          margin: 27px auto 0; } }
 
 /*# sourceMappingURL=footer.css.map */
