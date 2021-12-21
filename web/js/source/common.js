@@ -32,3 +32,9 @@ function goBack(_dom) {
         $('html, body').animate({ scrollTop: 0 }, 300);
     });
 }
+
+$(function() {
+    setTimeout(() => {
+        $('.custom-sc').addClass('on')
+    }, 300);
+})

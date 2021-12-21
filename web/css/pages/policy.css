@@ -1,0 +1,62 @@
+.fp-banner {
+  margin-top: 66px;
+  height: 216px;
+  background: url("../../images/ab-banner.png") no-repeat center -66px;
+  text-align: left;
+  transition-duration: 1.2s; }
+  .fp-banner .container {
+    padding-top: 52px;
+    width: 794px;
+    transition-duration: 1.2s; }
+    .fp-banner .container .fp-banner-title {
+      font: normal normal bold 48px/58px Inter;
+      color: #fff;
+      transition-duration: 1.2s; }
+    .fp-banner .container .fp-banner-txt {
+      margin-top: 8px;
+      font: normal normal normal 18px/23px Inter;
+      color: rgba(255, 255, 255, 0.6);
+      transition-duration: 1.2s; }
+
+@media (max-width: 768px) {
+  .fp-banner {
+    background: url("../../images/ab-banner-mob.png") no-repeat center center;
+    background-size: cover;
+    text-align: center; }
+    .fp-banner .container {
+      width: 100%;
+      padding: 24px 13px 43px; }
+      .fp-banner .container .fp-banner-title {
+        font: normal normal bold 32px/38px Inter; }
+      .fp-banner .container .fp-banner-txt {
+        margin-top: 16px;
+        font: normal normal normal 16px/19px Inter; } }
+.py-content {
+  padding: 52px 0 130px; }
+  .py-content .container {
+    width: 794px; }
+    .py-content .container .py-title {
+      font: normal normal bold 22px/22px Inter;
+      margin-bottom: 16px; }
+    .py-content .container .py-subtitle {
+      font: normal normal 600 16px/24px Inter;
+      margin-bottom: 4px; }
+    .py-content .container .py-txt {
+      margin-bottom: 16px;
+      font: normal normal 400 16px/24px Inter;
+      color: rgba(0, 0, 0, 0.6); }
+      .py-content .container .py-txt .py-txt-title {
+        font: normal normal 600 16px/23px Inter;
+        color: #000; }
+      .py-content .container .py-txt .g-link {
+        text-decoration: underline;
+        color: #23A094; }
+
+@media (max-width: 768px) {
+  .py-content {
+    padding: 32px 0 72px; }
+    .py-content .container {
+      width: 100%;
+      padding: 0 11px 0 14px; } }
+
+/*# sourceMappingURL=policy.css.map */

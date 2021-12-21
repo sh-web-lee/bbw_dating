@@ -238,6 +238,17 @@
                 }
             }
         }
+        .dp-float-ball {
+            position: fixed;
+            bottom: 12%;
+            right: 14%;
+            width: 32px;
+            height: 32px;
+            background: #FF90E8 url('../../images/icon/datingpage-float.svg') no-repeat -3px 0;
+            border-radius: 39px;
+            box-shadow: 0px 5px 4px rgba(255, 144, 232, 0.37);
+            cursor: grab;
+        }
     }
 }
 
@@ -328,7 +339,32 @@
                         }                   
                         &.card-3 {
                             background: url('../../images/blog/essay-2-mob.png') no-repeat center center;
-                        }                    }
+                        }                    
+                    }
+                    .dp-index-mob {
+                        padding-top: 23px;
+                        &.index-title {
+                            font: normal normal bold 16px/19px Inter;
+                            color: #000;
+                        }
+                        .dp_index_ap {
+                            padding-top: 8px;
+                            a {
+                                display: block;
+                                margin-top: 16px;
+                                font: normal normal normal 14px/17px Inter;
+                                color: rgba(0, 0, 0, .5);
+                                &:active {
+                                    color: #23A094;
+                                    font: normal normal 500 14px/17px Inter;
+                                }
+                                &:hover {
+                                    color: #23A094;
+                                    font: normal normal 500 14px/17px Inter;
+                                }
+                            }
+                        }
+                    }
                 }
                 .dp-related {
                     .dp-related-articles {
@@ -347,6 +383,17 @@
                         }
                     }
                 }
+                .dp-crumbs-mob {
+                    margin-top: 24px;
+                    color: rgba(0, 0, 0, .6);
+                    a {
+                        color: rgba(0, 0, 0, .6);
+                        font: normal normal normal 14px/17px Inter;
+                    }
+                }
+            }
+            .dp-float-ball {
+                right: 10px;
             }
         }
     }
