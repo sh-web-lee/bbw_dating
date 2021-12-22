@@ -251,5 +251,12 @@
   100% {
     opacity: 1;
     transform: translateX(0px); } }
+@keyframes drop-select {
+  0% {
+    top: 28px;
+    opacity: 0; }
+  100% {
+    top: 58px;
+    opacity: 1; } }
 
 /*# sourceMappingURL=animation.css.map */

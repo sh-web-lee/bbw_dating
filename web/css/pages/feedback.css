@@ -51,35 +51,30 @@
       display: flex;
       justify-content: space-between; }
       .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item {
+        position: relative;
         display: flex;
         flex-direction: column;
         width: 100%; }
         .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item label {
           position: relative;
           width: 100%; }
-          .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item label input, .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item label select {
+          .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item label input {
             width: 100%;
-            height: 51px;
+            padding: 19px 12px;
             border: 2px solid #dcdce4;
             border-radius: 6px;
             color: rgba(0, 0, 0, 0.48);
             font: normal normal 500 14px/100% Inter;
-            padding: 0 12px;
             box-sizing: border-box; }
-            .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item label input:focus, .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item label select:focus {
+            .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item label input:focus {
               border: 2px solid #FF90E8;
               color: #000; }
-            .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item label input:filled, .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item label select:filled {
-              background: #EFEFF4; }
-          .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item label select {
-            appearance: none;
-            background: #fff url("../../images/icon/icon-select.svg") no-repeat right 14px center; }
-            .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item label select option {
-              color: #2a2a2a;
-              font: normal normal 500 14px/100% Inter; }
         .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item .warning {
           color: #FF7676;
           font: normal normal normal 13px/24px Inter; }
+          .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item .warning img {
+            position: relative;
+            top: -1px; }
         .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item.item-textarea {
           flex: 1; }
           .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item.item-textarea label {
@@ -93,6 +88,53 @@
               color: #2a2a2a;
               font: normal normal 500 14px/100% Inter;
               border-radius: 6px; }
+        .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item .select {
+          position: relative;
+          width: 100%;
+          padding: 20px 16px;
+          box-sizing: border-box;
+          background: #FFF;
+          border: 2px solid #DCDCE4;
+          border-radius: 6px;
+          color: rgba(0, 0, 0, 0.48);
+          font: normal normal normal 14px/14px Inter;
+          letter-spacing: -.02em;
+          transition: all .3s; }
+          .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item .select::after {
+            position: absolute;
+            top: 26px;
+            right: 17px;
+            content: "";
+            width: 12px;
+            height: 8px;
+            background: url("../../images/icon/icon-select.svg") no-repeat center center;
+            transition: all .5s; }
+        .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item .select-list {
+          position: absolute;
+          display: none;
+          z-index: 99;
+          margin-top: 4px;
+          width: 100%;
+          padding: 12px;
+          background: #FFFFFF;
+          border: 2px solid #DCDCE4;
+          box-sizing: border-box;
+          border-radius: 6px; }
+          .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item .select-list li {
+            font: normal normal normal 14px/14px Inter;
+            border-radius: 6px;
+            padding: 12px;
+            cursor: default; }
+            .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item .select-list li:hover {
+              background: rgba(255, 144, 232, 0.25); }
+        .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item.open .select {
+          border: 2px solid #FF90E8; }
+          .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item.open .select::after {
+            transform: rotateZ(180deg); }
+        .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row .fd-submit-form-row-item.open .select-list {
+          animation: drop-select .5s;
+          display: block;
+          top: 58px; }
       .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.double .fd-submit-form-row-item {
         width: 48%; }
       .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.vcodeblock .fd-submit-form-row-item {
@@ -100,16 +142,13 @@
         .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.vcodeblock .fd-submit-form-row-item label {
           width: 220px; }
           .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.vcodeblock .fd-submit-form-row-item label input {
-            width: 100%;
-            padding: 0 12px; }
+            width: 100%; }
         .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.vcodeblock .fd-submit-form-row-item .vcode {
           position: relative;
           display: flex;
           margin-left: 12px;
           justify-content: center;
           align-items: center; }
-          .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.vcodeblock .fd-submit-form-row-item .vcode img {
-            margin-top: 13px; }
       .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.upload-row .fd-submit-form-row-item {
         flex-direction: row; }
         .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.upload-row .fd-submit-form-row-item > div {
@@ -141,6 +180,14 @@
     .fd-submit .container .fd-submit-content .fd-submit-form .btnzone {
       margin-top: 16px; }
 
+.fd-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none; }
+
 @media (max-width: 768px) {
   .fp-banner .container {
     width: 100%; }
@@ -166,6 +213,10 @@
         .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.vcodeblock .fd-submit-form-row-item label {
           margin-top: 16px;
           width: 57.5vw; }
+        .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.vcodeblock .fd-submit-form-row-item img {
+          margin-top: 13px; }
+        .fd-submit .container .fd-submit-content .fd-submit-form .fd-submit-form-row.fd-select-row .fd-submit-form-row-item {
+          margin-top: 28px; }
       .fd-submit .container .fd-submit-content .fd-submit-form .btnzone button {
         width: 100%;
         padding: 22px 0; }
