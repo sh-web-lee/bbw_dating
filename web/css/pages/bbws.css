@@ -499,6 +499,10 @@
       margin-top: 56px; }
       .section4 .sec4_ul .lili p {
         width: 348px; }
+    .section4 .sec4_ul .sec4_li_mob {
+      display: none; }
+    .section4 .sec4_ul .sec4_li {
+      display: block; }
   .section4 button {
     outline: none;
     border: none;
@@ -618,12 +622,13 @@
 
 .go_back {
   position: fixed;
-  right: 247px;
+  right: 13%;
   bottom: 85px;
   width: 46px;
   height: 46px;
   cursor: pointer;
-  background: url(../../images/icon/top.png) no-repeat center center; }
+  background: url(../../images/icon/top.png) no-repeat center center;
+  z-index: 99; }
 
 @media (max-width: 768px) {
   .home {
@@ -672,7 +677,8 @@
     width: 100%;
     height: 591px;
     background: url("../../images/bbws/mobile/background-mob.png") no-repeat center center;
-    margin-top: 66px; }
+    margin-top: 66px;
+    background-size: cover; }
     .banner .container {
       padding-top: 28px; }
       .banner .container strong {
@@ -683,7 +689,7 @@
         margin: 0px 0px 44px;
         background: url("../../images/bbws/pluscupid.png") no-repeat center center; }
       .banner .container h1 {
-        width: 341px;
+        width: 100%;
         font-family: Inter;
         font-style: normal;
         font-weight: bold;
@@ -771,7 +777,7 @@
           margin-top: 16px;
           width: 96%; }
       .section1 .sec1_pic .sec1_pic_right {
-        width: 360px;
+        width: 100%;
         height: 327px;
         background: url(../../images/bbws/sec1_pic.png) no-repeat center center; }
     .section1 .sec1_match {
@@ -891,10 +897,9 @@
         position: relative; }
         .section2 .ulul_slider .ulul_mob li {
           width: 100%;
-          height: 540px;
           text-align: center; }
           .section2 .ulul_slider .ulul_mob li img {
-            width: 338px; }
+            width: 90%; }
           .section2 .ulul_slider .ulul_mob li strong {
             font-family: Inter;
             font-style: normal;
@@ -969,9 +974,8 @@
         height: 393px;
         background: #E6E6E6; }
       .section2 .sec2_con_mob .sec2_con_right {
-        padding: 2rem 2.5rem 0;
+        padding: 2rem 2.5rem 2.25rem;
         width: 100%;
-        height: 504px;
         margin-top: -96px;
         background: #FF90E8;
         box-shadow: -36px 0px 49px rgba(206, 68, 177, 0.15), -15.04px 0px 33px rgba(206, 68, 177, 0.107828), -8.04px 0px 14px rgba(206, 68, 177, 0.0894161), -4.51px 0px 15px rgba(206, 68, 177, 0.075), -2.39px 0px 8px rgba(206, 68, 177, 0.0605839), -1px 0px 3.26536px rgba(206, 68, 177, 0.0421718); }
@@ -1006,7 +1010,6 @@
     width: 100%;
     height: auto; }
     .section3 h2 {
-      width: 314px;
       margin: 0 auto; }
       .section3 h2 span::after {
         background: url(../../images/bbws/mobile/line-mob2.png) no-repeat center center;
@@ -1156,7 +1159,7 @@
         margin-top: 58px; }
         .section4 .sec4_ul li b {
           display: inline-block;
-          width: 255px;
+          width: 70%;
           font-style: normal;
           font-weight: bold;
           font-size: 16px;
@@ -1179,19 +1182,12 @@
         margin-top: 58px; }
         .section4 .sec4_ul .lili p {
           width: 90%; }
-      .section4 .sec4_ul .lili.li_right img {
-        margin-right: 8px; }
       .section4 .sec4_ul .li_last p {
         border-bottom: none; }
-      .section4 .sec4_ul .li_right img {
-        display: block;
-        float: right; }
-      .section4 .sec4_ul .li_right b {
-        display: block;
-        float: left;
-        margin-left: 17px; }
-      .section4 .sec4_ul .li_right p {
-        margin-top: 80px; }
+      .section4 .sec4_ul .sec4_li_mob {
+        display: block; }
+      .section4 .sec4_ul .sec4_li {
+        display: none; }
     .section4 button {
       outline: none;
       border: none;
@@ -1251,7 +1247,7 @@
             height: 430px;
             text-align: center; }
             .section4 .sec4_info .ulul_slider2 ul li img {
-              width: 339px; }
+              width: 100%; }
             .section4 .sec4_info .ulul_slider2 ul li strong {
               font-family: Inter;
               font-style: normal;
@@ -1350,6 +1346,7 @@
     width: 28px;
     height: 28px;
     cursor: pointer;
-    background: url(../../images/icon/top.png) no-repeat center center/100%; } }
+    background: url(../../images/icon/top.png) no-repeat center center/100%;
+    z-index: 99; } }
 
 /*# sourceMappingURL=bbws.css.map */
