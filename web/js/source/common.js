@@ -29,7 +29,7 @@ function goBack(_dom) {
         }
     });
     $(_dom).bind("click", function() {
-        $('html, body').animate({ scrollTop: 0 }, 300);
+        $('html, body').animate({ scrollTop: 0 }, 100);
     });
 }
 
