@@ -202,6 +202,16 @@
   animation: ani_left .6s 2.2s ease forwards;
   opacity: 0; }
 
+.animate .ani_left5 {
+  transition: all .2s;
+  animation: ani_left .6s 1.4s ease forwards;
+  opacity: 0; }
+
+.animate .ani_left6 {
+  transition: all .2s;
+  animation: ani_left .6s 1.6s ease forwards;
+  opacity: 0; }
+
 .animate .ani_right {
   transition: all .2s;
   animation: ani_right .6s 1.1s ease forwards;
@@ -210,6 +220,41 @@
 .animate .ani_right2 {
   transition: all .2s;
   animation: ani_right .6s 2.6s ease forwards;
+  opacity: 0; }
+
+.animate .ani_right3 {
+  transition: all .2s;
+  animation: ani_right .6s 1.3s ease forwards;
+  opacity: 0; }
+
+.animate .ani_right4 {
+  transition: all .2s;
+  animation: ani_right .6s 1.5s ease forwards;
+  opacity: 0; }
+
+.animate .ani_right5 {
+  transition: all .2s;
+  animation: ani_right .6s 1.6s ease forwards;
+  opacity: 0; }
+
+.animate .ani_right6 {
+  transition: all .2s;
+  animation: ani_right .6s 1.7s ease forwards;
+  opacity: 0; }
+
+.animate .ani_right7 {
+  transition: all .2s;
+  animation: ani_right .6s 1.8s ease forwards;
+  opacity: 0; }
+
+.animate .ani_right8 {
+  transition: all .2s;
+  animation: ani_right .6s 1.9s ease forwards;
+  opacity: 0; }
+
+.animate .ani_right9 {
+  transition: all .2s;
+  animation: ani_right .6s 2s ease forwards;
   opacity: 0; }
 
 .ani_left1 {
@@ -224,10 +269,37 @@
 .ani_left4 {
   opacity: 0; }
 
+.ani_left5 {
+  opacity: 0; }
+
+.ani_left6 {
+  opacity: 0; }
+
 .ani_right {
   opacity: 0; }
 
 .ani_right2 {
+  opacity: 0; }
+
+.ani_right3 {
+  opacity: 0; }
+
+.ani_right4 {
+  opacity: 0; }
+
+.ani_right5 {
+  opacity: 0; }
+
+.ani_right6 {
+  opacity: 0; }
+
+.ani_right7 {
+  opacity: 0; }
+
+.ani_right8 {
+  opacity: 0; }
+
+.ani_right9 {
   opacity: 0; }
 
 @keyframes ani_up {
@@ -258,5 +330,19 @@
   100% {
     top: 58px;
     opacity: 1; } }
+@keyframes ani_rotate1 {
+  0% {
+    opacity: 0;
+    transform: translate3d(30%, -300px, 100px); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px); } }
+@keyframes ani_rotate2 {
+  0% {
+    opacity: 0;
+    transform: translate3d(-30%, 300px, -100px); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px); } }
 
 /*# sourceMappingURL=animation.css.map */

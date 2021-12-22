@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Lora";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../font/Lora-Regular.ttf"), url("../font/Lora-Regular.ttf") format("ttf"); }
+@font-face {
+  font-family: "Lora";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("../font/Lora-SemiBold.ttf"), url("../font/Lora-SemiBold.ttf") format("ttf"); }
+@font-face {
+  font-family: "Lora";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../font/Lora-BoldItalic.ttf"), url("../font/Lora-BoldItalic.ttf") format("ttf"); }
+@font-face {
+  font-family: "LoraItalic";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../font/Lora-BoldItalic.ttf"), url("../font/Lora-BoldItalic.ttf") format("ttf"); }
+@font-face {
+  font-family: "LoraItalic";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../font/Lora-Medium.ttf"), url("../font/Lora-Medium.ttf") format("ttf"); }
+@font-face {
+  font-family: "LoraItalic";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("../font/Lora-SemiBoldItalic.ttf"), url("../font/Lora-SemiBoldItalic.ttf") format("ttf"); }
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../font/Inter-Regular.ttf"), url("../font/Inter-Regular.ttf") format("ttf"); }
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("../font/Inter-SemiBold.ttf"), url("../font/Inter-SemiBold.ttf") format("ttf"); }
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../font/Inter-Bold.ttf"), url("../font/Inter-Bold.ttf") format("ttf"); }
+
+/*# sourceMappingURL=fonts.css.map */
