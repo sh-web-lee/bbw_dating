@@ -45,7 +45,7 @@
     ._hot_arti ._arti-content ._arti-items {
       margin-top: 32px;
       width: 389px;
-      transition: all 1.2s; }
+      transition-duration: 1.2s; }
       ._hot_arti ._arti-content ._arti-items > img {
         width: 100%;
         image-rendering: -webkit-optimize-contrast; }
@@ -102,7 +102,7 @@
       ._hot_arti ._arti-content ._arti-items._arti-card {
         position: relative;
         background-color: #FF90E8;
-        transition: all 1.2s; }
+        transition-duration: 1.2s; }
         ._hot_arti ._arti-content ._arti-items._arti-card ._arti-card-txt {
           position: relative;
           z-index: 10;

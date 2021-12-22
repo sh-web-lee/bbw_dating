@@ -445,3 +445,35 @@
         transform: translate3d(0px)
     }
 }
+@keyframes errormsg {
+    0% {
+        top: -10px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        top: -25px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes openItem {
+    0% {
+        top: -30px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}

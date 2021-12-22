@@ -50,7 +50,8 @@
         color: #000; }
       .py-content .container .py-txt .g-link {
         text-decoration: underline;
-        color: #23A094; }
+        color: #23A094;
+        vertical-align: top; }
 
 @media (max-width: 768px) {
   .py-content {

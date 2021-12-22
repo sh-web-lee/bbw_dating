@@ -17,6 +17,7 @@
                     text-decoration: underline;
                     font: normal normal normal 16px/24px Inter;
                     color: #23A094;
+                    vertical-align: top;
                 }
             }
             .fd-submit-form {
@@ -42,15 +43,24 @@
                                 color: rgba(0, 0, 0, .48);
                                 font: normal normal 500 14px/100% Inter;
                                 box-sizing: border-box;
+                                letter-spacing: -.02em;
                                 &:focus {
                                     border: 2px solid #FF90E8;
                                     color: #000;
                                 }
+                                &::selection {
+                                    background: #000;
+                                }
                             }
                         }
-                        .warning {
+                        .error {
+                            position: relative;
+                            left: 0;
+                            top: -10px;
                             color: #FF7676;
                             font: normal normal normal 13px/24px Inter;
+                            transition: all .3s;
+                            display: none;
                             img {
                                 position: relative;
                                 top: -1px;
@@ -75,6 +85,7 @@
                         .select {
                             position: relative;
                             width: 100%;
+                            height: 58px;
                             padding: 20px 16px;
                             box-sizing: border-box;
                             background: #FFF;
@@ -93,6 +104,10 @@
                                 height: 8px;
                                 background: url('../../images/icon/icon-select.svg') no-repeat center center;
                                 transition: all .5s;
+                            }
+                            &.has-selected {
+                                background: #EFEFF4;
+                                border: 2px solid #DCDCE4;
                             }
                         }
                         .select-list {
@@ -125,11 +140,24 @@
                                 }
                             }
                             .select-list {
-                                animation: drop-select .5s;
+                                animation: drop-select .5s forwards;
                                 display: block;
-                                top: 58px;
                             }
                         }
+                        &.invalid {
+                            input {
+                                border: 2px solid #FF7676;
+                            }
+                            span {
+                                display: block;
+                                animation: errormsg .3s forwards;
+                            }
+                        }
+                        &.valid {
+                            input, .suggestion {
+                                background: #EFEFF4;
+                            }
+                        }                    
                     }
                     &.double {
                         .fd-submit-form-row-item {
@@ -206,6 +234,53 @@
     height: 100vh;
     display: none;
 }
+.fd-flag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    .flag {
+        margin: 430px auto 0;
+        width: 365px;
+
+        background: #EFEFF4;
+        border: 2px solid #DCDCE4;
+        box-sizing: border-box;
+        padding: 62px 38px 54px;
+        border-radius: 8px;
+        text-align: center;
+        display: none;
+        h3 {
+            margin-top: 8px;
+            font: normal normal bold 24px/29px Inter;
+        }
+        p {
+            margin-top: 8px;
+            color: rgba(0, 0, 0, .6);
+            font: normal normal normal 16px/19px Inter;
+        }
+        button {
+            margin-top: 32px;
+            box-sizing: border-box;
+            padding: 22px 98px;
+            border: none;
+            background: #FF90E8;
+            border-radius: 6px;
+            cursor: pointer;
+            span {
+                font: normal normal bold 16px/16px Inter;
+                letter-spacing: -.02em;
+            }
+        }
+        &.flagModel {
+            display: block;
+            position: relative;
+            animation: fadeInDown .6s forwards;
+        }
+    }
+}
 
 @media (max-width: 768px) {
     .fp-banner {
@@ -270,6 +345,11 @@
                     }
                 }
             }
+        }
+    }
+    .fd-flag {
+        .flag {
+            width: 100%;
         }
     }
 }

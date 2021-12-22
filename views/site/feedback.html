@@ -62,38 +62,41 @@
                 </h2>
                 <div class="fd-submit-form">
                     <div class="fd-submit-form-row double">
-                        <div class="fd-submit-form-row-item">
+                        <div class="fd-submit-form-row-item fd-email-item">
                             <label for=""><input type="email" class="useremail" placeholder="Your Email"></label>
-                            <span class="warning email-warning"><img src="../../web/images/icon/icon-warning.svg" alt=""> Please provide a valid email address to get reply from us.</span>
+                            <span class="error error-email"><img src="../../web/images/icon/icon-warning.svg" alt=""> Please provide a valid email address to get reply from us.</span>
                         </div>
-                        <div class="fd-submit-form-row-item">
+                        <div class="fd-submit-form-row-item fd-username-item">
                             <label for=""><input type="text" class="username" placeholder="Your Name"></label>
-                            <span class="warning name-warning"><img src="../../web/images/icon/icon-warning.svg" alt=""> Please provide a valid name address to get reply from us.</span>
+                            <span class="error name-warning"><img src="../../web/images/icon/icon-warning.svg" alt=""> Please provide a valid name address to get reply from us.</span>
                         </div>
                     </div>
                     <div class="fd-submit-form-row double fd-select-row">
-                        <div class="fd-submit-form-row-item">
+                        <div class="fd-submit-form-row-item fd-select1-item">
                             <p class="select select1">Please select a subject</p>
                             <ul class="select-list select-list2">
-                                <li>Please select a subject</li>
-                                <li>Please select a subject</li>
-                                <li>Please select a subject</li>
+                                <li>select test 1</li>
+                                <li>select test 2</li>
+                                <li>select test 3</li>
                             </ul>
+                            <span class="error error-subject1">Request Type is not valid.</span>
                         </div>
-                        <div class="fd-submit-form-row-item">
+                        <div class="fd-submit-form-row-item fd-select2-item">
                             <p class="select select2">Please select a subject</p>
                             <ul class="select-list select-list2">
-                                <li>Please select a subject</li>
-                                <li>Please select a subject</li>
-                                <li>Please select a subject</li>
+                                <li>select test 1</li>
+                                <li>select test 2</li>
+                                <li>select test 3</li>
                             </ul>
+                            <span class="error error-subject1">Request Type is not valid.</span>
                         </div>
                     </div>
                     <div class="fd-submit-form-row">
-                        <div class="fd-submit-form-row-item item-textarea">
+                        <div class="fd-submit-form-row-item item-textarea fd-suggestion-item">
                             <label for="">
-                                <textarea name="" id="" placeholder="Please be as descriptive as possible of the issue you were experiencing so we can better assist you."></textarea>
+                                <textarea name="" id="" class="areaval suggestion" placeholder="Please be as descriptive as possible of the issue you were experiencing so we can better assist you."></textarea>
                             </label>
+                            <span class="error error-msg">Message must have 50 or more characters</span>
                         </div>
                     </div>
                     <p>Do you have a photo or screenshot that would help us understand the issue better?</p>
@@ -127,7 +130,7 @@
                         </div>
                     </div>
                     <div class="btnzone">
-                        <button class="send hover-5">
+                        <button class="send hover-5" onclick='getContect()'>
                             <span>S</span>
                             <span>E</span>
                             <span>N</span>
@@ -135,6 +138,28 @@
                         </button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="fd-flag">
+        <div class="container">
+            <div class="flag success-flag">
+                <img src="../../web/images/success-flag.png" alt="">
+                <h3>Congrats!</h3>
+                <p>Your feedback was sent successfully.</p>
+                <button class="ok-btn" onclick="hiddenFlag()">
+                    <span>O</span>
+                    <span>K</span>
+                </button>
+            </div>
+            <div class="flag fail-flag">
+                <img src="../../web/images/cry-flag.png" alt="">
+                <h3>Send failed!</h3>
+                <p>Please check your Internet connection and send it later.</p>
+                <button class="ok-btn" onclick="hiddenFlag()">
+                    <span>O</span>
+                    <span>K</span>
+                </button>
             </div>
         </div>
     </section>
