@@ -7,6 +7,7 @@
     .container {
         width: 794px;
         .faq-content-item {
+            position: relative;
             padding: 32px 0;
             border-bottom: 1px solid #E0E4ED;
             .item-title {
@@ -22,7 +23,8 @@
                     width: 15px;
                     height: 8px;
                     content: "";
-                    background: url('../../images/icon/rectangle.svg') no-repeat center center;
+                    background: url('../../images/icon/rectangle.svg') no-repeat 1px center;
+                    transition: all .5s;
                 }
             }
             .item-txt {
@@ -44,12 +46,29 @@
                     transition-duration: 1.2s;
                 }
             }
+            &>div {
+                position: relative;
+                overflow: hidden;
+                // height: 0;
+                left: 0;
+                transition: .5s;
+                display: none;
+            }
             .g-link {
                 text-decoration: underline;
                 color: #23A094;
             }
             &:nth-child(1) {
                 border-top: 1px solid #E0E4ED;
+            }
+            &.open-item {
+                .item-title::after {
+                    transform: rotateZ(180deg);
+                }
+                &>div {
+                    display: block;
+                    animation: openItem .5s forwards;
+                }
             }
         }
     }

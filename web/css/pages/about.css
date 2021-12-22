@@ -40,7 +40,6 @@
     font: normal normal normal 16px/24px Inter; }
 
 .confirm_pop {
-  width: 100vw;
   height: 88px;
   background: rgba(0, 0, 0, 0.83);
   backdrop-filter: blur(98px);

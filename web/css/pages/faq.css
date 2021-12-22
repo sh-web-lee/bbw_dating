@@ -36,6 +36,7 @@
   .faq-content .container {
     width: 794px; }
     .faq-content .container .faq-content-item {
+      position: relative;
       padding: 32px 0;
       border-bottom: 1px solid #E0E4ED; }
       .faq-content .container .faq-content-item .item-title {
@@ -51,7 +52,8 @@
           width: 15px;
           height: 8px;
           content: "";
-          background: url("../../images/icon/rectangle.svg") no-repeat center center; }
+          background: url("../../images/icon/rectangle.svg") no-repeat 1px center;
+          transition: all .5s; }
       .faq-content .container .faq-content-item .item-txt {
         margin-top: 16px;
         font: normal normal normal 15px/22px Inter;
@@ -66,11 +68,22 @@
         color: rgba(0, 0, 0, 0.6);
         font: normal normal normal 15px/22px Inter;
         transition-duration: 1.2s; }
+      .faq-content .container .faq-content-item > div {
+        position: relative;
+        overflow: hidden;
+        left: 0;
+        transition: .5s;
+        display: none; }
       .faq-content .container .faq-content-item .g-link {
         text-decoration: underline;
         color: #23A094; }
       .faq-content .container .faq-content-item:nth-child(1) {
         border-top: 1px solid #E0E4ED; }
+      .faq-content .container .faq-content-item.open-item .item-title::after {
+        transform: rotateZ(180deg); }
+      .faq-content .container .faq-content-item.open-item > div {
+        display: block;
+        animation: openItem .5s forwards; }
 
 @media (max-width: 768px) {
   .faq-content {

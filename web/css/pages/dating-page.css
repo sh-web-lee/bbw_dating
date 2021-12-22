@@ -68,7 +68,8 @@
     padding: 24px 0 120px; }
     .dp-content .container .dp_right .dp-crumbs a {
       font: normal normal 600 13px/16px Inter;
-      color: #23A094; }
+      color: #23A094;
+      vertical-align: baseline; }
     .dp-content .container .dp_right .dp-essay {
       margin-top: 52px; }
       .dp-content .container .dp_right .dp-essay > h1 {
@@ -94,9 +95,26 @@
         .dp-content .container .dp_right .dp-essay .dp-essay-inf .share {
           display: flex;
           color: #000;
-          font: normal normal normal 12px/14px Inter; }
-          .dp-content .container .dp_right .dp-essay .dp-essay-inf .share span {
+          font: normal normal normal 12px/20px Inter; }
+          .dp-content .container .dp_right .dp-essay .dp-essay-inf .share span, .dp-content .container .dp_right .dp-essay .dp-essay-inf .share a {
             margin-left: 10px; }
+          .dp-content .container .dp_right .dp-essay .dp-essay-inf .share a {
+            position: relative;
+            width: 22px;
+            height: 20px;
+            transition: all .3s; }
+            .dp-content .container .dp_right .dp-essay .dp-essay-inf .share a.twitter {
+              background: url("../../images/icon/icon-twitter.svg") no-repeat center center; }
+              .dp-content .container .dp_right .dp-essay .dp-essay-inf .share a.twitter:hover {
+                background: url("../../images/icon/icon-twitter-h.svg") no-repeat center 2px; }
+            .dp-content .container .dp_right .dp-essay .dp-essay-inf .share a.fbook {
+              background: url("../../images/icon/icon-facebook.svg") no-repeat center center; }
+              .dp-content .container .dp_right .dp-essay .dp-essay-inf .share a.fbook:hover {
+                background: url("../../images/icon/icon-facebook-h.svg") no-repeat center center; }
+            .dp-content .container .dp_right .dp-essay .dp-essay-inf .share a.weibo {
+              background: url("../../images/icon/icon-weibo.svg") no-repeat center center; }
+              .dp-content .container .dp_right .dp-essay .dp-essay-inf .share a.weibo:hover {
+                background: url("../../images/icon/icon-weibo-h.svg") no-repeat center center; }
       .dp-content .container .dp_right .dp-essay .dp-img {
         margin-top: 19px; }
       .dp-content .container .dp_right .dp-essay .dp-txt {
@@ -178,14 +196,19 @@
               font: normal normal 600 14px/17px Inter; }
   .dp-content .container .dp-float-ball {
     position: fixed;
-    bottom: 12%;
+    bottom: -5%;
     right: 14%;
     width: 32px;
     height: 32px;
+    opacity: 0;
     background: #FF90E8 url("../../images/icon/datingpage-float.svg") no-repeat -3px 0;
     border-radius: 39px;
     box-shadow: 0px 5px 4px rgba(255, 144, 232, 0.37);
-    cursor: grab; }
+    cursor: grab;
+    transition: all .3s; }
+    .dp-content .container .dp-float-ball.active-floatball {
+      bottom: 12%;
+      opacity: 1; }
 
 @media (max-width: 768px) {
   .dp-banner {
