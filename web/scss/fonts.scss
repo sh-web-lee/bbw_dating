@@ -26,26 +26,35 @@
 }
 @font-face {
     font-family: "LoraItalic";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
     src: url('../font/Lora-BoldItalic.ttf'), /* IE9 Compat Mode */
     url('../font/Lora-BoldItalic.ttf') format("ttf");
 }
+// @font-face {
+//     font-family: "LoraItalic";
+//     src: url('../font/Lora-Italic.ttf'), /* IE9 Compat Mode */
+//     url('../font/Lora-Italic.ttf') format("ttf");
+// }
 @font-face {
     font-family: "LoraItalic";
-    src: url('../font/Lora-Italic.ttf'), /* IE9 Compat Mode */
-    url('../font/Lora-Italic.ttf') format("ttf");
-}
-@font-face {
-    font-family: "LoraItalic";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
     src: url('../font/Lora-Medium.ttf'), /* IE9 Compat Mode */
     url('../font/Lora-Medium.ttf') format("ttf");
 }
+// @font-face {
+//     font-family: "LoraItalic";
+//     src: url('../font/Lora-MediumItalic.ttf'), /* IE9 Compat Mode */
+//     url('../font/Lora-MediumItalic.ttf') format("ttf");
+// }
 @font-face {
     font-family: "LoraItalic";
-    src: url('../font/Lora-MediumItalic.ttf'), /* IE9 Compat Mode */
-    url('../font/Lora-MediumItalic.ttf') format("ttf");
-}
-@font-face {
-    font-family: "LoraItalic";
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
     src: url('../font/Lora-SemiBoldItalic.ttf'), /* IE9 Compat Mode */
     url('../font/Lora-SemiBoldItalic.ttf') format("ttf");
 }
