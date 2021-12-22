@@ -209,9 +209,11 @@
         }
         ._arti-content {
             flex-direction: column;
+            margin-top: 16px;
             ._arti-items {
                 width: 100%;
-                padding: 0 8px 22px 0;
+                margin-top: 16px;
+                // padding: 0 8px 22px 0;
                 ._arti_txt {
                     padding: 22px 18px 14px 18px;
                     background-color: rgba(0, 0, 0, 0.06);

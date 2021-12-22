@@ -167,10 +167,11 @@
     ._hot_arti ._hot-title {
       font: normal normal bold 24px/29px Inter; }
     ._hot_arti ._arti-content {
-      flex-direction: column; }
+      flex-direction: column;
+      margin-top: 16px; }
       ._hot_arti ._arti-content ._arti-items {
         width: 100%;
-        padding: 0 8px 22px 0; }
+        margin-top: 16px; }
         ._hot_arti ._arti-content ._arti-items ._arti_txt {
           padding: 22px 18px 14px 18px;
           background-color: rgba(0, 0, 0, 0.06);
