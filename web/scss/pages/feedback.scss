@@ -26,41 +26,35 @@
                     display: flex;
                     justify-content: space-between;
                     .fd-submit-form-row-item {
+                        position: relative;
                         display: flex;
                         flex-direction: column;
                         width: 100%;
                         label {
                             position: relative;
                             width: 100%;
-                            input, select {
+                            input {
                                 width: 100%;
-                                height: 51px;
+                                // height: 51px;
+                                padding: 19px 12px;
                                 border: 2px solid #dcdce4;
                                 border-radius: 6px;
                                 color: rgba(0, 0, 0, .48);
                                 font: normal normal 500 14px/100% Inter;
-                                padding: 0 12px;
                                 box-sizing: border-box;
                                 &:focus {
                                     border: 2px solid #FF90E8;
                                     color: #000;
-                                }
-                                &:filled {
-                                    background: #EFEFF4;
-                                }
-                            }
-                            select {
-                                appearance: none;
-                                background: #fff url('../../images/icon/icon-select.svg') no-repeat right 14px center;
-                                option {
-                                    color: #2a2a2a;
-                                    font: normal normal 500 14px/100% Inter;
                                 }
                             }
                         }
                         .warning {
                             color: #FF7676;
                             font: normal normal normal 13px/24px Inter;
+                            img {
+                                position: relative;
+                                top: -1px;
+                            }
                         }
                         &.item-textarea {
                             flex: 1;
@@ -78,6 +72,64 @@
                                 }
                             }
                         }
+                        .select {
+                            position: relative;
+                            width: 100%;
+                            padding: 20px 16px;
+                            box-sizing: border-box;
+                            background: #FFF;
+                            border: 2px solid #DCDCE4;
+                            border-radius: 6px;
+                            color: rgba(0, 0, 0, .48);
+                            font: normal normal normal 14px/14px Inter;
+                            letter-spacing: -.02em;
+                            transition: all .3s;
+                            &::after {
+                                position: absolute;
+                                top: 26px;
+                                right: 17px;
+                                content: "";
+                                width: 12px;
+                                height: 8px;
+                                background: url('../../images/icon/icon-select.svg') no-repeat center center;
+                                transition: all .5s;
+                            }
+                        }
+                        .select-list {
+                            position: absolute;
+                            // top: 28px;
+                            display: none;
+                            z-index: 99;
+                            margin-top: 4px;
+                            width: 100%;
+                            padding: 12px;
+                            background: #FFFFFF;
+                            border: 2px solid #DCDCE4;
+                            box-sizing: border-box;
+                            border-radius: 6px;
+                            li {
+                                font: normal normal normal 14px/14px Inter;
+                                border-radius: 6px;
+                                padding: 12px;
+                                cursor: default;
+                                &:hover {
+                                    background: rgba(255, 144, 232, 0.25);
+                                }
+                            }
+                        }
+                        &.open {
+                            .select {
+                                border: 2px solid #FF90E8;
+                                &::after {
+                                    transform: rotateZ(180deg);
+                                }
+                            }
+                            .select-list {
+                                animation: drop-select .5s;
+                                display: block;
+                                top: 58px;
+                            }
+                        }
                     }
                     &.double {
                         .fd-submit-form-row-item {
@@ -91,7 +143,6 @@
                                 width: 220px;
                                 input {
                                     width: 100%;
-                                    padding: 0 12px;
                                 }
                             }
                             .vcode {
@@ -100,9 +151,6 @@
                                 margin-left: 12px;
                                 justify-content: center;
                                 align-items: center;
-                                img {
-                                    margin-top: 13px;
-                                }
                             }
                         }
                     }
@@ -150,6 +198,14 @@
         }
     }
 }
+.fd-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
 
 @media (max-width: 768px) {
     .fp-banner {
@@ -192,7 +248,14 @@
                                     margin-top: 16px;
                                     width: 57.5vw;
                                 }
-                                
+                                img {
+                                    margin-top: 13px;
+                                }
+                            }
+                        }
+                        &.fd-select-row {
+                            .fd-submit-form-row-item {
+                                margin-top: 28px;
                             }
                         }
                     }
