@@ -905,6 +905,11 @@ html {
   animation: ani_left .6s 1.6s ease forwards;
   opacity: 0; }
 
+.animate .ani_left7 {
+  transition: all .2s;
+  animation: ani_left .6s 1.7s ease forwards;
+  opacity: 0; }
+
 .animate .ani_right {
   transition: all .2s;
   animation: ani_right .6s 1.1s ease forwards;
@@ -966,6 +971,9 @@ html {
   opacity: 0; }
 
 .ani_left6 {
+  opacity: 0; }
+
+.ani_left7 {
   opacity: 0; }
 
 .ani_right {
