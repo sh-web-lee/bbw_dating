@@ -193,15 +193,15 @@
       letter-spacing: -0.02em;
       /* 黑色 */
       color: #000000; }
-    .section1 .sec1_warp ul {
+    .section1 .sec1_warp .sec1_ulul {
       margin-top: 33px;
       display: flex;
       justify-content: space-evenly;
       align-items: center; }
-      .section1 .sec1_warp ul li {
+      .section1 .sec1_warp .sec1_ulul li {
         width: 33.3%;
         height: 300px; }
-        .section1 .sec1_warp ul li p {
+        .section1 .sec1_warp .sec1_ulul li p {
           font-family: Inter;
           font-style: normal;
           font-weight: bold;
@@ -211,22 +211,24 @@
           color: #FFFFFF;
           width: 186px;
           position: relative; }
-      .section1 .sec1_warp ul .sec1_li1 {
+      .section1 .sec1_warp .sec1_ulul .sec1_li1 {
         background: url(../../images/bp/sec1_li1.png) no-repeat center center; }
-        .section1 .sec1_warp ul .sec1_li1 p {
+        .section1 .sec1_warp .sec1_ulul .sec1_li1 p {
           left: 20px;
           top: 107px; }
-      .section1 .sec1_warp ul .sec1_li2 {
+      .section1 .sec1_warp .sec1_ulul .sec1_li2 {
         background: url(../../images/bp/sec1_li2.png) no-repeat center center; }
-        .section1 .sec1_warp ul .sec1_li2 p {
+        .section1 .sec1_warp .sec1_ulul .sec1_li2 p {
           left: 112px;
           top: 28px; }
-      .section1 .sec1_warp ul .sec1_li3 {
+      .section1 .sec1_warp .sec1_ulul .sec1_li3 {
         background: url(../../images/bp/sec1_li3.png) no-repeat center center; }
-        .section1 .sec1_warp ul .sec1_li3 p {
+        .section1 .sec1_warp .sec1_ulul .sec1_li3 p {
           left: 32px;
           top: 26px;
           width: 210px; }
+    .section1 .sec1_warp .sec1_ulul_mob {
+      display: none; }
     .section1 .sec1_warp .ulul_circul {
       display: none; }
     .section1 .sec1_warp .sec1_warp_word {
@@ -254,7 +256,7 @@
   height: auto;
   margin-top: 120px;
   background: #000000;
-  padding-top: 80px; }
+  padding: 80px 0; }
   .section2 h3 {
     font-family: Inter;
     font-style: normal;
@@ -276,20 +278,22 @@
     text-align: center;
     color: rgba(255, 255, 255, 0.7);
     margin: 8px auto 0px;
-    width: 61%; }
-  .section2 ul {
+    width: 100%; }
+  .section2 .sec2_ulul_mob {
+    display: none; }
+  .section2 .sec2_ulul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
     margin: 45px auto 0; }
-    .section2 ul li {
+    .section2 .sec2_ulul li {
       width: 50%;
       text-align: center;
       padding: 0 5%;
       box-sizing: border-box; }
-      .section2 ul li b {
+      .section2 .sec2_ulul li b {
         font-family: Inter;
         font-style: normal;
         font-weight: bold;
@@ -301,7 +305,7 @@
         /* 主色 */
         color: #FF90E8;
         display: inline-block; }
-      .section2 ul li p {
+      .section2 .sec2_ulul li p {
         font-family: Inter;
         font-style: normal;
         font-weight: normal;
@@ -311,65 +315,65 @@
         text-align: center;
         color: rgba(255, 255, 255, 0.7);
         margin: 8px auto 0px; }
-    .section2 ul .sec2_li {
+    .section2 .sec2_ulul .sec2_li {
       margin-top: 64px; }
-  .section2 .sec2_get {
-    width: 100%;
-    margin-top: 83px;
-    padding: 48px 0 62px;
-    background: url(../../images/bp/sec2_bg.png) no-repeat center center; }
-    .section2 .sec2_get h3 {
-      font-family: Inter;
-      font-size: 40px;
-      line-height: 120%;
-      /* or 53px */
-      text-align: center;
-      letter-spacing: -0.02em;
-      color: #000000;
-      max-width: 678px;
-      margin: 0 auto; }
-      .section2 .sec2_get h3 span {
-        font-family: LoraItalic;
-        font-style: normal;
-        font-weight: 700;
-        vertical-align: top;
-        font-size: 44px; }
-      .section2 .sec2_get h3 strong {
-        vertical-align: top;
-        font-weight: 700;
-        color: #663a5d;
-        font-size: 44px; }
-    .section2 .sec2_get p {
-      font-family: Inter;
-      max-width: 736px;
+
+.sec2_get {
+  width: 100%;
+  padding: 47px 0 62px;
+  background: url(../../images/bp/sec2_bg.png) no-repeat center center; }
+  .sec2_get h3 {
+    font-family: Inter;
+    font-size: 40px;
+    line-height: 120%;
+    /* or 53px */
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #000000;
+    max-width: 678px;
+    margin: 0 auto; }
+    .sec2_get h3 span {
+      font-family: LoraItalic;
       font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 140%;
-      /* or 20px */
-      text-align: center;
-      color: rgba(0, 0, 0, 0.7);
-      margin: 16px auto 0px; }
-    .section2 .sec2_get .bp-go-button {
-      position: relative;
-      padding: 20px 65px;
-      box-sizing: border-box;
-      display: flex;
-      width: 248px;
-      height: 58px;
-      margin: 32px auto 0px; }
-      .section2 .sec2_get .bp-go-button span {
-        font: normal normal 600 18px/18px Inter;
-        color: #fff;
-        letter-spacing: -.02em; }
-      .section2 .sec2_get .bp-go-button::before {
-        position: absolute;
-        top: 20px;
-        left: 65px;
-        content: "GO OUT NOW";
-        font: normal normal 600 18px/18px Inter;
-        color: #fff;
-        letter-spacing: -.02em; }
+      font-weight: 700;
+      vertical-align: top;
+      font-size: 44px; }
+    .sec2_get h3 strong {
+      vertical-align: top;
+      font-weight: 700;
+      color: #663a5d;
+      font-size: 44px; }
+  .sec2_get p {
+    font-family: Inter;
+    max-width: 736px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 16px auto 0px; }
+  .sec2_get .bp-go-button {
+    position: relative;
+    padding: 20px 65px;
+    box-sizing: border-box;
+    display: flex;
+    width: 248px;
+    height: 58px;
+    margin: 32px auto 0px; }
+    .sec2_get .bp-go-button span {
+      font: normal normal 600 18px/18px Inter;
+      color: #fff;
+      letter-spacing: -.02em; }
+    .sec2_get .bp-go-button::before {
+      position: absolute;
+      top: 20px;
+      left: 65px;
+      content: "GO OUT NOW";
+      font: normal normal 600 18px/18px Inter;
+      color: #fff;
+      letter-spacing: -.02em; }
 
 .section3 {
   width: 100%;
@@ -544,57 +548,57 @@
             padding-left: 18px; }
         .section3 .sec3_con .sec3_con_right ul .sec3_con_li .dl_one {
           margin-top: 18px; }
-  .section3 .sec3_info {
-    width: 100%;
-    height: auto;
-    background: url(../../images/bp/sec3_bg.png) no-repeat center center; }
-    .section3 .sec3_info .container {
-      padding: 64px 0 80px; }
-    .section3 .sec3_info h3 {
-      font-family: Inter;
+
+.sec3_info {
+  width: 100%;
+  height: auto;
+  background: url(../../images/bp/sec3_bg.png) no-repeat center center;
+  padding: 64px 0 80px; }
+  .sec3_info h3 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 110%;
+    /* or 40px */
+    letter-spacing: -0.02em;
+    /* 纯白 */
+    color: #FFFFFF;
+    max-width: 494px; }
+    .sec3_info h3 span {
+      font-family: LoraItalic;
       font-style: normal;
-      font-weight: bold;
-      font-size: 36px;
-      line-height: 110%;
-      /* or 40px */
-      letter-spacing: -0.02em;
-      /* 纯白 */
-      color: #FFFFFF;
-      max-width: 494px; }
-      .section3 .sec3_info h3 span {
-        font-family: LoraItalic;
-        font-style: normal;
-        font-weight: 600;
-        vertical-align: top; }
-    .section3 .sec3_info p {
-      font-family: Inter;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 140%;
-      /* or 20px */
-      color: rgba(255, 255, 255, 0.8);
-      margin: 16px 0px;
-      max-width: 556px; }
-    .section3 .sec3_info .bp-date-button {
-      position: relative;
-      padding: 20px 75px;
-      box-sizing: border-box;
-      display: flex;
-      width: 248px;
-      height: 58px; }
-      .section3 .sec3_info .bp-date-button span {
-        font: normal normal 600 18px/18px Inter;
-        color: #000;
-        letter-spacing: -.02em; }
-      .section3 .sec3_info .bp-date-button::before {
-        position: absolute;
-        top: 20px;
-        left: 75px;
-        content: "Dating Now";
-        font: normal normal 600 18px/18px Inter;
-        color: #000;
-        letter-spacing: -.02em; }
+      font-weight: 600;
+      vertical-align: top; }
+  .sec3_info p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+    color: rgba(255, 255, 255, 0.8);
+    margin: 16px 0px;
+    max-width: 556px; }
+  .sec3_info .bp-date-button {
+    position: relative;
+    padding: 20px 75px;
+    box-sizing: border-box;
+    display: flex;
+    width: 248px;
+    height: 58px; }
+    .sec3_info .bp-date-button span {
+      font: normal normal 600 18px/18px Inter;
+      color: #000;
+      letter-spacing: -.02em; }
+    .sec3_info .bp-date-button::before {
+      position: absolute;
+      top: 20px;
+      left: 75px;
+      content: "Dating Now";
+      font: normal normal 600 18px/18px Inter;
+      color: #000;
+      letter-spacing: -.02em; }
 
 .go_back {
   position: fixed;
@@ -674,7 +678,8 @@
   .section1 {
     width: 100%;
     height: auto;
-    margin-top: 64px; }
+    margin-top: 64px;
+    padding-bottom: 32px; }
     .section1 h2 {
       font-family: Inter;
       font-style: normal;
@@ -783,19 +788,21 @@
         letter-spacing: -0.02em;
         /* 黑色 */
         color: #000000; }
-      .section1 .sec1_warp ul {
+      .section1 .sec1_warp .sec1_ulul {
+        display: none; }
+      .section1 .sec1_warp .sec1_ulul_mob {
         margin-top: 17px;
         width: 100%;
         display: block;
         position: relative;
         height: 300px; }
-        .section1 .sec1_warp ul li {
+        .section1 .sec1_warp .sec1_ulul_mob li {
           width: 100%;
           height: 300px;
           position: absolute;
           top: 0;
           left: 0; }
-          .section1 .sec1_warp ul li p {
+          .section1 .sec1_warp .sec1_ulul_mob li p {
             font-family: Inter;
             font-style: normal;
             font-weight: bold;
@@ -805,19 +812,19 @@
             color: #FFFFFF;
             width: 186px;
             position: relative; }
-        .section1 .sec1_warp ul .sec1_li1 {
+        .section1 .sec1_warp .sec1_ulul_mob .sec1_li1 {
           background: url(../../images/bp/sec1_li1.png) no-repeat center center; }
-          .section1 .sec1_warp ul .sec1_li1 p {
+          .section1 .sec1_warp .sec1_ulul_mob .sec1_li1 p {
             left: 20px;
             top: 107px; }
-        .section1 .sec1_warp ul .sec1_li2 {
+        .section1 .sec1_warp .sec1_ulul_mob .sec1_li2 {
           background: url(../../images/bp/sec1_li2.png) no-repeat center center; }
-          .section1 .sec1_warp ul .sec1_li2 p {
+          .section1 .sec1_warp .sec1_ulul_mob .sec1_li2 p {
             left: 112px;
             top: 28px; }
-        .section1 .sec1_warp ul .sec1_li3 {
+        .section1 .sec1_warp .sec1_ulul_mob .sec1_li3 {
           background: url(../../images/bp/sec1_li3.png) no-repeat center center; }
-          .section1 .sec1_warp ul .sec1_li3 p {
+          .section1 .sec1_warp .sec1_ulul_mob .sec1_li3 p {
             left: 32px;
             top: 26px;
             width: 210px; }
@@ -841,10 +848,10 @@
         max-width: 781px;
         font-family: Inter;
         font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
+        font-weight: 500;
+        font-size: 1rem;
         line-height: 140%;
-        /* or 28px */
+        /* or 22px */
         text-align: center;
         color: rgba(0, 0, 0, 0.5);
         margin: 16px auto; }
@@ -852,7 +859,7 @@
         font-family: Inter;
         font-style: normal;
         font-weight: bold;
-        font-size: 24px;
+        font-size: 1.125rem;
         line-height: 140%;
         /* identical to box height, or 34px */
         text-align: center; }
@@ -860,16 +867,16 @@
   .section2 {
     width: 100%;
     height: auto;
-    margin-top: 120px;
     background: #000000;
-    padding-top: 80px; }
+    padding: 64px 0 0 0;
+    margin-top: 0; }
     .section2 h3 {
       font-family: Inter;
       font-style: normal;
       font-weight: bold;
-      font-size: 40px;
+      font-size: 2rem;
       line-height: 120%;
-      /* identical to box height, or 48px */
+      /* or 38px */
       text-align: center;
       letter-spacing: -0.02em;
       /* 纯白 */
@@ -878,30 +885,50 @@
       font-family: Inter;
       font-style: normal;
       font-weight: normal;
-      font-size: 14px;
+      font-size: .875rem;
       line-height: 140%;
       /* or 20px */
       text-align: center;
       color: rgba(255, 255, 255, 0.7);
-      margin: 8px auto 0px;
-      width: 61%; }
-    .section2 ul {
+      margin: 8px auto 0px; }
+    .section2 .sec2_ulul {
+      display: none; }
+    .section2 .sec2_ulul_mob {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
       width: 100%;
       flex-wrap: wrap;
-      margin: 45px auto 0; }
-      .section2 ul li {
-        width: 50%;
+      flex-direction: column;
+      margin: 32px auto 0; }
+      .section2 .sec2_ulul_mob .sec2_warp_div {
+        width: 100%;
+        height: auto;
+        position: relative; }
+        .section2 .sec2_ulul_mob .sec2_warp_div .sec2_arrow {
+          width: 100%;
+          height: 248px;
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) -24.6%, #000000 100%);
+          position: absolute;
+          bottom: 0;
+          text-align: center; }
+          .section2 .sec2_ulul_mob .sec2_warp_div .sec2_arrow img {
+            display: inline-block;
+            position: relative;
+            top: 69%;
+            animation: ani_arrow 3s linear infinite; }
+      .section2 .sec2_ulul_mob .sec2_div_slider {
+        display: none; }
+      .section2 .sec2_ulul_mob .sec2_div {
+        width: 100%;
         text-align: center;
-        padding: 0 5%;
-        box-sizing: border-box; }
-        .section2 ul li b {
+        box-sizing: border-box;
+        margin-bottom: 40px; }
+        .section2 .sec2_ulul_mob .sec2_div b {
           font-family: Inter;
           font-style: normal;
           font-weight: bold;
-          font-size: 24px;
+          font-size: 1.5rem;
           line-height: 120%;
           /* identical to box height, or 29px */
           text-align: center;
@@ -909,92 +936,94 @@
           /* 主色 */
           color: #FF90E8;
           display: inline-block; }
-        .section2 ul li p {
+        .section2 .sec2_ulul_mob .sec2_div p {
           font-family: Inter;
           font-style: normal;
           font-weight: normal;
-          font-size: 14px;
+          font-size: .875rem;
           line-height: 140%;
           /* or 20px */
           text-align: center;
           color: rgba(255, 255, 255, 0.7);
           margin: 8px auto 0px; }
-      .section2 ul .sec2_li {
-        margin-top: 64px; }
-    .section2 .sec2_get {
-      width: 100%;
-      margin-top: 83px;
-      padding: 48px 0 62px;
-      background: url(../../images/bp/sec2_bg.png) no-repeat center center; }
-      .section2 .sec2_get h3 {
+
+  .sec2_get {
+    width: 100%;
+    margin-top: 0px;
+    padding: 64px 0 66px;
+    background: url(../../images/bp/mobile/sec2_bg_mob.png) no-repeat center center;
+    background-size: cover; }
+    .sec2_get h3 {
+      font-family: Inter;
+      font-size: 1.5rem;
+      line-height: 150%;
+      font-weight: 700;
+      /* or 53px */
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #000000;
+      max-width: 678px;
+      margin: 0 auto; }
+      .sec2_get h3 span {
+        font-family: LoraItalic;
+        font-style: normal;
+        font-weight: 700;
+        vertical-align: top;
+        font-size: 2.125rem; }
+      .sec2_get h3 strong {
+        vertical-align: top;
+        font-weight: 700;
+        color: #663a5d;
+        font-size: 2rem; }
+    .sec2_get p {
+      font-family: Inter;
+      max-width: 736px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: .875rem;
+      line-height: 140%;
+      /* or 20px */
+      text-align: center;
+      color: rgba(0, 0, 0, 0.7);
+      margin: 16px auto 0px; }
+    .sec2_get button {
+      width: 248px;
+      height: 58px;
+      background: #000000;
+      box-shadow: 0px 9px 72px rgba(117, 18, 103, 0.46), 0px 3.75998px 30.0799px rgba(117, 18, 103, 0.330673), 0px 2.01027px 16.0821px rgba(117, 18, 103, 0.274209), 0px 1.12694px 9.01552px rgba(117, 18, 103, 0.23), 0px 0.598509px 4.78807px rgba(117, 18, 103, 0.185791), 0px 0.249053px 1.99242px rgba(117, 18, 103, 0.129327);
+      border-radius: 4px;
+      border: none;
+      outline: none;
+      margin: 32px auto 0px;
+      display: block; }
+      .sec2_get button a {
+        width: 100%;
+        height: 100%;
         font-family: Inter;
-        font-size: 40px;
-        line-height: 120%;
-        /* or 53px */
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.125rem;
+        line-height: 100%;
+        /* identical to box height, or 18px */
         text-align: center;
         letter-spacing: -0.02em;
-        color: #000000;
-        max-width: 678px;
-        margin: 0 auto; }
-        .section2 .sec2_get h3 span {
-          font-family: LoraItalic;
-          font-style: normal;
-          font-weight: 700;
-          vertical-align: top;
-          font-size: 44px; }
-        .section2 .sec2_get h3 strong {
-          vertical-align: top;
-          font-weight: 700;
-          color: #663a5d;
-          font-size: 44px; }
-      .section2 .sec2_get p {
-        font-family: Inter;
-        max-width: 736px;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 140%;
-        /* or 20px */
-        text-align: center;
-        color: rgba(0, 0, 0, 0.7);
-        margin: 16px auto 0px; }
-      .section2 .sec2_get button {
-        width: 248px;
-        height: 58px;
-        background: #000000;
-        box-shadow: 0px 9px 72px rgba(117, 18, 103, 0.46), 0px 3.75998px 30.0799px rgba(117, 18, 103, 0.330673), 0px 2.01027px 16.0821px rgba(117, 18, 103, 0.274209), 0px 1.12694px 9.01552px rgba(117, 18, 103, 0.23), 0px 0.598509px 4.78807px rgba(117, 18, 103, 0.185791), 0px 0.249053px 1.99242px rgba(117, 18, 103, 0.129327);
-        border-radius: 4px;
-        border: none;
-        outline: none;
-        margin: 32px auto 0px;
-        display: block; }
-        .section2 .sec2_get button a {
-          width: 100%;
-          height: 100%;
-          font-family: Inter;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 100%;
-          /* identical to box height, or 18px */
-          text-align: center;
-          letter-spacing: -0.02em;
-          /* 纯白 */
-          color: #FFFFFF;
-          display: flex;
-          justify-content: center;
-          align-items: center; }
+        /* 纯白 */
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
 
   .section3 {
     width: 100%;
     height: auto;
     background: #F4F5F9;
-    padding-top: 80px; }
+    padding-top: 64px;
+    overflow: hidden; }
     .section3 h2 {
       font-family: Inter;
       font-style: normal;
       font-weight: bold;
-      font-size: 40px;
+      font-size: 2rem;
       line-height: 120%;
       /* or 48px */
       text-align: center;
@@ -1009,33 +1038,37 @@
       .section3 h2 span::after {
         position: absolute;
         content: '';
-        bottom: -16px;
+        bottom: -8px;
         right: 0;
         display: block;
-        background: url(../../images/bp/line.png) no-repeat center center;
-        width: 176px;
-        height: 25px; }
+        background: url(../../images/bp/mobile/sec3_line.png) no-repeat center center;
+        width: 148px;
+        height: 12px; }
     .section3 .sec3_word {
       font-family: Inter;
       font-style: normal;
       font-weight: normal;
-      font-size: 16px;
+      font-size: .875rem;
       line-height: 140%;
       /* or 22px */
       text-align: center;
       /* colors/text 1 */
       color: #323B4B;
-      margin: 24px auto 0px;
+      margin: 14px auto 0px;
       max-width: 811px; }
     .section3 .sec3_con {
-      max-width: 1000px;
+      max-width: 100%;
+      width: 100%;
       margin: 56px auto 0;
-      padding-bottom: 85px;
+      padding-bottom: 35px;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
+      flex-direction: column;
       align-items: center; }
       .section3 .sec3_con .sec3_con_left {
         text-align: center; }
+        .section3 .sec3_con .sec3_con_left .sec3_con_bb {
+          display: none; }
         .section3 .sec3_con .sec3_con_left b {
           font-family: Inter;
           font-style: normal;
@@ -1046,7 +1079,8 @@
           /* 黑色 */
           color: #000000;
           display: block;
-          text-align: center; }
+          text-align: center;
+          margin-bottom: 10px; }
         .section3 .sec3_con .sec3_con_left p {
           font-family: Inter;
           font-style: normal;
@@ -1067,7 +1101,8 @@
           box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
           border-radius: 4px;
           width: 248px;
-          height: 58px; }
+          height: 58px;
+          margin-top: 10px; }
           .section3 .sec3_con .sec3_con_left button a {
             font-family: Inter;
             font-style: normal;
@@ -1088,16 +1123,17 @@
             justify-content: center;
             align-items: center; }
       .section3 .sec3_con .sec3_con_right {
-        margin-left: 170px; }
+        margin: 34px auto 0; }
         .section3 .sec3_con .sec3_con_right ul li {
+          text-align: center;
           margin-top: 42px; }
           .section3 .sec3_con .sec3_con_right ul li strong {
             font-family: Inter;
             font-style: normal;
             font-weight: bold;
-            font-size: 20px;
+            font-size: 1.5rem;
             line-height: 140%;
-            /* identical to box height, or 28px */
+            /* identical to box height, or 34px */
             text-align: center;
             letter-spacing: -0.02em;
             /* 黑色 */
@@ -1105,29 +1141,30 @@
             position: relative;
             display: inline-block; }
           .section3 .sec3_con .sec3_con_right ul li strong::before {
-            position: absolute;
+            position: relative;
             content: '';
             display: block;
-            width: 48px;
-            height: 48px;
-            top: -14px;
-            left: -72px; }
+            width: 74px;
+            height: 74px;
+            top: 0;
+            left: 0;
+            margin: 0 auto; }
           .section3 .sec3_con .sec3_con_right ul li .sec3_pic1::before {
-            background: url(../../images/bp/sec3_pic1.png) no-repeat center center; }
+            background: url(../../images/bp/mobile/sec3_pic1_mob.png) no-repeat center center; }
           .section3 .sec3_con .sec3_con_right ul li .sec3_pic2::before {
-            background: url(../../images/bp/sec3_pic2.png) no-repeat center center; }
+            background: url(../../images/bp/mobile/sec3_pic2_mob.png) no-repeat center center; }
           .section3 .sec3_con .sec3_con_right ul li .sec3_pic3::before {
-            background: url(../../images/bp/sec3_pic3.png) no-repeat center center; }
+            background: url(../../images/bp/mobile/sec3_pic3_mob.png) no-repeat center center; }
           .section3 .sec3_con .sec3_con_right ul li > p {
             font-family: Inter;
             font-style: normal;
             font-weight: normal;
-            font-size: 14px;
+            font-size: .875rem;
             line-height: 140%;
             /* or 20px */
             color: rgba(0, 0, 0, 0.5);
             max-width: 520px;
-            margin-top: 18px; }
+            margin: 24px auto 0; }
         .section3 .sec3_con .sec3_con_right ul .sec3_con_li {
           margin-top: 0; }
           .section3 .sec3_con .sec3_con_right ul .sec3_con_li dl {
@@ -1136,7 +1173,7 @@
               font-family: Inter;
               font-style: normal;
               font-weight: bold;
-              font-size: 16px;
+              font-size: 1rem;
               line-height: 140%;
               /* or 22px */
               /* 黑色 */
@@ -1166,74 +1203,78 @@
               padding-left: 18px; }
           .section3 .sec3_con .sec3_con_right ul .sec3_con_li .dl_one {
             margin-top: 18px; }
-    .section3 .sec3_info {
-      width: 100%;
-      height: auto;
-      background: url(../../images/bp/sec3_bg.png) no-repeat center center; }
-      .section3 .sec3_info .container {
-        padding: 64px 0 80px; }
-      .section3 .sec3_info h3 {
+
+  .sec3_info {
+    width: 100%;
+    height: auto;
+    background: url(../../images/bp/mobile/sec3_bg_mob.png) no-repeat center center;
+    background-size: cover;
+    padding: 44px 0 262px;
+    text-align: center; }
+    .sec3_info h3 {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 2.25rem;
+      line-height: 110%;
+      /* or 40px */
+      letter-spacing: -0.02em;
+      /* 纯白 */
+      color: #FFFFFF;
+      max-width: 494px;
+      margin: 0 auto; }
+      .sec3_info h3 span {
+        font-family: LoraItalic;
+        font-style: normal;
+        font-weight: 600;
+        vertical-align: top;
+        font-size: 2.375rem; }
+    .sec3_info p {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: .875rem;
+      line-height: 140%;
+      /* or 20px */
+      color: rgba(255, 255, 255, 0.8);
+      margin: 16px auto;
+      max-width: 556px; }
+    .sec3_info button {
+      outline: none;
+      border: none;
+      background: #FF90E8;
+      box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
+      border-radius: 4px;
+      width: 248px;
+      height: 58px; }
+      .sec3_info button a {
         font-family: Inter;
         font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 110%;
-        /* or 40px */
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 100%;
+        text-align: center;
         letter-spacing: -0.02em;
-        /* 纯白 */
-        color: #FFFFFF;
-        max-width: 494px; }
-        .section3 .sec3_info h3 span {
-          font-family: LoraItalic;
-          font-style: normal;
-          font-weight: 600;
-          vertical-align: top; }
-      .section3 .sec3_info p {
-        font-family: Inter;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 140%;
-        /* or 20px */
-        color: rgba(255, 255, 255, 0.8);
-        margin: 16px 0px;
-        max-width: 556px; }
-      .section3 .sec3_info button {
-        outline: none;
-        border: none;
-        background: #FF90E8;
-        box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
-        border-radius: 4px;
-        width: 248px;
-        height: 58px; }
-        .section3 .sec3_info button a {
-          font-family: Inter;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 100%;
-          text-align: center;
-          letter-spacing: -0.02em;
-          color: #000000;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center; }
+        color: #000000;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
 
   .go_back {
     position: fixed;
-    right: 13%;
-    bottom: 85px;
-    width: 46px;
-    height: 46px;
+    right: 2rem;
+    bottom: 4rem;
+    width: 28px;
+    height: 28px;
     cursor: pointer;
-    background: url(../../images/icon/top.png) no-repeat center center;
+    background: url(../../images/icon/top.png) no-repeat center center/100%;
     z-index: 99; } }
 
 /*# sourceMappingURL=bp.css.map */

@@ -1196,6 +1196,16 @@ html {
   100% {
     opacity: 1;
     transform: translate3d(0px); } }
+@keyframes ani_arrow {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0); }
+  50% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0); } }
 @keyframes errormsg {
   0% {
     top: -10px;
