@@ -432,32 +432,27 @@
             color: rgba(0, 0, 0, 0.7);
             margin: 16px auto 0px;
         }
-        button {
+        .bp-go-button {
+            position: relative;
+            padding: 20px 65px;
+            box-sizing: border-box;
+            display: flex;
             width: 248px;
             height: 58px;
-            background: #000000;
-            box-shadow: 0px 9px 72px rgba(117, 18, 103, 0.46), 0px 3.75998px 30.0799px rgba(117, 18, 103, 0.330673), 0px 2.01027px 16.0821px rgba(117, 18, 103, 0.274209), 0px 1.12694px 9.01552px rgba(117, 18, 103, 0.23), 0px 0.598509px 4.78807px rgba(117, 18, 103, 0.185791), 0px 0.249053px 1.99242px rgba(117, 18, 103, 0.129327);
-            border-radius: 4px;
-            border: none;
-            outline: none;
             margin: 32px auto 0px;
-            display: block;
-            a {
-                width: 100%;
-                height: 100%;
-                font-family: Inter;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 100%;
-                /* identical to box height, or 18px */
-                text-align: center;
-                letter-spacing: -0.02em;
-                /* 纯白 */
-                color: #FFFFFF;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            span {
+                font: normal normal 600 18px/18px Inter;
+                color: #fff;
+                letter-spacing: -.02em;
+            }
+            &::before {
+                position: absolute;
+                top: 20px;
+                left: 65px;
+                content: "GO OUT NOW";
+                font: normal normal 600 18px/18px Inter;
+                color: #fff;
+                letter-spacing: -.02em;
             }
         }
     }
@@ -544,17 +539,26 @@
                 padding-left: 20%;
                 text-align: left
             }
-            button {
-                @include btn;
+            .bp-match-button {
+                position: relative;
+                padding: 20px 75px;
+                box-sizing: border-box;
+                display: flex;
                 width: 248px;
                 height: 58px;
-                a {
-                    @include aa;
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                span {
+                    font: normal normal 600 18px/18px Inter;
+                    color: #000;
+                    letter-spacing: -.02em;
+                }
+                &::before {
+                    position: absolute;
+                    top: 20px;
+                    left: 75px;
+                    content: "Dating Now";
+                    font: normal normal 600 18px/18px Inter;
+                    color: #000;
+                    letter-spacing: -.02em;
                 }
             }
         }
@@ -690,17 +694,26 @@
             margin: 16px 0px;
             max-width: 556px;
         }
-        button {
-            @include btn;
+        .bp-date-button {
+            position: relative;
+            padding: 20px 75px;
+            box-sizing: border-box;
+            display: flex;
             width: 248px;
             height: 58px;
-            a {
-                @include aa;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            span {
+                font: normal normal 600 18px/18px Inter;
+                color: #000;
+                letter-spacing: -.02em;
+            }
+            &::before {
+                position: absolute;
+                top: 20px;
+                left: 75px;
+                content: "Dating Now";
+                font: normal normal 600 18px/18px Inter;
+                color: #000;
+                letter-spacing: -.02em;
             }
         }
     }

@@ -10,8 +10,7 @@
   padding: 0 9.2vw 0 18.7vw;
   background: rgba(0, 0, 0, 0.8);
   z-index: 99;
-  backdrop-filter: blur(66px);
-  transition: all 1.2s; }
+  backdrop-filter: blur(66px); }
   .header-pc .nav-logo {
     position: relative;
     display: flex;

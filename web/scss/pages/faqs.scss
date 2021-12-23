@@ -49,10 +49,9 @@
             &>div {
                 position: relative;
                 overflow: hidden;
-                // height: 0;
+                max-height: 0;
                 left: 0;
-                transition: .5s;
-                display: none;
+                transition: max-height .5s;
             }
             .g-link {
                 text-decoration: underline;
@@ -66,8 +65,9 @@
                     transform: rotateZ(180deg);
                 }
                 &>div {
-                    display: block;
-                    animation: openItem .5s forwards;
+                    max-height: 1100px;
+                    transition: max-height .5s;
+                    // animation: openItem .5s forwards;
                 }
             }
         }
@@ -82,6 +82,7 @@
             .faq-content-item {
                 .item-title {
                     font: normal normal bold 20px/20px Inter;
+                    padding-right: 30px;
                 }
                 .item-txt-list {
                     &.none-title {

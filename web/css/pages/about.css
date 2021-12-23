@@ -60,14 +60,23 @@
         color: #FF90E8;
         text-decoration: underline; }
     .confirm_pop .wrap button {
-      width: 135px;
-      height: 48px;
-      background: #FF90E8;
-      border-radius: 6px;
+      position: relative;
+      display: flex;
+      padding: 12px 40px;
+      box-sizing: border-box;
       cursor: pointer;
-      color: #000000;
-      font-weight: 600;
-      border: none; }
+      border: none;
+      outline: none; }
+      .confirm_pop .wrap button span {
+        font: normal normal 600 16px/24px Inter;
+        color: #000; }
+      .confirm_pop .wrap button::before {
+        position: absolute;
+        top: 12px;
+        left: 40px;
+        content: "I Agree";
+        font: normal normal 600 16px/24px Inter;
+        color: #000; }
 
 @media (max-width: 768px) {
   .fp-banner .container .fp-banner-txt {

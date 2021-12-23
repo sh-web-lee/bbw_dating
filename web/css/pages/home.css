@@ -1,12 +1,10 @@
 .home {
-  width: 100vw;
   height: auto;
   position: relative; }
   .home button {
     outline: none;
     border: none; }
   .home .main {
-    width: 100vw;
     height: auto;
     position: relative; }
     .home .main .slider {
@@ -22,13 +20,14 @@
           width: 193px;
           height: 40px;
           display: inline-block;
-          background: url("../images/home/logo.png") no-repeat center center; }
+          background: url("../../images/home/logo.png") no-repeat center center; }
       .home .main .slider ul {
         position: relative;
         margin: 0;
         padding: 0;
         height: 700px;
         list-style: none;
+        display: flex;
         width: 300%; }
         .home .main .slider ul li {
           position: relative;
@@ -36,10 +35,10 @@
           float: left;
           margin: 0;
           padding: 0;
-          width: 33.34%;
+          width: 100vw;
           height: 700px; }
         .home .main .slider ul li.banner_one {
-          background: url("../images/home/banner1.png") no-repeat center center; }
+          background: url("../../images/home/banner1.png") no-repeat center center; }
           .home .main .slider ul li.banner_one .container {
             margin-top: 169px;
             font-family: Inter; }
@@ -65,26 +64,26 @@
               line-height: 32px;
               color: rgba(255, 255, 255, 0.6);
               margin: 24px 0px; }
-            .home .main .slider ul li.banner_one .container button {
+            .home .main .slider ul li.banner_one .container .banner-button {
+              position: relative;
+              display: flex;
+              text-align: center;
               width: 275px;
-              height: 62px;
               margin: 24px 0px;
-              border-radius: 6px;
-              background: #FF90E8;
-              outline: none;
-              border: none; }
-              .home .main .slider ul li.banner_one .container button a {
-                width: 100%;
-                height: 100%;
-                display: inline-block;
-                line-height: 56px;
-                background: #FF90E8;
-                font-family: Inter;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 18px; }
+              padding: 15px 86px;
+              box-sizing: border-box; }
+              .home .main .slider ul li.banner_one .container .banner-button span {
+                font: normal normal bold 18px/32px Inter;
+                color: #000; }
+              .home .main .slider ul li.banner_one .container .banner-button::before {
+                position: absolute;
+                top: 15px;
+                left: 86px;
+                content: "Match Now!";
+                font: normal normal bold 18px/32px Inter;
+                color: #000; }
         .home .main .slider ul li.banner_two {
-          background: url("../images/home/banner2.png") no-repeat center center; }
+          background: url("../../images/home/banner2.png") no-repeat center center; }
           .home .main .slider ul li.banner_two .container {
             margin-top: 169px;
             font-family: Inter; }
@@ -114,7 +113,7 @@
               color: #8A94A6;
               margin: 24px 0px; }
         .home .main .slider ul li.banner_three {
-          background: url("../images/home/banner3.png") no-repeat center center; }
+          background: url("../../images/home/banner3.png") no-repeat center center; }
           .home .main .slider ul li.banner_three .container {
             margin-top: 169px;
             font-family: Inter;
@@ -163,101 +162,109 @@
           color: #FF90E8;
           text-decoration: underline; }
       .home .confirm_pop .warp button {
-        width: 135px;
-        height: 48px;
-        background: #FF90E8;
-        border-radius: 6px;
-        cursor: pointer;
-        color: #000000;
-        font-weight: 600; }
+        position: relative;
+        display: flex;
+        padding: 12px 40px;
+        box-sizing: border-box;
+        cursor: pointer; }
+        .home .confirm_pop .warp button span {
+          font: normal normal 600 16px/24px Inter;
+          color: #000; }
+        .home .confirm_pop .warp button::before {
+          position: absolute;
+          top: 12px;
+          left: 40px;
+          content: "I Agree";
+          font: normal normal 600 16px/24px Inter;
+          color: #000; }
 
 @media (max-width: 768px) {
-  .home .main {
-    margin-top: 66px; }
-    .home .main .slider {
+  .home .main .slider {
+    height: 592px; }
+    .home .main .slider .logo {
+      display: none; }
+    .home .main .slider ul {
       height: 592px; }
-      .home .main .slider .logo {
-        display: none; }
-      .home .main .slider ul {
+      .home .main .slider ul li {
         height: 592px; }
-        .home .main .slider ul li {
-          height: 592px; }
-          .home .main .slider ul li .container {
-            width: 100%; }
-        .home .main .slider ul li.banner_one {
-          background: url("../images/home/banner1_mob.png") no-repeat center center;
-          background-size: cover; }
-          .home .main .slider ul li.banner_one .container {
-            padding-left: 1rem;
-            box-sizing: border-box;
-            margin-top: 0; }
-            .home .main .slider ul li.banner_one .container h1 {
-              font-size: 2.5rem;
-              line-height: 110%;
-              margin: 1.25rem 0px .875rem; }
-            .home .main .slider ul li.banner_one .container .banner_p {
-              margin: 0;
-              font-size: 1.375rem;
-              line-height: 120%; }
-            .home .main .slider ul li.banner_one .container .banner_word {
-              font-size: 1rem;
-              line-height: 150%;
-              margin: .875rem 0; }
-            .home .main .slider ul li.banner_one .container button {
-              margin: 0;
-              width: 152px;
-              height: 47px; }
-              .home .main .slider ul li.banner_one .container button a {
-                font-size: 1.125rem;
-                line-height: 45px;
-                color: #000000; }
-        .home .main .slider ul li.banner_two {
-          background: url("../images/home/banner2_mob.png") no-repeat center center;
-          background-size: cover; }
-          .home .main .slider ul li.banner_two .container {
-            padding-left: 1rem;
-            box-sizing: border-box;
-            margin-top: 0; }
-            .home .main .slider ul li.banner_two .container h2 {
-              font-size: 2.5rem;
-              line-height: 110%;
-              margin: 1.25rem 0px .875rem; }
-            .home .main .slider ul li.banner_two .container .banner_p {
-              margin: 0;
-              font-size: 1.375rem;
-              line-height: 120%; }
-            .home .main .slider ul li.banner_two .container .banner_word {
-              font-size: 1rem;
-              line-height: 150%;
-              margin: .875rem 0;
-              width: 20.3rem; }
-        .home .main .slider ul li.banner_three {
-          background: url("../images/home/banner3_mob.png") no-repeat center center;
-          background-size: cover; }
-          .home .main .slider ul li.banner_three .container {
-            padding-left: 1rem;
-            box-sizing: border-box;
-            margin-top: 0; }
-            .home .main .slider ul li.banner_three .container h2 {
-              font-size: 2.5rem;
-              line-height: 110%;
-              margin: 1.25rem 0px .875rem; }
-              .home .main .slider ul li.banner_three .container h2 .banner_br {
-                display: none; }
-            .home .main .slider ul li.banner_three .container .banner_p {
-              margin: 0;
-              font-size: 1.375rem;
-              line-height: 120%; }
-            .home .main .slider ul li.banner_three .container .banner_word {
-              font-size: 1rem;
-              line-height: 150%;
-              margin: .875rem 0;
-              width: 20.3rem; }
+        .home .main .slider ul li .container {
+          width: 100%; }
+      .home .main .slider ul li.banner_one {
+        background: url("../../images/home/banner1_mob.png") no-repeat center center;
+        background-size: cover; }
+        .home .main .slider ul li.banner_one .container {
+          padding-left: 1rem;
+          box-sizing: border-box;
+          margin-top: 0; }
+          .home .main .slider ul li.banner_one .container h1 {
+            font-size: 2.5rem;
+            line-height: 110%;
+            margin: 1.25rem 0px .875rem; }
+          .home .main .slider ul li.banner_one .container .banner_p {
+            margin: 0;
+            font-size: 1.375rem;
+            line-height: 120%; }
+          .home .main .slider ul li.banner_one .container .banner_word {
+            font-size: 1rem;
+            line-height: 150%;
+            margin: .875rem 0; }
+          .home .main .slider ul li.banner_one .container .banner-button {
+            margin: 0;
+            width: 152px;
+            padding: 14px 27px 14px 24px; }
+            .home .main .slider ul li.banner_one .container .banner-button::before {
+              top: 14px;
+              left: 24px;
+              font: normal normal 600 18px/18px Inter; }
+            .home .main .slider ul li.banner_one .container .banner-button span {
+              font: normal normal 600 18px/18px Inter; }
+      .home .main .slider ul li.banner_two {
+        background: url("../../images/home/banner2_mob.png") no-repeat center center;
+        background-size: cover; }
+        .home .main .slider ul li.banner_two .container {
+          padding-left: 1rem;
+          box-sizing: border-box;
+          margin-top: 0; }
+          .home .main .slider ul li.banner_two .container h2 {
+            font-size: 2.5rem;
+            line-height: 110%;
+            margin: 1.25rem 0px .875rem; }
+          .home .main .slider ul li.banner_two .container .banner_p {
+            margin: 0;
+            font-size: 1.375rem;
+            line-height: 120%; }
+          .home .main .slider ul li.banner_two .container .banner_word {
+            font-size: 1rem;
+            line-height: 150%;
+            margin: .875rem 0;
+            width: 20.3rem; }
+      .home .main .slider ul li.banner_three {
+        background: url("../../images/home/banner3_mob.png") no-repeat center center;
+        background-size: cover; }
+        .home .main .slider ul li.banner_three .container {
+          padding-left: 1rem;
+          box-sizing: border-box;
+          margin-top: 0; }
+          .home .main .slider ul li.banner_three .container h2 {
+            font-size: 2.5rem;
+            line-height: 110%;
+            margin: 1.25rem 0px .875rem; }
+            .home .main .slider ul li.banner_three .container h2 .banner_br {
+              display: none; }
+          .home .main .slider ul li.banner_three .container .banner_p {
+            margin: 0;
+            font-size: 1.375rem;
+            line-height: 120%; }
+          .home .main .slider ul li.banner_three .container .banner_word {
+            font-size: 1rem;
+            line-height: 150%;
+            margin: .875rem 0;
+            width: 20.3rem; }
   .home .confirm_pop {
-    height: 8.5rem; }
+    height: auto; }
     .home .confirm_pop .container {
       width: 100%;
-      padding: 0 1rem;
+      padding: 1rem;
       box-sizing: border-box; }
       .home .confirm_pop .container .warp {
         display: block;
@@ -271,9 +278,13 @@
         .home .confirm_pop .container .warp button {
           width: 73px;
           height: 34px;
-          font-weight: 600;
-          font-size: .75rem;
-          line-height: 150%;
-          margin-top: .85rem; } }
+          padding: 8px 16px;
+          margin-top: .85rem; }
+          .home .confirm_pop .container .warp button::before {
+            top: 8px;
+            left: 16px;
+            font: normal normal 600 12px/18px Inter; }
+          .home .confirm_pop .container .warp button span {
+            font: normal normal 600 12px/18px Inter; } }
 
 /*# sourceMappingURL=home.css.map */
