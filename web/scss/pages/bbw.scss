@@ -70,11 +70,9 @@
 .banner {
     width: 100%;
     height: 700px;
-    margin-top: 66px;
     background: url(../../images/bbw/banner_bg.png) no-repeat center center;
-    .container {
-        overflow: hidden;
-    }
+    padding-top: 66px;
+    .container {}
     h1 {
         font-family: Inter;
         font-size: 52px;
@@ -114,6 +112,7 @@
                 /* 纯白 */
                 color: #FFFFFF;
                 position: relative;
+                display: inline-block;
             }
             b::before {
                 position: relative;
@@ -172,12 +171,9 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(80px);
     padding-bottom: 78px;
+    padding-top: 80px;
     .container {
         max-width: 1000px;
-        overflow: hidden;
-    }
-    h2 {
-        margin-top: 80px;
     }
     .sec1_con {
         width: 100%;
@@ -269,6 +265,7 @@
                 text-align: center;
                 /* 黑色 */
                 color: #000000;
+                display: inline-block;
             }
             p {
                 font-family: Inter;
@@ -438,13 +435,11 @@
         height: auto;
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
         margin-top: 80px;
         li {
             width: 25%;
             text-align: center;
             vertical-align: top;
-            height: 148px;
             b {
                 display: block;
                 font-family: Inter;
@@ -497,6 +492,7 @@
     .container {
         width: 1110px;
         padding-top: 80px;
+        padding-bottom: 100px;
     }
     h2 {
         font-size: 32px;
@@ -505,10 +501,236 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         flex-wrap: wrap;
         li {
             width: 50%;
+            margin-top: 62px;
+            div {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                position: relative;
+                img {
+                    margin-right: 14px;
+                }
+                dl {
+                    dt {
+                        font-family: Inter;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 100%;
+                        /* identical to box height, or 18px */
+                        letter-spacing: -0.02em;
+                        /* 黑色 */
+                        color: #000000;
+                    }
+                    dd {
+                        font-family: Inter;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 100%;
+                        /* identical to box height, or 14px */
+                        color: rgba(0, 0, 0, 0.6);
+                        margin-top: 16px;
+                    }
+                }
+            }
+            div::after {
+                content: '';
+                display: block;
+                background: url(../../images/bbw/dot.png) no-repeat center center;
+                width: 30px;
+                height: 23px;
+                position: absolute;
+                right: 10%;
+                top: 14px;
+            }
+            p {
+                margin-top: 18px;
+                font-family: Inter;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 140%;
+                /* or 20px */
+                color: rgba(0, 0, 0, 0.5);
+                max-width: 517px;
+            }
         }
     }
+}
+
+.section5 {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-top: 32px;
+    padding: 80px 0 106px;
+    .container {
+        width: 1025px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .sec5_tab {
+        width: 100%;
+        height: auto;
+        margin-top: 64px;
+        ol {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                width: 339px;
+                height: 60px;
+                background: rgba(0, 0, 0, 0.12);
+                font-family: Inter;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 140%;
+                /* or 22px */
+                text-align: center;
+                /* 黑色 */
+                color: #000000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+            .active {
+                background: #000000;
+                color: #fff;
+            }
+        }
+        .sec5_div {
+            margin-top: 44px;
+            .sec5_ul {
+                display: block;
+            }
+            ul {
+                display: none;
+                li {
+                    cursor: pointer;
+                    border-bottom: solid 1px #EBEEF4;
+                    h4 {
+                        font-family: Inter;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 140%;
+                        position: relative;
+                        margin-top: 24px;
+                        /* or 25px */
+                        color: #000000;
+                        span {
+                            width: 10px;
+                            height: 10px;
+                            background: url(../../images/bbw/add.png) no-repeat center center;
+                            display: inline-block;
+                            vertical-align: middle;
+                            position: absolute;
+                            top: 28%;
+                            right: 0;
+                            transition: all .2s;
+                        }
+                    }
+                    div {
+                        margin-top: 16px;
+                        display: none;
+                        p {
+                            font-family: Inter;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 140%;
+                            /* identical to box height, or 20px */
+                            color: rgba(0, 0, 0, 0.5);
+                            max-width: 878px;
+                            b {
+                                color: #000000;
+                                vertical-align: top;
+                            }
+                        }
+                        .sec5_word {
+                            font-family: Inter;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 140%;
+                            /* identical to box height, or 20px */
+                            color: #000000;
+                            display: inline-block;
+                            margin-top: 16px;
+                        }
+                    }
+                }
+                .on {
+                    padding-bottom: 24px;
+                    h4 {
+                        span {
+                            width: 10px;
+                            height: 2px;
+                            background: url(../../images/bbw/sub.png) no-repeat center center;
+                            transition: all .2s;
+                        }
+                    }
+                    div {
+                        display: block;
+                        p {
+                            margin-top: 16px;
+                        }
+                    }
+                }
+                .li_last {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+
+.section6 {
+    width: 100%;
+    height: auto;
+    background: url(../../images/bbw/sec6_bg.png) no-repeat center center;
+    .container {
+        padding: 62px 0;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    p {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 140%;
+        /* or 20px */
+        text-align: center;
+        color: rgba(0, 0, 0, 0.5);
+        margin: 16px auto 0;
+        max-width: 722px
+    }
+    a {
+        @include aa;
+        background: #000000;
+        color: white;
+        margin: 25px auto 0;
+    }
+}
+
+.go_back {
+    position: fixed;
+    right: 13%;
+    bottom: 85px;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    background: url(../../images/icon/top.png) no-repeat center center;
+    z-index: 99;
 }
