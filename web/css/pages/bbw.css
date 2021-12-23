@@ -93,25 +93,28 @@
       /* identical to box height, or 21px */
       color: rgba(255, 255, 255, 0.6);
       padding-left: 13px; }
-  .banner a {
-    width: 275px;
-    height: 62px;
-    background: #FF90E8;
-    box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
-    border-radius: 4px;
+  .banner .bbw-banner-button {
+    position: relative;
+    box-sizing: border-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    /* identical to box height, or 18px */
-    text-align: center;
-    letter-spacing: -0.02em;
-    /* 黑色 */
-    color: #000000;
-    margin-top: 32px; }
+    width: 248px;
+    height: 58px;
+    margin-top: 32px;
+    padding: 22px 49px;
+    width: 275px;
+    height: 62px; }
+    .banner .bbw-banner-button span {
+      font: normal normal 600 18px/18px Inter;
+      color: #000;
+      letter-spacing: -.02em; }
+    .banner .bbw-banner-button::before {
+      position: absolute;
+      content: "Download PlusCupid";
+      top: 22px;
+      left: 49px;
+      font: normal normal 600 18px/18px Inter;
+      color: #000;
+      letter-spacing: -.02em; }
 
 .main {
   width: 100%;
@@ -162,25 +165,26 @@
           color: rgba(0, 0, 0, 0.5); }
         .section1 .sec1_con .sec1_left li .sec1_word {
           color: #000000; }
-        .section1 .sec1_con .sec1_left li a {
-          width: 275px;
-          height: 62px;
-          background: #FF90E8;
-          box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
-          border-radius: 4px;
+        .section1 .sec1_con .sec1_left li .bbw-sec1-button {
+          position: relative;
+          box-sizing: border-box;
           display: flex;
-          justify-content: center;
-          align-items: center;
-          font-family: Inter;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 18px;
-          /* identical to box height, or 18px */
-          text-align: center;
-          letter-spacing: -0.02em;
-          /* 黑色 */
-          color: #000000;
-          margin-top: 32px; }
+          width: 248px;
+          height: 58px;
+          margin-top: 32px;
+          padding: 20px 60px; }
+          .section1 .sec1_con .sec1_left li .bbw-sec1-button span {
+            font: normal normal 600 18px/18px Inter;
+            color: #000;
+            letter-spacing: -.02em; }
+          .section1 .sec1_con .sec1_left li .bbw-sec1-button::before {
+            position: absolute;
+            top: 20px;
+            left: 60px;
+            content: "Join PlusCupid";
+            font: normal normal 600 18px/18px Inter;
+            color: #000;
+            letter-spacing: -.02em; }
     .section1 .sec1_con .sec1_right {
       width: 475px;
       height: 593px;
@@ -225,25 +229,126 @@
         color: rgba(0, 0, 0, 0.5);
         max-width: 508px;
         margin-top: 24px; }
-      .section2 ul li a {
-        width: 275px;
-        height: 62px;
-        background: #FF90E8;
-        box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
-        border-radius: 4px;
+      .section2 ul li .bbw-date-button {
+        position: relative;
+        box-sizing: border-box;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        /* identical to box height, or 18px */
-        text-align: center;
-        letter-spacing: -0.02em;
-        /* 黑色 */
-        color: #000000;
-        margin-top: 32px; }
+        width: 248px;
+        height: 58px;
+        margin-top: 32px;
+        padding: 20px 15px 20px 13px; }
+        .section2 ul li .bbw-date-button span {
+          font: normal normal 600 18px/18px Inter;
+          color: #000;
+          letter-spacing: -.02em; }
+        .section2 ul li .bbw-date-button::before {
+          position: absolute;
+          top: 20px;
+          left: 13px;
+          content: "Date With Genuine Singles";
+          font: normal normal 600 18px/18px Inter;
+          color: #000;
+          letter-spacing: -.02em; }
+      .section2 ul li .bbw-make-button {
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        width: 248px;
+        height: 58px;
+        margin-top: 32px;
+        padding: 20px 40px 20px 38px; }
+        .section2 ul li .bbw-make-button span {
+          font: normal normal 600 18px/18px Inter;
+          color: #000;
+          letter-spacing: -.02em; }
+        .section2 ul li .bbw-make-button::before {
+          position: absolute;
+          top: 20px;
+          left: 38px;
+          content: "Make the First Move";
+          font: normal normal 600 18px/18px Inter;
+          color: #000;
+          letter-spacing: -.02em; }
+      .section2 ul li .bbw-chat-button {
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        width: 248px;
+        height: 58px;
+        margin-top: 32px;
+        padding: 20px 35px; }
+        .section2 ul li .bbw-chat-button span {
+          font: normal normal 600 18px/18px Inter;
+          color: #000;
+          letter-spacing: -.02em; }
+        .section2 ul li .bbw-chat-button::before {
+          position: absolute;
+          top: 20px;
+          left: 35px;
+          content: "Chat without Worries";
+          font: normal normal 600 18px/18px Inter;
+          color: #000;
+          letter-spacing: -.02em; }
+      .section2 ul li .bbw-hear-button {
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        width: 248px;
+        height: 58px;
+        margin-top: 32px;
+        padding: 20px 40px; }
+        .section2 ul li .bbw-hear-button span {
+          font: normal normal 600 18px/18px Inter;
+          color: #000;
+          letter-spacing: -.02em; }
+        .section2 ul li .bbw-hear-button::before {
+          position: absolute;
+          top: 20px;
+          left: 40px;
+          content: "Hear Unique Voices";
+          font: normal normal 600 18px/18px Inter;
+          color: #000;
+          letter-spacing: -.02em; }
+      .section2 ul li .bbw-share-button {
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        width: 248px;
+        height: 58px;
+        margin-top: 32px;
+        padding: 20px 57px; }
+        .section2 ul li .bbw-share-button span {
+          font: normal normal 600 18px/18px Inter;
+          color: #000;
+          letter-spacing: -.02em; }
+        .section2 ul li .bbw-share-button::before {
+          position: absolute;
+          top: 20px;
+          left: 57px;
+          content: "Share Moments";
+          font: normal normal 600 18px/18px Inter;
+          color: #000;
+          letter-spacing: -.02em; }
+      .section2 ul li .bbw-match-button {
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        width: 248px;
+        height: 58px;
+        margin-top: 32px;
+        padding: 20px 75px; }
+        .section2 ul li .bbw-match-button span {
+          font: normal normal 600 18px/18px Inter;
+          color: #000;
+          letter-spacing: -.02em; }
+        .section2 ul li .bbw-match-button::before {
+          position: absolute;
+          top: 20px;
+          left: 75px;
+          content: "Match Now";
+          font: normal normal 600 18px/18px Inter;
+          color: #000;
+          letter-spacing: -.02em; }
       .section2 ul li .div1 {
         width: 378px;
         height: 247px;
@@ -328,25 +433,27 @@
         color: rgba(0, 0, 0, 0.5);
         width: 88%;
         margin: 0 auto; }
-  .section3 a {
-    width: 275px;
-    height: 62px;
-    background: #FF90E8;
-    box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
-    border-radius: 4px;
+  .section3 .bbw-find-button {
+    position: relative;
+    box-sizing: border-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    /* identical to box height, or 18px */
-    text-align: center;
-    letter-spacing: -0.02em;
-    /* 黑色 */
-    color: #000000;
+    width: 248px;
+    height: 58px;
+    margin-top: 32px;
+    padding: 20px 76px;
     margin: 64px auto 0; }
+    .section3 .bbw-find-button span {
+      font: normal normal 600 18px/18px Inter;
+      color: #000;
+      letter-spacing: -.02em; }
+    .section3 .bbw-find-button::before {
+      position: absolute;
+      top: 20px;
+      left: 76px;
+      content: "Match Now";
+      font: normal normal 600 18px/18px Inter;
+      color: #000;
+      letter-spacing: -.02em; }
 
 .section4 {
   width: 100%;

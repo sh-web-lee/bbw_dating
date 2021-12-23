@@ -219,8 +219,27 @@
                     color: rgba(0, 0, 0, .6);
                 }
                 .btnzone {
+                    button {
+                        position: relative;
+                        display: flex;
+                        padding: 22px 89px;
+                        box-sizing: border-box;
+                        margin-top: 16px;
+                        span {
+                            font: normal normal bold 16px/16px Inter;
+                            letter-spacing: -.02em;
+                        }
+                        cursor: pointer;
+                        &::before {
+                            position: absolute;
+                            top: 22px;
+                            left: 89px;
+                            content: "SEND";
+                            font: normal normal bold 16px/16px Inter;
+                            letter-spacing: -.02em;
+                        }
+                    }
                     margin-top: 16px;
-    
                 }
             }
         }
@@ -262,14 +281,21 @@
             font: normal normal normal 16px/19px Inter;
         }
         button {
-            margin-top: 32px;
+            position: relative;
+            display: flex;
+            margin: 32px auto 0;
             box-sizing: border-box;
             padding: 22px 98px;
-            border: none;
-            background: #FF90E8;
-            border-radius: 6px;
             cursor: pointer;
             span {
+                font: normal normal bold 16px/16px Inter;
+                letter-spacing: -.02em;
+            }
+            &::before {
+                position: absolute;
+                top: 22px;
+                left: 98px;
+                content: "OK";
                 font: normal normal bold 16px/16px Inter;
                 letter-spacing: -.02em;
             }

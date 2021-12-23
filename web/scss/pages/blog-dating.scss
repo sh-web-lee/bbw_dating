@@ -129,6 +129,7 @@
             padding-top: 32px;
             .bd_arti_item {
                 width: 32.4%;
+                transition: all .3s;
                 .item-img {
                     img {
                         width: 100%;
@@ -156,6 +157,9 @@
                         font: normal normal 600 18px/22px Inter;
                         letter-spacing: -.02em;
                     }
+                }
+                &:hover {
+                    transform: translateY(-3px);
                 }
             }
         }

@@ -67,29 +67,26 @@
         color: #FF90E8;
         font-weight: bold;
         vertical-align: top; }
-    .banner .container button {
+    .banner .container .bbws-banner-button {
+      position: relative;
+      display: flex;
       margin-top: 44px;
       width: 275px;
-      height: 62px;
-      outline: none;
-      border: none;
-      background: #FF90E8;
-      box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
-      border-radius: 4px; }
-      .banner .container button a {
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 100%;
-        text-align: center;
-        letter-spacing: -0.02em;
-        color: #000000;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
+      height: 60px;
+      padding: 22px 29px 22px 31px;
+      box-sizing: border-box; }
+      .banner .container .bbws-banner-button span {
+        font: normal normal bold 18px/18px Inter;
+        color: #000;
+        letter-spacing: -.02em; }
+      .banner .container .bbws-banner-button::before {
+        position: absolute;
+        top: 22px;
+        left: 31px;
+        content: "Meet Your BBW Soulmate";
+        font: normal normal bold 18px/18px Inter;
+        color: #000;
+        letter-spacing: -.02em; }
 
 .section1 {
   width: 100%;
@@ -159,32 +156,26 @@
       margin-top: 22px; }
     .section1 .sec1_match .sec1_p {
       margin-top: 14px; }
-    .section1 .sec1_match button {
-      outline: none;
-      border: none;
-      background: #FF90E8;
-      box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
-      border-radius: 4px;
+    .section1 .sec1_match .bbws-match-button {
+      position: relative;
+      display: flex;
+      padding: 20px 76px;
+      box-sizing: border-box;
       width: 248px;
       height: 58px;
-      display: block;
       margin: 34px auto 0; }
-      .section1 .sec1_match button a {
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 100%;
-        text-align: center;
-        letter-spacing: -0.02em;
-        color: #000000;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%; }
+      .section1 .sec1_match .bbws-match-button span {
+        font: normal normal 600 18px/18px Inter;
+        color: #000;
+        letter-spacing: -.02em; }
+      .section1 .sec1_match .bbws-match-button::before {
+        position: absolute;
+        top: 20px;
+        left: 76px;
+        content: "Match Now";
+        font: normal normal 600 18px/18px Inter;
+        color: #000;
+        letter-spacing: -.02em; }
 
 .section2 {
   width: 100%;
@@ -209,30 +200,26 @@
     .section2 .sec2_word span {
       color: #FF90E8;
       vertical-align: top; }
-  .section2 button {
-    outline: none;
-    border: none;
-    background: #FF90E8;
-    box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
-    border-radius: 4px;
+  .section2 .bbws-quick-button {
+    position: relative;
+    display: flex;
+    padding: 20px 47px;
+    box-sizing: border-box;
     width: 248px;
     height: 58px;
-    margin: 24px auto 0;
-    display: block; }
-    .section2 button a {
-      font-family: Inter;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 100%;
-      text-align: center;
-      letter-spacing: -0.02em;
-      color: #000000;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
+    margin: 24px auto 0; }
+    .section2 .bbws-quick-button span {
+      font: normal normal bold 18px/18px Inter;
+      color: #000;
+      letter-spacing: -.02em; }
+    .section2 .bbws-quick-button::before {
+      position: absolute;
+      top: 20px;
+      left: 47px;
+      content: "View BBW Singles";
+      font: normal normal bold 18px/18px Inter;
+      color: #000;
+      letter-spacing: -.02em; }
   .section2 .ulul_slider {
     display: none; }
   .section2 .ulul {
@@ -319,32 +306,26 @@
           color: white;
           text-decoration: underline;
           vertical-align: top; }
-      .section2 .sec2_con .sec2_con_right button {
-        outline: none;
-        border: none;
-        background: #FF90E8;
-        box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
-        border-radius: 4px;
-        display: block;
-        background: #000000;
-        margin: 0;
-        margin-top: 53px;
-        box-shadow: 0px 9px 72px rgba(117, 18, 103, 0.46), 0px 3.75998px 30.0799px rgba(117, 18, 103, 0.330673), 0px 2.01027px 16.0821px rgba(117, 18, 103, 0.274209), 0px 1.12694px 9.01552px rgba(117, 18, 103, 0.23), 0px 0.598509px 4.78807px rgba(117, 18, 103, 0.185791), 0px 0.249053px 1.99242px rgba(117, 18, 103, 0.129327); }
-        .section2 .sec2_con .sec2_con_right button a {
-          font-family: Inter;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 100%;
-          text-align: center;
-          letter-spacing: -0.02em;
-          color: #000000;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: white; }
+      .section2 .sec2_con .sec2_con_right .bbws-search-button {
+        position: relative;
+        display: flex;
+        padding: 20px 35px;
+        box-sizing: border-box;
+        width: 248px;
+        height: 58px;
+        margin-top: 53px; }
+        .section2 .sec2_con .sec2_con_right .bbws-search-button span {
+          font: normal normal bold 18px/18px Inter;
+          color: #fff;
+          letter-spacing: -.02em; }
+        .section2 .sec2_con .sec2_con_right .bbws-search-button::before {
+          position: absolute;
+          top: 20px;
+          left: 35px;
+          content: "Search Large Friends";
+          font: normal normal bold 18px/18px Inter;
+          color: #fff;
+          letter-spacing: -.02em; }
 
 .section3 {
   width: 100%;
@@ -420,32 +401,26 @@
       margin-top: 14px; }
     .section3 .sec3_match .sec3_match_mob {
       display: none; }
-    .section3 .sec3_match button {
-      outline: none;
-      border: none;
-      background: #FF90E8;
-      box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
-      border-radius: 4px;
+    .section3 .sec3_match .bbws-sec3-match {
+      position: relative;
+      padding: 20px 76px;
+      box-sizing: border-box;
       width: 248px;
       height: 58px;
-      display: block;
+      display: flex;
       margin: 34px auto 0; }
-      .section3 .sec3_match button a {
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 100%;
-        text-align: center;
-        letter-spacing: -0.02em;
-        color: #000000;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%; }
+      .section3 .sec3_match .bbws-sec3-match span {
+        font: normal normal 600 18px/18px Inter;
+        color: #000;
+        letter-spacing: -.02em; }
+      .section3 .sec3_match .bbws-sec3-match::before {
+        position: absolute;
+        top: 20px;
+        left: 76px;
+        content: "Match Now";
+        font: normal normal 600 18px/18px Inter;
+        color: #000;
+        letter-spacing: -.02em; }
     .section3 .sec3_match .sec3_match_aa {
       display: none; }
 
@@ -503,31 +478,27 @@
       display: none; }
     .section4 .sec4_ul .sec4_li {
       display: block; }
-  .section4 button {
-    outline: none;
-    border: none;
-    background: #FF90E8;
-    box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
-    border-radius: 4px;
+  .section4 .bbws-date-button {
+    position: relative;
+    display: flex;
+    padding: 20px 82px;
+    box-sizing: border-box;
     width: 248px;
     height: 58px;
-    margin-top: 20px; }
-    .section4 button a {
-      font-family: Inter;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 100%;
-      text-align: center;
-      letter-spacing: -0.02em;
-      color: #000000;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 248px;
-      height: 58px; }
+    margin-top: 20px;
+    margin: 20px auto 0; }
+    .section4 .bbws-date-button span {
+      font: normal normal 600 18px/18px Inter;
+      color: #000;
+      letter-spacing: -.02em; }
+    .section4 .bbws-date-button::before {
+      position: absolute;
+      top: 20px;
+      left: 82px;
+      content: "Date Now";
+      font: normal normal 600 18px/18px Inter;
+      color: #000;
+      letter-spacing: -.02em; }
   .section4 .sec4_info {
     width: 100%;
     margin-top: 87px; }
@@ -605,20 +576,26 @@
             line-height: 100%;
             letter-spacing: -0.02em;
             color: #000000; }
-      .section4 .sec4_match .container button {
-        margin-left: 250px;
-        background: #000000;
-        box-shadow: 0px 9px 72px rgba(117, 18, 103, 0.46), 0px 3.75998px 30.0799px rgba(117, 18, 103, 0.330673), 0px 2.01027px 16.0821px rgba(117, 18, 103, 0.274209), 0px 1.12694px 9.01552px rgba(117, 18, 103, 0.23), 0px 0.598509px 4.78807px rgba(117, 18, 103, 0.185791), 0px 0.249053px 1.99242px rgba(117, 18, 103, 0.129327);
-        border-radius: 4px; }
-        .section4 .sec4_match .container button a {
-          font-family: Inter;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 100%;
-          text-align: center;
-          letter-spacing: -0.02em;
-          color: #FFFFFF; }
+      .section4 .sec4_match .container .bbws-sec4-button {
+        position: relative;
+        display: flex;
+        padding: 20px 66px;
+        box-sizing: border-box;
+        width: 248px;
+        height: 58px;
+        margin-left: 250px; }
+        .section4 .sec4_match .container .bbws-sec4-button span {
+          font: normal normal 600 18px/18px Inter;
+          color: #fff;
+          letter-spacing: -.02em; }
+        .section4 .sec4_match .container .bbws-sec4-button::before {
+          position: absolute;
+          top: 20px;
+          left: 66px;
+          content: "GET THE APP";
+          font: normal normal 600 18px/18px Inter;
+          color: #fff;
+          letter-spacing: -.02em; }
 
 .go_back {
   position: fixed;
@@ -1095,33 +1072,26 @@
         flex-grow: 0;
         margin: 18px auto 0px;
         width: 275px; }
-      .section3 .sec3_match button {
-        outline: none;
-        border: none;
-        background: #FF90E8;
-        box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
-        border-radius: 4px;
+      .section3 .sec3_match .bbws-sec3-match-mob {
+        position: relative;
+        padding: 20px 36px;
+        box-sizing: border-box;
         width: 248px;
         height: 58px;
-        display: none;
-        margin: 34px auto 0; }
-        .section3 .sec3_match button a {
-          font-family: Inter;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 100%;
-          text-align: center;
-          letter-spacing: -0.02em;
-          color: #000000;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          height: 100%;
-          font-size: 1.125rem; }
+        display: flex;
+        margin: 32px auto 0; }
+        .section3 .sec3_match .bbws-sec3-match-mob span {
+          font: normal normal 600 18px/18px Inter;
+          color: #000;
+          letter-spacing: -.02em; }
+        .section3 .sec3_match .bbws-sec3-match-mob::before {
+          position: absolute;
+          top: 20px;
+          left: 36px;
+          content: "Download PlusCupid";
+          font: normal normal 600 18px/18px Inter;
+          color: #000;
+          letter-spacing: -.02em; }
       .section3 .sec3_match .sec3_match_aa {
         display: block; }
 
@@ -1188,31 +1158,6 @@
         display: block; }
       .section4 .sec4_ul .sec4_li {
         display: none; }
-    .section4 button {
-      outline: none;
-      border: none;
-      background: #FF90E8;
-      box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
-      border-radius: 4px;
-      width: 248px;
-      height: 58px;
-      margin-top: 20px; }
-      .section4 button a {
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 100%;
-        text-align: center;
-        letter-spacing: -0.02em;
-        color: #000000;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 248px;
-        height: 58px; }
     .section4 .sec4_info {
       width: 100%;
       margin-top: 64px; }
@@ -1324,20 +1269,8 @@
               line-height: 100%;
               letter-spacing: -0.02em;
               color: #000000; }
-        .section4 .sec4_match .container button {
-          margin: 44px auto 0;
-          background: #000000;
-          box-shadow: 0px 9px 72px rgba(117, 18, 103, 0.46), 0px 3.75998px 30.0799px rgba(117, 18, 103, 0.330673), 0px 2.01027px 16.0821px rgba(117, 18, 103, 0.274209), 0px 1.12694px 9.01552px rgba(117, 18, 103, 0.23), 0px 0.598509px 4.78807px rgba(117, 18, 103, 0.185791), 0px 0.249053px 1.99242px rgba(117, 18, 103, 0.129327);
-          border-radius: 4px; }
-          .section4 .sec4_match .container button a {
-            font-family: Inter;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 100%;
-            text-align: center;
-            letter-spacing: -0.02em;
-            color: #FFFFFF; }
+        .section4 .sec4_match .container .bbws-sec4-button {
+          margin: 44px auto 0; }
 
   .go_back {
     position: fixed;

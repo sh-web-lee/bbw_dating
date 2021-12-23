@@ -16,7 +16,7 @@
   background: #FF90E8; }
   .nav-list {
     display: flex;
-    justify-content: space-between; }
+    justify-content: start; }
     .nav-list li {
       width: 297px;
       text-align: center; }
@@ -45,7 +45,7 @@
     ._hot_arti ._arti-content ._arti-items {
       margin-top: 32px;
       width: 389px;
-      transition-duration: 1.2s; }
+      transition: all .3s; }
       ._hot_arti ._arti-content ._arti-items > img {
         width: 100%;
         image-rendering: -webkit-optimize-contrast; }
@@ -116,8 +116,27 @@
             margin-top: 8px;
             color: rgba(0, 0, 0, 0.6);
             font: normal normal 500 16px/21px Inter; }
-          ._hot_arti ._arti-content ._arti-items._arti-card ._arti-card-txt > a {
-            z-index: 10; }
+          ._hot_arti ._arti-content ._arti-items._arti-card ._arti-card-txt .blog-card-button {
+            position: relative;
+            display: flex;
+            width: 180px;
+            height: 38px;
+            padding: 12px 24px;
+            box-sizing: border-box;
+            z-index: 10;
+            margin: 16px auto 0; }
+            ._hot_arti ._arti-content ._arti-items._arti-card ._arti-card-txt .blog-card-button span {
+              font: normal normal bold 14px/14px Inter;
+              color: #fff;
+              letter-spacing: -.6px; }
+            ._hot_arti ._arti-content ._arti-items._arti-card ._arti-card-txt .blog-card-button::before {
+              position: absolute;
+              top: 12px;
+              left: 24px;
+              content: "Free Download Now";
+              font: normal normal bold 14px/14px Inter;
+              color: #fff;
+              letter-spacing: -.02em; }
         ._hot_arti ._arti-content ._arti-items._arti-card ._card-txt-images {
           position: relative;
           height: 251px; }
@@ -146,6 +165,10 @@
           height: 203px;
           content: "";
           background: url("../../images/blog/card-shadow3.png") no-repeat; }
+        ._hot_arti ._arti-content ._arti-items._arti-card:hover {
+          transform: translateY(0); }
+      ._hot_arti ._arti-content ._arti-items:hover {
+        transform: translateY(-3px); }
 
 @media (max-width: 768px) {
   .blog-banner {
@@ -167,10 +190,11 @@
     ._hot_arti ._hot-title {
       font: normal normal bold 24px/29px Inter; }
     ._hot_arti ._arti-content {
-      flex-direction: column; }
+      flex-direction: column;
+      margin-top: 16px; }
       ._hot_arti ._arti-content ._arti-items {
         width: 100%;
-        padding: 0 8px 22px 0; }
+        margin-top: 16px; }
         ._hot_arti ._arti-content ._arti-items ._arti_txt {
           padding: 22px 18px 14px 18px;
           background-color: rgba(0, 0, 0, 0.06);

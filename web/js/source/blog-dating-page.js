@@ -1,5 +1,4 @@
 $(function() {
-    var top = document.documentElement.scrollTop
     $(window).on('scroll', function() {
         $(this).scrollTop() > 886 ? 
         $('.dp-float-ball').addClass('active-floatball') : 

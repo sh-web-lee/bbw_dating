@@ -198,6 +198,23 @@
       color: rgba(0, 0, 0, 0.6); }
     .fd-submit .container .fd-submit-content .fd-submit-form .btnzone {
       margin-top: 16px; }
+      .fd-submit .container .fd-submit-content .fd-submit-form .btnzone button {
+        position: relative;
+        display: flex;
+        padding: 22px 89px;
+        box-sizing: border-box;
+        margin-top: 16px;
+        cursor: pointer; }
+        .fd-submit .container .fd-submit-content .fd-submit-form .btnzone button span {
+          font: normal normal bold 16px/16px Inter;
+          letter-spacing: -.02em; }
+        .fd-submit .container .fd-submit-content .fd-submit-form .btnzone button::before {
+          position: absolute;
+          top: 22px;
+          left: 89px;
+          content: "SEND";
+          font: normal normal bold 16px/16px Inter;
+          letter-spacing: -.02em; }
 
 .fd-mask {
   position: fixed;
@@ -232,14 +249,20 @@
       color: rgba(0, 0, 0, 0.6);
       font: normal normal normal 16px/19px Inter; }
     .fd-flag .flag button {
-      margin-top: 32px;
+      position: relative;
+      display: flex;
+      margin: 32px auto 0;
       box-sizing: border-box;
       padding: 22px 98px;
-      border: none;
-      background: #FF90E8;
-      border-radius: 6px;
       cursor: pointer; }
       .fd-flag .flag button span {
+        font: normal normal bold 16px/16px Inter;
+        letter-spacing: -.02em; }
+      .fd-flag .flag button::before {
+        position: absolute;
+        top: 22px;
+        left: 98px;
+        content: "OK";
         font: normal normal bold 16px/16px Inter;
         letter-spacing: -.02em; }
     .fd-flag .flag.flagModel {

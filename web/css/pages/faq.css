@@ -71,9 +71,9 @@
       .faq-content .container .faq-content-item > div {
         position: relative;
         overflow: hidden;
+        max-height: 0;
         left: 0;
-        transition: .5s;
-        display: none; }
+        transition: all .3s; }
       .faq-content .container .faq-content-item .g-link {
         text-decoration: underline;
         color: #23A094; }
@@ -82,8 +82,7 @@
       .faq-content .container .faq-content-item.open-item .item-title::after {
         transform: rotateZ(180deg); }
       .faq-content .container .faq-content-item.open-item > div {
-        display: block;
-        animation: openItem .5s forwards; }
+        max-height: 1100px; }
 
 @media (max-width: 768px) {
   .faq-content {
@@ -91,7 +90,8 @@
     .faq-content .container {
       width: 100%; }
       .faq-content .container .faq-content-item .item-title {
-        font: normal normal bold 20px/20px Inter; }
+        font: normal normal bold 20px/20px Inter;
+        padding-right: 30px; }
       .faq-content .container .faq-content-item .item-txt-list.none-title .list-word {
         margin-top: 16px; } }
 

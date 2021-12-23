@@ -320,7 +320,7 @@
 
 .sec2_get {
   width: 100%;
-  padding: 47px 0 62px;
+  padding: 46px 0 62px;
   background: url(../../images/bp/sec2_bg.png) no-repeat center center; }
   .sec2_get h3 {
     font-family: Inter;
@@ -354,32 +354,26 @@
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
     margin: 16px auto 0px; }
-  .sec2_get button {
+  .sec2_get .bp-go-button {
+    position: relative;
+    padding: 20px 65px;
+    box-sizing: border-box;
+    display: flex;
     width: 248px;
     height: 58px;
-    background: #000000;
-    box-shadow: 0px 9px 72px rgba(117, 18, 103, 0.46), 0px 3.75998px 30.0799px rgba(117, 18, 103, 0.330673), 0px 2.01027px 16.0821px rgba(117, 18, 103, 0.274209), 0px 1.12694px 9.01552px rgba(117, 18, 103, 0.23), 0px 0.598509px 4.78807px rgba(117, 18, 103, 0.185791), 0px 0.249053px 1.99242px rgba(117, 18, 103, 0.129327);
-    border-radius: 4px;
-    border: none;
-    outline: none;
-    margin: 32px auto 0px;
-    display: block; }
-    .sec2_get button a {
-      width: 100%;
-      height: 100%;
-      font-family: Inter;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 100%;
-      /* identical to box height, or 18px */
-      text-align: center;
-      letter-spacing: -0.02em;
-      /* 纯白 */
-      color: #FFFFFF;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
+    margin: 32px auto 0px; }
+    .sec2_get .bp-go-button span {
+      font: normal normal 600 18px/18px Inter;
+      color: #fff;
+      letter-spacing: -.02em; }
+    .sec2_get .bp-go-button::before {
+      position: absolute;
+      top: 20px;
+      left: 65px;
+      content: "GO OUT NOW";
+      font: normal normal 600 18px/18px Inter;
+      color: #fff;
+      letter-spacing: -.02em; }
 
 .section3 {
   width: 100%;
@@ -456,33 +450,26 @@
         max-width: 254px;
         padding-left: 20%;
         text-align: left; }
-      .section3 .sec3_con .sec3_con_left button {
-        outline: none;
-        border: none;
-        background: #FF90E8;
-        box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
-        border-radius: 4px;
+      .section3 .sec3_con .sec3_con_left .bp-match-button {
+        position: relative;
+        padding: 20px 75px;
+        box-sizing: border-box;
+        display: flex;
         width: 248px;
-        height: 58px; }
-        .section3 .sec3_con .sec3_con_left button a {
-          font-family: Inter;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 100%;
-          text-align: center;
-          letter-spacing: -0.02em;
-          color: #000000;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center; }
+        height: 58px;
+        margin: 0 auto; }
+        .section3 .sec3_con .sec3_con_left .bp-match-button span {
+          font: normal normal 600 18px/18px Inter;
+          color: #000;
+          letter-spacing: -.02em; }
+        .section3 .sec3_con .sec3_con_left .bp-match-button::before {
+          position: absolute;
+          top: 20px;
+          left: 75px;
+          content: "Dating Now";
+          font: normal normal 600 18px/18px Inter;
+          color: #000;
+          letter-spacing: -.02em; }
     .section3 .sec3_con .sec3_con_right {
       margin-left: 170px; }
       .section3 .sec3_con .sec3_con_right ul li {
@@ -594,43 +581,38 @@
     color: rgba(255, 255, 255, 0.8);
     margin: 16px 0px;
     max-width: 556px; }
-  .sec3_info button {
-    outline: none;
-    border: none;
-    background: #FF90E8;
-    box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
-    border-radius: 4px;
+  .sec3_info .bp-date-button {
+    position: relative;
+    padding: 20px 75px;
+    box-sizing: border-box;
+    display: flex;
     width: 248px;
     height: 58px; }
-    .sec3_info button a {
-      font-family: Inter;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 100%;
-      text-align: center;
-      letter-spacing: -0.02em;
-      color: #000000;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
+    .sec3_info .bp-date-button span {
+      font: normal normal 600 18px/18px Inter;
+      color: #000;
+      letter-spacing: -.02em; }
+    .sec3_info .bp-date-button::before {
+      position: absolute;
+      top: 20px;
+      left: 75px;
+      content: "Dating Now";
+      font: normal normal 600 18px/18px Inter;
+      color: #000;
+      letter-spacing: -.02em; }
 
 .go_back {
   position: fixed;
   right: 13%;
-  bottom: 85px;
+  bottom: -60px;
   width: 46px;
   height: 46px;
   cursor: pointer;
   background: url(../../images/icon/top.png) no-repeat center center;
-  z-index: 99; }
+  z-index: 99;
+  transition: all .5s; }
+  .go_back.active-goback {
+    bottom: 85px; }
 
 @media (max-width: 768px) {
   .banner {
@@ -1292,7 +1274,7 @@
   .go_back {
     position: fixed;
     right: 2rem;
-    bottom: 4rem;
+    bottom: -4rem;
     width: 28px;
     height: 28px;
     cursor: pointer;

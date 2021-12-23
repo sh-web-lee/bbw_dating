@@ -17,7 +17,7 @@
     background: #FF90E8;
     &-list {
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
         li {
             width: 297px;
             text-align: center;
@@ -51,7 +51,8 @@
         ._arti-items {
             margin-top: 32px;
             width: 389px;
-            transition-duration: 1.2s;
+            // transition-duration: 1.2s;
+            transition: all .3s;
             &>img {
                 width: 100%;
                 image-rendering: -webkit-optimize-contrast;
@@ -139,8 +140,29 @@
                         color: rgba(0, 0, 0, .6);
                         font: normal normal 500 16px/21px Inter;
                     }
-                    &>a {
+                    .blog-card-button {
+                        position: relative;
+                        display: flex;
+                        width: 180px;
+                        height: 38px;
+                        padding: 12px 24px;
+                        box-sizing: border-box;
                         z-index: 10;
+                        margin: 16px auto 0;
+                        span {
+                            font: normal normal bold 14px/14px Inter;
+                            color: #fff;
+                            letter-spacing: -.6px;
+                        }
+                        &::before {
+                            position: absolute;
+                            top: 12px;
+                            left: 24px;
+                            content: "Free Download Now";
+                            font: normal normal bold 14px/14px Inter;
+                            color: #fff;
+                            letter-spacing: -.02em;
+                        }
                     }
                 }
                 ._card-txt-images {
@@ -177,6 +199,12 @@
                     content: "";
                     background: url('../../images/blog/card-shadow3.png') no-repeat;
                 }
+                &:hover {
+                    transform: translateY(0);
+                }
+            }
+            &:hover {
+                transform: translateY(-3px);
             }
         }
     }
@@ -209,9 +237,11 @@
         }
         ._arti-content {
             flex-direction: column;
+            margin-top: 16px;
             ._arti-items {
                 width: 100%;
-                padding: 0 8px 22px 0;
+                margin-top: 16px;
+                // padding: 0 8px 22px 0;
                 ._arti_txt {
                     padding: 22px 18px 14px 18px;
                     background-color: rgba(0, 0, 0, 0.06);
