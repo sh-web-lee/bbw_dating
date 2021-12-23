@@ -320,7 +320,7 @@
 
 .sec2_get {
   width: 100%;
-  padding: 47px 0 62px;
+  padding: 46px 0 62px;
   background: url(../../images/bp/sec2_bg.png) no-repeat center center; }
   .sec2_get h3 {
     font-family: Inter;
@@ -456,7 +456,8 @@
         box-sizing: border-box;
         display: flex;
         width: 248px;
-        height: 58px; }
+        height: 58px;
+        margin: 0 auto; }
         .section3 .sec3_con .sec3_con_left .bp-match-button span {
           font: normal normal 600 18px/18px Inter;
           color: #000;
@@ -603,12 +604,15 @@
 .go_back {
   position: fixed;
   right: 13%;
-  bottom: 85px;
+  bottom: -60px;
   width: 46px;
   height: 46px;
   cursor: pointer;
   background: url(../../images/icon/top.png) no-repeat center center;
-  z-index: 99; }
+  z-index: 99;
+  transition: all .5s; }
+  .go_back.active-goback {
+    bottom: 85px; }
 
 @media (max-width: 768px) {
   .banner {
@@ -1270,7 +1274,7 @@
   .go_back {
     position: fixed;
     right: 2rem;
-    bottom: 4rem;
+    bottom: -4rem;
     width: 28px;
     height: 28px;
     cursor: pointer;

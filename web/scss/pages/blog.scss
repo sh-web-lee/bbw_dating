@@ -17,7 +17,7 @@
     background: #FF90E8;
     &-list {
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
         li {
             width: 297px;
             text-align: center;
@@ -51,7 +51,8 @@
         ._arti-items {
             margin-top: 32px;
             width: 389px;
-            transition-duration: 1.2s;
+            // transition-duration: 1.2s;
+            transition: all .3s;
             &>img {
                 width: 100%;
                 image-rendering: -webkit-optimize-contrast;
@@ -198,6 +199,12 @@
                     content: "";
                     background: url('../../images/blog/card-shadow3.png') no-repeat;
                 }
+                &:hover {
+                    transform: translateY(0);
+                }
+            }
+            &:hover {
+                transform: translateY(-3px);
             }
         }
     }

@@ -265,6 +265,7 @@
         .dp-content .container .dp_right .dp-related-articles .dp-re-item {
           width: 32%; }
           .dp-content .container .dp_right .dp-related-articles .dp-re-item-txt {
+            color: #000;
             padding: 10px 10px 10px 0; }
             .dp-content .container .dp_right .dp-related-articles .dp-re-item-txt span {
               padding: 4px 8px;

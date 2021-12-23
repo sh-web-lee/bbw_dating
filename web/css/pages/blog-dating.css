@@ -104,7 +104,8 @@
     justify-content: space-between;
     padding-top: 32px; }
     .content .container .bd_articles .bd_arti_item {
-      width: 32.4%; }
+      width: 32.4%;
+      transition: all .3s; }
       .content .container .bd_articles .bd_arti_item .item-img img {
         width: 100%;
         image-rendering: -moz-crisp-edges;
@@ -131,6 +132,8 @@
         .content .container .bd_articles .bd_arti_item .item-txt-desc {
           font: normal normal 600 18px/22px Inter;
           letter-spacing: -.02em; }
+      .content .container .bd_articles .bd_arti_item:hover {
+        transform: translateY(-3px); }
 
 @media (max-width: 768px) {
   .blog-banner {

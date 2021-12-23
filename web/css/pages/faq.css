@@ -73,7 +73,7 @@
         overflow: hidden;
         max-height: 0;
         left: 0;
-        transition: max-height .5s; }
+        transition: all .3s; }
       .faq-content .container .faq-content-item .g-link {
         text-decoration: underline;
         color: #23A094; }
@@ -82,8 +82,7 @@
       .faq-content .container .faq-content-item.open-item .item-title::after {
         transform: rotateZ(180deg); }
       .faq-content .container .faq-content-item.open-item > div {
-        max-height: 1100px;
-        transition: max-height .5s; }
+        max-height: 1100px; }
 
 @media (max-width: 768px) {
   .faq-content {

@@ -16,7 +16,7 @@
   background: #FF90E8; }
   .nav-list {
     display: flex;
-    justify-content: space-between; }
+    justify-content: start; }
     .nav-list li {
       width: 297px;
       text-align: center; }
@@ -45,7 +45,7 @@
     ._hot_arti ._arti-content ._arti-items {
       margin-top: 32px;
       width: 389px;
-      transition-duration: 1.2s; }
+      transition: all .3s; }
       ._hot_arti ._arti-content ._arti-items > img {
         width: 100%;
         image-rendering: -webkit-optimize-contrast; }
@@ -165,6 +165,10 @@
           height: 203px;
           content: "";
           background: url("../../images/blog/card-shadow3.png") no-repeat; }
+        ._hot_arti ._arti-content ._arti-items._arti-card:hover {
+          transform: translateY(0); }
+      ._hot_arti ._arti-content ._arti-items:hover {
+        transform: translateY(-3px); }
 
 @media (max-width: 768px) {
   .blog-banner {

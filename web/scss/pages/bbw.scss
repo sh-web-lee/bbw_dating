@@ -54,6 +54,19 @@
     color: #000000;
 }
 
+@mixin button {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    width: 248px;
+    height: 58px;
+    margin-top: 32px;
+}
+@mixin buttonFont {
+    font: normal normal 600 18px/18px Inter;
+    color: #000;
+    letter-spacing: -.02em;
+}
 .banner {
     width: 100%;
     height: 700px;
@@ -126,9 +139,21 @@
             }
         }
     }
-    a {
-        @include aa;
-        margin-top: 32px;
+    .bbw-banner-button {
+        @include button;
+        padding: 22px 49px;
+        width: 275px;
+        height: 62px;
+        span {
+            @include buttonFont;
+        }
+        &::before {
+            position: absolute;
+            content: "Download PlusCupid";
+            top: 22px;
+            left: 49px;
+            @include buttonFont;
+        }
     }
 }
 
@@ -189,9 +214,20 @@
                 .sec1_word {
                     color: #000000;
                 }
-                a {
-                    @include aa;
-                    margin-top: 32px;
+                .bbw-sec1-button {
+                    @include button;
+                    padding: 20px 60px;
+                    span {
+                        @include buttonFont;
+                    }
+                    &::before {
+                        position: absolute;
+                        top: 20px;
+                        left: 60px;
+                        content: "Join PlusCupid";
+                        @include buttonFont;
+                    }
+
                 }
             }
         }
@@ -245,9 +281,89 @@
                 max-width: 508px;
                 margin-top: 24px
             }
-            a {
-                @include aa;
-                margin-top: 32px;
+            .bbw-date-button {
+                @include button;
+                padding: 20px 15px 20px 13px;
+                span {
+                    @include buttonFont;
+                }
+                &::before {
+                    position: absolute;
+                    top: 20px;
+                    left: 13px;
+                    content: "Date With Genuine Singles";
+                    @include buttonFont;
+                }
+            }
+            .bbw-make-button {
+                @include button;
+                padding: 20px 40px 20px 38px;
+                span {
+                    @include buttonFont;
+                }
+                &::before {
+                    position: absolute;
+                    top: 20px;
+                    left: 38px;
+                    content: "Make the First Move";
+                    @include buttonFont;
+                }
+            }
+            .bbw-chat-button {
+                @include button;
+                padding: 20px 35px;
+                span {
+                    @include buttonFont;
+                }
+                &::before {
+                    position: absolute;
+                    top: 20px;
+                    left: 35px;
+                    content: "Chat without Worries";
+                    @include buttonFont;
+                }
+            }
+            .bbw-hear-button {
+                @include button;
+                padding: 20px 40px;
+                span {
+                    @include buttonFont;
+                }
+                &::before {
+                    position: absolute;
+                    top: 20px;
+                    left: 40px;
+                    content: "Hear Unique Voices";
+                    @include buttonFont;
+                }
+            }
+            .bbw-share-button {
+                @include button;
+                padding: 20px 57px;
+                span {
+                    @include buttonFont;
+                }
+                &::before {
+                    position: absolute;
+                    top: 20px;
+                    left: 57px;
+                    content: "Share Moments";
+                    @include buttonFont;
+                }
+            }
+            .bbw-match-button {
+                @include button;
+                padding: 20px 75px;
+                span {
+                    @include buttonFont;
+                }
+                &::before {
+                    position: absolute;
+                    top: 20px;
+                    left: 75px;
+                    content: "Match Now";
+                    @include buttonFont;
+                }
             }
             .div1 {
                 width: 378px;
@@ -356,9 +472,20 @@
             }
         }
     }
-    a {
-        @include aa;
+    .bbw-find-button {
+        @include button;
+        padding: 20px 76px;
         margin: 64px auto 0;
+        span {
+            @include buttonFont;
+        }
+        &::before {
+            position: absolute;
+            top: 20px;
+            left: 76px;
+            content: "Match Now";
+            @include buttonFont;
+        }
     }
 }
 
