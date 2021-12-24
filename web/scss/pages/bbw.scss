@@ -716,18 +716,31 @@
         margin: 16px auto 0;
         max-width: 722px
     }
-    a {
-        @include aa;
-        background: #000000;
-        color: white;
+    .bbw-subbanner-button {
+        @include button;
+        padding: 20px 36px;
         margin: 25px auto 0;
+        span {
+            font: normal normal 600 18px/18px Inter;
+            color: #fff;
+            letter-spacing: -.02em;
+        }
+        &::before {
+            position: absolute;
+            top: 20px;
+            left: 36px;
+            content: "Download PlusCupid";
+            font: normal normal 600 18px/18px Inter;
+            color: #fff;
+            letter-spacing: -.02em;
+        }
     }
 }
 
 .go_back {
     position: fixed;
     right: 13%;
-    bottom: 85px;
+    bottom: -5%;
     width: 46px;
     height: 46px;
     cursor: pointer;
