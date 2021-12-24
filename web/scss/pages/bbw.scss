@@ -28,7 +28,7 @@
             width: 171px;
             height: 25px;
             background: url(../../images/bbw/line.png) no-repeat center center;
-            bottom: -15;
+            bottom: -15px;
             right: 0;
         }
     }
@@ -62,17 +62,21 @@
     height: 58px;
     margin-top: 32px;
 }
+
 @mixin buttonFont {
     font: normal normal 600 18px/18px Inter;
     color: #000;
     letter-spacing: -.02em;
 }
+
 .banner {
     width: 100%;
     height: 700px;
     background: url(../../images/bbw/banner_bg.png) no-repeat center center;
-    padding-top: 66px;
-    .container {}
+    margin-top: 66px;
+    .container {
+        overflow: hidden;
+    }
     h1 {
         font-family: Inter;
         font-size: 52px;
@@ -172,6 +176,7 @@
     backdrop-filter: blur(80px);
     padding-bottom: 78px;
     padding-top: 80px;
+    overflow: hidden;
     .container {
         max-width: 1000px;
     }
@@ -223,7 +228,6 @@
                         content: "Join PlusCupid";
                         @include buttonFont;
                     }
-
                 }
             }
         }
@@ -240,6 +244,7 @@
     height: auto;
     background: #fff;
     margin-top: 32px;
+    overflow: hidden;
     .container {
         max-width: 1000px;
         padding-top: 80px;
@@ -489,15 +494,16 @@
     height: auto;
     background: #fff;
     margin-top: 32px;
+    overflow: hidden;
     .container {
-        width: 1110px;
+        max-width: 1110px;
         padding-top: 80px;
         padding-bottom: 100px;
     }
     h2 {
         font-size: 32px;
     }
-    ul {
+    .sec1_ulul {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -561,6 +567,9 @@
             }
         }
     }
+    .sec1_ulul_mob {
+        display: none;
+    }
 }
 
 .section5 {
@@ -570,12 +579,16 @@
     margin-top: 32px;
     padding: 80px 0 106px;
     .container {
-        width: 1025px;
+        max-width: 1025px;
     }
     h2 {
         font-size: 32px;
     }
+    .sec5_tab_mob {
+        display: none;
+    }
     .sec5_tab {
+        display: block;
         width: 100%;
         height: auto;
         margin-top: 64px;
@@ -720,14 +733,26 @@
         @include button;
         padding: 20px 36px;
         margin: 25px auto 0;
+<<<<<<< HEAD
         span {
             font: normal normal 600 18px/18px Inter;
             color: #fff;
             letter-spacing: -.02em;
+=======
+        box-shadow: 0px 9px 72px rgba(117, 18, 103, 0.46), 0px 3.75998px 30.0799px rgba(117, 18, 103, 0.330673), 0px 2.01027px 16.0821px rgba(117, 18, 103, 0.274209), 0px 1.12694px 9.01552px rgba(117, 18, 103, 0.23), 0px 0.598509px 4.78807px rgba(117, 18, 103, 0.185791), 0px 0.249053px 1.99242px rgba(117, 18, 103, 0.129327);
+    }
+    .bbw-sec6-button {
+        @include button;
+        padding: 20px 40px 20px 38px;
+        span {
+            // @include buttonFont;
+            color: white;
+>>>>>>> xiewen
         }
         &::before {
             position: absolute;
             top: 20px;
+<<<<<<< HEAD
             left: 36px;
             content: "Download PlusCupid";
             font: normal normal 600 18px/18px Inter;
@@ -746,4 +771,773 @@
     cursor: pointer;
     background: url(../../images/icon/top.png) no-repeat center center;
     z-index: 99;
+=======
+            left: 38px;
+            content: "Download PlusCupid";
+            @include buttonFont;
+            color: white;
+        }
+    }
+    .hover-effect3:hover {
+        box-shadow: none;
+        background: #000000;
+    }
+}
+
+@media (max-width:768px) {
+    .home {
+        width: 100%;
+        height: auto;
+        h2 {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.75rem;
+            line-height: 140%;
+            /* or 56px */
+            text-align: center;
+            letter-spacing: -0.02em;
+            /* 黑色 */
+            color: #000000;
+            span {
+                font-size: 2rem;
+                color: #FF90E8;
+                vertical-align: top;
+                font-weight: bold;
+                font-style: normal;
+                font-family: Lora;
+                position: relative;
+            }
+            span::after {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 171px;
+                height: 25px;
+                background: url(../../images/bbw/mobile/line_mob.png) no-repeat center center;
+                bottom: -15px;
+                right: -16px;
+            }
+        }
+    }
+    .banner {
+        width: 100%;
+        height: auto;
+        background: url(../../images/bbw/mobile/banner_bg_mob.png) no-repeat center center;
+        background-size: cover;
+        padding-bottom: 291px;
+        h1 {
+            font-family: Inter;
+            font-size: 1.75rem;
+            line-height: 110%;
+            /* or 62px */
+            letter-spacing: -0.04em;
+            /* 主色 */
+            color: #fff;
+            font-weight: 700;
+            font-style: normal;
+            margin-top: 24px;
+            max-width: 749px;
+            text-align: center;
+            span {
+                font-family: Lora;
+                font-size: 1.875rem;
+                line-height: 110%;
+                /* or 62px */
+                letter-spacing: -0.04em;
+                /* 主色 */
+                color: #FF90E8;
+                vertical-align: top;
+                font-weight: 700;
+                font-style: normal;
+            }
+        }
+        ul {
+            margin-top: 20px;
+            li {
+                margin-top: 4px;
+                text-align: center;
+                b {
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1.125rem;
+                    line-height: 120%;
+                    /* identical to box height, or 22px */
+                    text-align: center;
+                    letter-spacing: -0.02em;
+                    /* 纯白 */
+                    color: #FFFFFF;
+                    display: inline-block;
+                }
+                b::before {
+                    display: none;
+                }
+                p {
+                    display: none
+                }
+            }
+        }
+        .bbw-banner-button {
+            @include button;
+            padding: 22px 49px;
+            width: 275px;
+            height: 62px;
+            margin: 24px auto 0;
+            span {
+                @include buttonFont;
+            }
+            &::before {
+                position: absolute;
+                content: "Download PlusCupid";
+                top: 22px;
+                left: 49px;
+                @include buttonFont;
+            }
+        }
+    }
+    .main {
+        width: 100%;
+        height: auto;
+        background: linear-gradient(180deg, #D8F8F4 0%, #FDF7E8 36.98%, #B8E2F4 72.4%, #FFD1F5 100%);
+        padding: 24px 10px;
+        box-sizing: border-box;
+    }
+    .section1 {
+        width: 100%;
+        height: auto;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+        backdrop-filter: blur(80px);
+        padding-bottom: 45px;
+        padding-top: 32px;
+        .container {
+            max-width: 1000px;
+        }
+        .sec1_con {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-top: 50px;
+            .sec1_left {
+                max-width: 484px;
+                margin-top: 35px;
+                li {
+                    margin-bottom: 32px;
+                    text-align: center;
+                    b {
+                        font-family: Inter;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 1.375rem;
+                        line-height: 140%;
+                        /* identical to box height, or 31px */
+                        text-align: center;
+                        /* 黑色 */
+                        color: #000000;
+                        margin-bottom: 16px;
+                        display: inline-block;
+                    }
+                    p {
+                        font-family: Inter;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: .875rem;
+                        line-height: 140%;
+                        /* or 24px */
+                        color: rgba(0, 0, 0, 0.5);
+                    }
+                    .sec1_word {
+                        color: #000000;
+                    }
+                    .bbw-sec1-button {
+                        @include button;
+                        padding: 20px 60px;
+                        span {
+                            @include buttonFont;
+                        }
+                        margin: 16px auto 0;
+                        &::before {
+                            position: absolute;
+                            top: 20px;
+                            left: 60px;
+                            content: "Join PlusCupid";
+                            @include buttonFont;
+                        }
+                    }
+                }
+            }
+            .sec1_right {
+                width: 100%;
+                height: 442px;
+                background: url(../../images/bbw/mobile/phone_mob.png) no-repeat center center;
+                background-size: cover;
+            }
+        }
+    }
+    .section2 {
+        width: 100%;
+        height: auto;
+        margin-top: 24px;
+        background: transparent;
+        .container {
+            max-width: 1000px;
+            padding-top: 32px;
+        }
+        h2 {
+            margin-bottom: 70px;
+        }
+        ul {
+            width: 100%;
+            li {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                border-bottom: 2px solid #EBEEF4;
+                text-align: center;
+                background: rgba(255, 255, 255, 0.96);
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+                backdrop-filter: blur(80px);
+                box-sizing: border-box;
+                padding: 0 26px;
+                b {
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    line-height: 140%;
+                    /* or 39px */
+                    text-align: center;
+                    /* 黑色 */
+                    color: #000000;
+                    display: inline-block;
+                    margin-top: 32px;
+                }
+                p {
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: .875rem;
+                    line-height: 140%;
+                    /* or 20px */
+                    text-align: center;
+                    color: rgba(0, 0, 0, 0.5);
+                    max-width: 508px;
+                    margin-top: 24px
+                }
+                .bbw-date-button {
+                    @include button;
+                    padding: 20px 15px 20px 13px;
+                    margin: 32px auto 0;
+                    span {
+                        @include buttonFont;
+                    }
+                    &::before {
+                        position: absolute;
+                        top: 20px;
+                        left: 13px;
+                        content: "Date With Genuine Singles";
+                        @include buttonFont;
+                    }
+                }
+                .bbw-make-button {
+                    @include button;
+                    padding: 20px 40px 20px 38px;
+                    margin: 32px auto 0;
+                    span {
+                        @include buttonFont;
+                    }
+                    &::before {
+                        position: absolute;
+                        top: 20px;
+                        left: 38px;
+                        content: "Make the First Move";
+                        @include buttonFont;
+                    }
+                }
+                .bbw-chat-button {
+                    @include button;
+                    padding: 20px 35px;
+                    margin: 32px auto 0;
+                    span {
+                        @include buttonFont;
+                    }
+                    &::before {
+                        position: absolute;
+                        top: 20px;
+                        left: 35px;
+                        content: "Chat without Worries";
+                        @include buttonFont;
+                    }
+                }
+                .bbw-hear-button {
+                    @include button;
+                    padding: 20px 40px;
+                    margin: 32px auto 0;
+                    span {
+                        @include buttonFont;
+                    }
+                    &::before {
+                        position: absolute;
+                        top: 20px;
+                        left: 40px;
+                        content: "Hear Unique Voices";
+                        @include buttonFont;
+                    }
+                }
+                .bbw-share-button {
+                    @include button;
+                    padding: 20px 57px;
+                    margin: 32px auto 0;
+                    span {
+                        @include buttonFont;
+                    }
+                    &::before {
+                        position: absolute;
+                        top: 20px;
+                        left: 57px;
+                        content: "Share Moments";
+                        @include buttonFont;
+                    }
+                }
+                .bbw-match-button {
+                    @include button;
+                    padding: 20px 75px;
+                    margin: 32px auto 0;
+                    span {
+                        @include buttonFont;
+                    }
+                    &::before {
+                        position: absolute;
+                        top: 20px;
+                        left: 75px;
+                        content: "Match Now";
+                        @include buttonFont;
+                    }
+                }
+                .div1 {
+                    max-width: 100%;
+                    max-height: 200px;
+                    background: url(../../images/bbw/mobile/pic1_mob.png) no-repeat center center;
+                    background-size: 100%;
+                }
+                .div2 {
+                    max-width: 100%;
+                    max-height: 200px;
+                    background: url(../../images/bbw/pic2.png) no-repeat center center;
+                    background-size: 100%;
+                }
+                .div3 {
+                    max-width: 100%;
+                    max-height: 200px;
+                    background: url(../../images/bbw/pic3.png) no-repeat center center;
+                    background-size: 100%;
+                }
+                .div4 {
+                    max-width: 100%;
+                    max-height: 200px;
+                    background: url(../../images/bbw/pic4.png) no-repeat center center;
+                    background-size: 100%;
+                }
+                .div5 {
+                    max-width: 100%;
+                    max-height: 200px;
+                    background: url(../../images/bbw/pic5.png) no-repeat center center;
+                    background-size: 100%;
+                }
+                .div6 {
+                    max-width: 100%;
+                    max-height: 200px;
+                    background: url(../../images/bbw/pic6.png) no-repeat center center;
+                    background-size: 100%;
+                }
+            }
+            .li_right {
+                flex-direction: row-reverse;
+            }
+            .li1 {
+                padding-bottom: 41px;
+            }
+            .li2 {
+                padding-bottom: 38px;
+                padding-top: 24px;
+                margin-top: 16px;
+                flex-direction: column;
+            }
+            .li3 {
+                padding-bottom: 44px;
+                padding-top: 24px;
+                margin-top: 16px;
+            }
+            .li4 {
+                padding-bottom: 41px;
+                padding-top: 24px;
+                flex-direction: column;
+                margin-top: 16px;
+            }
+            .li5 {
+                padding-bottom: 41px;
+                padding-top: 24px;
+                margin-top: 16px;
+            }
+            .li6 {
+                padding-bottom: 41px;
+                padding-top: 24px;
+                flex-direction: column;
+                margin-top: 16px;
+            }
+        }
+    }
+    .section3 {
+        width: 100%;
+        height: auto;
+        background: #fff;
+        margin-top: 21px;
+        .container {
+            padding: 32px 10px 44px;
+        }
+        ul {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+            li {
+                width: 100%;
+                text-align: center;
+                vertical-align: top;
+                margin-bottom: 32px;
+                b {
+                    display: block;
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 140%;
+                    /* identical to box height, or 34px */
+                    text-align: center;
+                    letter-spacing: -0.02em;
+                    /* 黑色 */
+                    color: #000000;
+                }
+                p {
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 140%;
+                    /* or 20px */
+                    text-align: center;
+                    color: rgba(0, 0, 0, 0.5);
+                    width: 88%;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .bbw-find-button {
+            @include button;
+            padding: 20px 76px;
+            margin: 0px auto;
+            margin-top: 0;
+            span {
+                @include buttonFont;
+            }
+            &::before {
+                position: absolute;
+                top: 20px;
+                left: 76px;
+                content: "Match Now";
+                @include buttonFont;
+            }
+        }
+    }
+    .section4 {
+        width: 100%;
+        height: auto;
+        background: #fff;
+        margin-top: 24px;
+        .container {
+            max-width: 1110px;
+            padding-top: 32px;
+            padding-bottom: 44px;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        .sec1_ulul {
+            display: none;
+        }
+        .sec1_ulul_mob {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            height: 360px;
+            margin-top: 62px;
+            position: relative;
+            li {
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin-top: 0;
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    flex-direction: column;
+                    text-align: center;
+                    img {
+                        margin: 0;
+                    }
+                    dl {
+                        dt {
+                            font-family: Inter;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 100%;
+                            /* identical to box height, or 18px */
+                            letter-spacing: -0.02em;
+                            /* 黑色 */
+                            color: #000000;
+                            margin-top: 14px;
+                        }
+                        dd {
+                            font-family: Inter;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 100%;
+                            /* identical to box height, or 14px */
+                            color: rgba(0, 0, 0, 0.6);
+                            margin-top: 16px;
+                        }
+                    }
+                }
+                div::after {
+                    content: '';
+                    display: block;
+                    background: url(../../images/bbw/dot.png) no-repeat center center;
+                    width: 30px;
+                    height: 23px;
+                    position: absolute;
+                    right: 45%;
+                    top: -40px;
+                }
+                p {
+                    margin-top: 18px;
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 140%;
+                    /* or 20px */
+                    color: rgba(0, 0, 0, 0.5);
+                    max-width: 517px;
+                    text-align: center;
+                }
+            }
+        }
+        .ulul_circul {
+            display: block;
+            position: relative;
+            bottom: 0;
+            margin: 18px auto 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 82px;
+            div {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: rgba(0, 0, 0, 0.24);
+            }
+            .cir_color {
+                background: #000;
+            }
+        }
+    }
+    .section5 {
+        width: 100%;
+        height: auto;
+        background: #fff;
+        margin-top: 24px;
+        padding: 32px 0 44px;
+        .container {
+            max-width: 1025px;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        .sec5_tab {
+            display: none;
+        }
+        .sec5_tab_mob {
+            display: block;
+            ul {
+                width: 100%;
+                margin-top: 32px;
+                li {
+                    width: 100%;
+                    margin-bottom: 16px;
+                    h3 {
+                        position: relative;
+                        text-align: center;
+                        max-width: 339px;
+                        height: 60px;
+                        background: rgba(0, 0, 0, 0.12);
+                        font-family: Inter;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 1rem;
+                        line-height: 140%;
+                        /* or 22px */
+                        text-align: center;
+                        /* 黑色 */
+                        color: #000000;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0 auto;
+                        span {
+                            position: relative;
+                            right: 0;
+                            width: 7px;
+                            height: 7px;
+                            margin-left: 8px;
+                            background: url(../../images/bbw/mobile/black_arrow.png) no-repeat center center;
+                        }
+                    }
+                    .sec5_div {
+                        display: none;
+                        padding: 0 26px;
+                        box-sizing: border-box;
+                        margin-top: 32px;
+                        h4 {
+                            font-family: Inter;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: .875rem;
+                            line-height: 140%;
+                            /* identical to box height, or 20px */
+                            color: #000000;
+                            position: relative;
+                            span {
+                                width: 10px;
+                                height: 10px;
+                                background: url(../../images/bbw/add.png) no-repeat center center;
+                                transition: all .2s;
+                                display: inline-block;
+                                position: absolute;
+                                top: 28%;
+                                right: 0;
+                            }
+                        }
+                        div {
+                            margin-top: 16px;
+                            display: none;
+                            p {
+                                font-family: Inter;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 140%;
+                                /* or 20px */
+                                color: rgba(0, 0, 0, 0.5);
+                                margin-bottom: 16px;
+                                b {
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+                .sec5_show {
+                    h3 {
+                        background: #000000;
+                        color: white;
+                        span {
+                            background: url(../../images/bbw/mobile/white_arrow.png) no-repeat center center;
+                        }
+                    }
+                    .sec5_div {
+                        display: block;
+                        .on {
+                            h4 {
+                                span {
+                                    height: 2px;
+                                    background: url(../../images/bbw/sub.png) no-repeat center center;
+                                }
+                            }
+                            div {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section6 {
+        width: 100%;
+        height: auto;
+        background: url(../../images/bbw/mobile/sec6_bg_mob.png) no-repeat center center;
+        background-size: cover;
+        .container {
+            padding: 62px 10px 80px;
+        }
+        h2 {
+            font-size: 1.75rem;
+        }
+        p {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            font-size: .875rem;
+            line-height: 140%;
+            /* or 20px */
+            text-align: center;
+            color: rgba(0, 0, 0, 0.5);
+            margin: 16px auto 0;
+            max-width: 722px
+        }
+        a {
+            @include aa;
+            background: #000000;
+            color: white;
+            margin: 25px auto 0;
+            box-shadow: 0px 9px 72px rgba(117, 18, 103, 0.46), 0px 3.75998px 30.0799px rgba(117, 18, 103, 0.330673), 0px 2.01027px 16.0821px rgba(117, 18, 103, 0.274209), 0px 1.12694px 9.01552px rgba(117, 18, 103, 0.23), 0px 0.598509px 4.78807px rgba(117, 18, 103, 0.185791), 0px 0.249053px 1.99242px rgba(117, 18, 103, 0.129327);
+        }
+        .bbw-sec6-button {
+            @include button;
+            padding: 20px 40px 20px 38px;
+            span {
+                // @include buttonFont;
+                color: white;
+            }
+            &::before {
+                position: absolute;
+                top: 20px;
+                left: 38px;
+                content: "Download PlusCupid";
+                @include buttonFont;
+                color: white;
+            }
+        }
+        .hover-effect3:hover {
+            box-shadow: none;
+            background: #000000;
+        }
+    }
+>>>>>>> xiewen
 }

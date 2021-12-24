@@ -28,14 +28,16 @@
       width: 171px;
       height: 25px;
       background: url(../../images/bbw/line.png) no-repeat center center;
-      bottom: -15;
+      bottom: -15px;
       right: 0; }
 
 .banner {
   width: 100%;
   height: 700px;
   background: url(../../images/bbw/banner_bg.png) no-repeat center center;
-  padding-top: 66px; }
+  margin-top: 66px; }
+  .banner .container {
+    overflow: hidden; }
   .banner h1 {
     font-family: Inter;
     font-size: 52px;
@@ -130,7 +132,8 @@
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
   backdrop-filter: blur(80px);
   padding-bottom: 78px;
-  padding-top: 80px; }
+  padding-top: 80px;
+  overflow: hidden; }
   .section1 .container {
     max-width: 1000px; }
   .section1 .sec1_con {
@@ -194,7 +197,8 @@
   width: 100%;
   height: auto;
   background: #fff;
-  margin-top: 32px; }
+  margin-top: 32px;
+  overflow: hidden; }
   .section2 .container {
     max-width: 1000px;
     padding-top: 80px; }
@@ -459,30 +463,31 @@
   width: 100%;
   height: auto;
   background: #fff;
-  margin-top: 32px; }
+  margin-top: 32px;
+  overflow: hidden; }
   .section4 .container {
-    width: 1110px;
+    max-width: 1110px;
     padding-top: 80px;
     padding-bottom: 100px; }
   .section4 h2 {
     font-size: 32px; }
-  .section4 ul {
+  .section4 .sec1_ulul {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap; }
-    .section4 ul li {
+    .section4 .sec1_ulul li {
       width: 50%;
       margin-top: 62px; }
-      .section4 ul li div {
+      .section4 .sec1_ulul li div {
         display: flex;
         justify-content: start;
         align-items: center;
         position: relative; }
-        .section4 ul li div img {
+        .section4 .sec1_ulul li div img {
           margin-right: 14px; }
-        .section4 ul li div dl dt {
+        .section4 .sec1_ulul li div dl dt {
           font-family: Inter;
           font-style: normal;
           font-weight: bold;
@@ -492,7 +497,7 @@
           letter-spacing: -0.02em;
           /* 黑色 */
           color: #000000; }
-        .section4 ul li div dl dd {
+        .section4 .sec1_ulul li div dl dd {
           font-family: Inter;
           font-style: normal;
           font-weight: normal;
@@ -501,7 +506,7 @@
           /* identical to box height, or 14px */
           color: rgba(0, 0, 0, 0.6);
           margin-top: 16px; }
-      .section4 ul li div::after {
+      .section4 .sec1_ulul li div::after {
         content: '';
         display: block;
         background: url(../../images/bbw/dot.png) no-repeat center center;
@@ -510,7 +515,7 @@
         position: absolute;
         right: 10%;
         top: 14px; }
-      .section4 ul li p {
+      .section4 .sec1_ulul li p {
         margin-top: 18px;
         font-family: Inter;
         font-style: normal;
@@ -520,6 +525,8 @@
         /* or 20px */
         color: rgba(0, 0, 0, 0.5);
         max-width: 517px; }
+  .section4 .sec1_ulul_mob {
+    display: none; }
 
 .section5 {
   width: 100%;
@@ -528,10 +535,13 @@
   margin-top: 32px;
   padding: 80px 0 106px; }
   .section5 .container {
-    width: 1025px; }
+    max-width: 1025px; }
   .section5 h2 {
     font-size: 32px; }
+  .section5 .sec5_tab_mob {
+    display: none; }
   .section5 .sec5_tab {
+    display: block;
     width: 100%;
     height: auto;
     margin-top: 64px; }
@@ -651,6 +661,7 @@
     position: relative;
     box-sizing: border-box;
     display: flex;
+<<<<<<< HEAD
     width: 248px;
     height: 58px;
     margin-top: 32px;
@@ -678,5 +689,782 @@
   cursor: pointer;
   background: url(../../images/icon/top.png) no-repeat center center;
   z-index: 99; }
+=======
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    /* identical to box height, or 18px */
+    text-align: center;
+    letter-spacing: -0.02em;
+    /* 黑色 */
+    color: #000000;
+    background: #000000;
+    color: white;
+    margin: 25px auto 0;
+    box-shadow: 0px 9px 72px rgba(117, 18, 103, 0.46), 0px 3.75998px 30.0799px rgba(117, 18, 103, 0.330673), 0px 2.01027px 16.0821px rgba(117, 18, 103, 0.274209), 0px 1.12694px 9.01552px rgba(117, 18, 103, 0.23), 0px 0.598509px 4.78807px rgba(117, 18, 103, 0.185791), 0px 0.249053px 1.99242px rgba(117, 18, 103, 0.129327); }
+  .section6 .bbw-sec6-button {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    width: 248px;
+    height: 58px;
+    margin-top: 32px;
+    padding: 20px 40px 20px 38px; }
+    .section6 .bbw-sec6-button span {
+      color: white; }
+    .section6 .bbw-sec6-button::before {
+      position: absolute;
+      top: 20px;
+      left: 38px;
+      content: "Download PlusCupid";
+      font: normal normal 600 18px/18px Inter;
+      color: #000;
+      letter-spacing: -.02em;
+      color: white; }
+  .section6 .hover-effect3:hover {
+    box-shadow: none;
+    background: #000000; }
 
-/*# sourceMappingURL=bbw.css.map */
+@media (max-width: 768px) {
+  .home {
+    width: 100%;
+    height: auto; }
+    .home h2 {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.75rem;
+      line-height: 140%;
+      /* or 56px */
+      text-align: center;
+      letter-spacing: -0.02em;
+      /* 黑色 */
+      color: #000000; }
+      .home h2 span {
+        font-size: 2rem;
+        color: #FF90E8;
+        vertical-align: top;
+        font-weight: bold;
+        font-style: normal;
+        font-family: Lora;
+        position: relative; }
+      .home h2 span::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 171px;
+        height: 25px;
+        background: url(../../images/bbw/mobile/line_mob.png) no-repeat center center;
+        bottom: -15px;
+        right: -16px; }
+
+  .banner {
+    width: 100%;
+    height: auto;
+    background: url(../../images/bbw/mobile/banner_bg_mob.png) no-repeat center center;
+    background-size: cover;
+    padding-bottom: 291px; }
+    .banner h1 {
+      font-family: Inter;
+      font-size: 1.75rem;
+      line-height: 110%;
+      /* or 62px */
+      letter-spacing: -0.04em;
+      /* 主色 */
+      color: #fff;
+      font-weight: 700;
+      font-style: normal;
+      margin-top: 24px;
+      max-width: 749px;
+      text-align: center; }
+      .banner h1 span {
+        font-family: Lora;
+        font-size: 1.875rem;
+        line-height: 110%;
+        /* or 62px */
+        letter-spacing: -0.04em;
+        /* 主色 */
+        color: #FF90E8;
+        vertical-align: top;
+        font-weight: 700;
+        font-style: normal; }
+    .banner ul {
+      margin-top: 20px; }
+      .banner ul li {
+        margin-top: 4px;
+        text-align: center; }
+        .banner ul li b {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 1.125rem;
+          line-height: 120%;
+          /* identical to box height, or 22px */
+          text-align: center;
+          letter-spacing: -0.02em;
+          /* 纯白 */
+          color: #FFFFFF;
+          display: inline-block; }
+        .banner ul li b::before {
+          display: none; }
+        .banner ul li p {
+          display: none; }
+    .banner .bbw-banner-button {
+      position: relative;
+      box-sizing: border-box;
+      display: flex;
+      width: 248px;
+      height: 58px;
+      margin-top: 32px;
+      padding: 22px 49px;
+      width: 275px;
+      height: 62px;
+      margin: 24px auto 0; }
+      .banner .bbw-banner-button span {
+        font: normal normal 600 18px/18px Inter;
+        color: #000;
+        letter-spacing: -.02em; }
+      .banner .bbw-banner-button::before {
+        position: absolute;
+        content: "Download PlusCupid";
+        top: 22px;
+        left: 49px;
+        font: normal normal 600 18px/18px Inter;
+        color: #000;
+        letter-spacing: -.02em; }
+
+  .main {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #D8F8F4 0%, #FDF7E8 36.98%, #B8E2F4 72.4%, #FFD1F5 100%);
+    padding: 24px 10px;
+    box-sizing: border-box; }
+
+  .section1 {
+    width: 100%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(80px);
+    padding-bottom: 45px;
+    padding-top: 32px; }
+    .section1 .container {
+      max-width: 1000px; }
+    .section1 .sec1_con {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-top: 50px; }
+      .section1 .sec1_con .sec1_left {
+        max-width: 484px;
+        margin-top: 35px; }
+        .section1 .sec1_con .sec1_left li {
+          margin-bottom: 32px;
+          text-align: center; }
+          .section1 .sec1_con .sec1_left li b {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.375rem;
+            line-height: 140%;
+            /* identical to box height, or 31px */
+            text-align: center;
+            /* 黑色 */
+            color: #000000;
+            margin-bottom: 16px;
+            display: inline-block; }
+          .section1 .sec1_con .sec1_left li p {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            font-size: .875rem;
+            line-height: 140%;
+            /* or 24px */
+            color: rgba(0, 0, 0, 0.5); }
+          .section1 .sec1_con .sec1_left li .sec1_word {
+            color: #000000; }
+          .section1 .sec1_con .sec1_left li .bbw-sec1-button {
+            position: relative;
+            box-sizing: border-box;
+            display: flex;
+            width: 248px;
+            height: 58px;
+            margin-top: 32px;
+            padding: 20px 60px;
+            margin: 16px auto 0; }
+            .section1 .sec1_con .sec1_left li .bbw-sec1-button span {
+              font: normal normal 600 18px/18px Inter;
+              color: #000;
+              letter-spacing: -.02em; }
+            .section1 .sec1_con .sec1_left li .bbw-sec1-button::before {
+              position: absolute;
+              top: 20px;
+              left: 60px;
+              content: "Join PlusCupid";
+              font: normal normal 600 18px/18px Inter;
+              color: #000;
+              letter-spacing: -.02em; }
+      .section1 .sec1_con .sec1_right {
+        width: 100%;
+        height: 442px;
+        background: url(../../images/bbw/mobile/phone_mob.png) no-repeat center center;
+        background-size: cover; }
+
+  .section2 {
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+    background: transparent; }
+    .section2 .container {
+      max-width: 1000px;
+      padding-top: 32px; }
+    .section2 h2 {
+      margin-bottom: 70px; }
+    .section2 ul {
+      width: 100%; }
+      .section2 ul li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid #EBEEF4;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+        backdrop-filter: blur(80px);
+        box-sizing: border-box;
+        padding: 0 26px; }
+        .section2 ul li b {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 1.5rem;
+          line-height: 140%;
+          /* or 39px */
+          text-align: center;
+          /* 黑色 */
+          color: #000000;
+          display: inline-block;
+          margin-top: 32px; }
+        .section2 ul li p {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: normal;
+          font-size: .875rem;
+          line-height: 140%;
+          /* or 20px */
+          text-align: center;
+          color: rgba(0, 0, 0, 0.5);
+          max-width: 508px;
+          margin-top: 24px; }
+        .section2 ul li .bbw-date-button {
+          position: relative;
+          box-sizing: border-box;
+          display: flex;
+          width: 248px;
+          height: 58px;
+          margin-top: 32px;
+          padding: 20px 15px 20px 13px;
+          margin: 32px auto 0; }
+          .section2 ul li .bbw-date-button span {
+            font: normal normal 600 18px/18px Inter;
+            color: #000;
+            letter-spacing: -.02em; }
+          .section2 ul li .bbw-date-button::before {
+            position: absolute;
+            top: 20px;
+            left: 13px;
+            content: "Date With Genuine Singles";
+            font: normal normal 600 18px/18px Inter;
+            color: #000;
+            letter-spacing: -.02em; }
+        .section2 ul li .bbw-make-button {
+          position: relative;
+          box-sizing: border-box;
+          display: flex;
+          width: 248px;
+          height: 58px;
+          margin-top: 32px;
+          padding: 20px 40px 20px 38px;
+          margin: 32px auto 0; }
+          .section2 ul li .bbw-make-button span {
+            font: normal normal 600 18px/18px Inter;
+            color: #000;
+            letter-spacing: -.02em; }
+          .section2 ul li .bbw-make-button::before {
+            position: absolute;
+            top: 20px;
+            left: 38px;
+            content: "Make the First Move";
+            font: normal normal 600 18px/18px Inter;
+            color: #000;
+            letter-spacing: -.02em; }
+        .section2 ul li .bbw-chat-button {
+          position: relative;
+          box-sizing: border-box;
+          display: flex;
+          width: 248px;
+          height: 58px;
+          margin-top: 32px;
+          padding: 20px 35px;
+          margin: 32px auto 0; }
+          .section2 ul li .bbw-chat-button span {
+            font: normal normal 600 18px/18px Inter;
+            color: #000;
+            letter-spacing: -.02em; }
+          .section2 ul li .bbw-chat-button::before {
+            position: absolute;
+            top: 20px;
+            left: 35px;
+            content: "Chat without Worries";
+            font: normal normal 600 18px/18px Inter;
+            color: #000;
+            letter-spacing: -.02em; }
+        .section2 ul li .bbw-hear-button {
+          position: relative;
+          box-sizing: border-box;
+          display: flex;
+          width: 248px;
+          height: 58px;
+          margin-top: 32px;
+          padding: 20px 40px;
+          margin: 32px auto 0; }
+          .section2 ul li .bbw-hear-button span {
+            font: normal normal 600 18px/18px Inter;
+            color: #000;
+            letter-spacing: -.02em; }
+          .section2 ul li .bbw-hear-button::before {
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            content: "Hear Unique Voices";
+            font: normal normal 600 18px/18px Inter;
+            color: #000;
+            letter-spacing: -.02em; }
+        .section2 ul li .bbw-share-button {
+          position: relative;
+          box-sizing: border-box;
+          display: flex;
+          width: 248px;
+          height: 58px;
+          margin-top: 32px;
+          padding: 20px 57px;
+          margin: 32px auto 0; }
+          .section2 ul li .bbw-share-button span {
+            font: normal normal 600 18px/18px Inter;
+            color: #000;
+            letter-spacing: -.02em; }
+          .section2 ul li .bbw-share-button::before {
+            position: absolute;
+            top: 20px;
+            left: 57px;
+            content: "Share Moments";
+            font: normal normal 600 18px/18px Inter;
+            color: #000;
+            letter-spacing: -.02em; }
+        .section2 ul li .bbw-match-button {
+          position: relative;
+          box-sizing: border-box;
+          display: flex;
+          width: 248px;
+          height: 58px;
+          margin-top: 32px;
+          padding: 20px 75px;
+          margin: 32px auto 0; }
+          .section2 ul li .bbw-match-button span {
+            font: normal normal 600 18px/18px Inter;
+            color: #000;
+            letter-spacing: -.02em; }
+          .section2 ul li .bbw-match-button::before {
+            position: absolute;
+            top: 20px;
+            left: 75px;
+            content: "Match Now";
+            font: normal normal 600 18px/18px Inter;
+            color: #000;
+            letter-spacing: -.02em; }
+        .section2 ul li .div1 {
+          max-width: 100%;
+          max-height: 200px;
+          background: url(../../images/bbw/mobile/pic1_mob.png) no-repeat center center;
+          background-size: 100%; }
+        .section2 ul li .div2 {
+          max-width: 100%;
+          max-height: 200px;
+          background: url(../../images/bbw/pic2.png) no-repeat center center;
+          background-size: 100%; }
+        .section2 ul li .div3 {
+          max-width: 100%;
+          max-height: 200px;
+          background: url(../../images/bbw/pic3.png) no-repeat center center;
+          background-size: 100%; }
+        .section2 ul li .div4 {
+          max-width: 100%;
+          max-height: 200px;
+          background: url(../../images/bbw/pic4.png) no-repeat center center;
+          background-size: 100%; }
+        .section2 ul li .div5 {
+          max-width: 100%;
+          max-height: 200px;
+          background: url(../../images/bbw/pic5.png) no-repeat center center;
+          background-size: 100%; }
+        .section2 ul li .div6 {
+          max-width: 100%;
+          max-height: 200px;
+          background: url(../../images/bbw/pic6.png) no-repeat center center;
+          background-size: 100%; }
+      .section2 ul .li_right {
+        flex-direction: row-reverse; }
+      .section2 ul .li1 {
+        padding-bottom: 41px; }
+      .section2 ul .li2 {
+        padding-bottom: 38px;
+        padding-top: 24px;
+        margin-top: 16px;
+        flex-direction: column; }
+      .section2 ul .li3 {
+        padding-bottom: 44px;
+        padding-top: 24px;
+        margin-top: 16px; }
+      .section2 ul .li4 {
+        padding-bottom: 41px;
+        padding-top: 24px;
+        flex-direction: column;
+        margin-top: 16px; }
+      .section2 ul .li5 {
+        padding-bottom: 41px;
+        padding-top: 24px;
+        margin-top: 16px; }
+      .section2 ul .li6 {
+        padding-bottom: 41px;
+        padding-top: 24px;
+        flex-direction: column;
+        margin-top: 16px; }
+
+  .section3 {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-top: 21px; }
+    .section3 .container {
+      padding: 32px 10px 44px; }
+    .section3 ul {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 50px; }
+      .section3 ul li {
+        width: 100%;
+        text-align: center;
+        vertical-align: top;
+        margin-bottom: 32px; }
+        .section3 ul li b {
+          display: block;
+          font-family: Inter;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 140%;
+          /* identical to box height, or 34px */
+          text-align: center;
+          letter-spacing: -0.02em;
+          /* 黑色 */
+          color: #000000; }
+        .section3 ul li p {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 140%;
+          /* or 20px */
+          text-align: center;
+          color: rgba(0, 0, 0, 0.5);
+          width: 88%;
+          margin: 0 auto; }
+    .section3 .bbw-find-button {
+      position: relative;
+      box-sizing: border-box;
+      display: flex;
+      width: 248px;
+      height: 58px;
+      margin-top: 32px;
+      padding: 20px 76px;
+      margin: 0px auto;
+      margin-top: 0; }
+      .section3 .bbw-find-button span {
+        font: normal normal 600 18px/18px Inter;
+        color: #000;
+        letter-spacing: -.02em; }
+      .section3 .bbw-find-button::before {
+        position: absolute;
+        top: 20px;
+        left: 76px;
+        content: "Match Now";
+        font: normal normal 600 18px/18px Inter;
+        color: #000;
+        letter-spacing: -.02em; }
+
+  .section4 {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-top: 24px; }
+    .section4 .container {
+      max-width: 1110px;
+      padding-top: 32px;
+      padding-bottom: 44px; }
+    .section4 h2 {
+      font-size: 1.5rem; }
+    .section4 .sec1_ulul {
+      display: none; }
+    .section4 .sec1_ulul_mob {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+      height: 360px;
+      margin-top: 62px;
+      position: relative; }
+      .section4 .sec1_ulul_mob li {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 0; }
+        .section4 .sec1_ulul_mob li div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          flex-direction: column;
+          text-align: center; }
+          .section4 .sec1_ulul_mob li div img {
+            margin: 0; }
+          .section4 .sec1_ulul_mob li div dl dt {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 100%;
+            /* identical to box height, or 18px */
+            letter-spacing: -0.02em;
+            /* 黑色 */
+            color: #000000;
+            margin-top: 14px; }
+          .section4 .sec1_ulul_mob li div dl dd {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 100%;
+            /* identical to box height, or 14px */
+            color: rgba(0, 0, 0, 0.6);
+            margin-top: 16px; }
+        .section4 .sec1_ulul_mob li div::after {
+          content: '';
+          display: block;
+          background: url(../../images/bbw/dot.png) no-repeat center center;
+          width: 30px;
+          height: 23px;
+          position: absolute;
+          right: 45%;
+          top: -40px; }
+        .section4 .sec1_ulul_mob li p {
+          margin-top: 18px;
+          font-family: Inter;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 140%;
+          /* or 20px */
+          color: rgba(0, 0, 0, 0.5);
+          max-width: 517px;
+          text-align: center; }
+    .section4 .ulul_circul {
+      display: block;
+      position: relative;
+      bottom: 0;
+      margin: 18px auto 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 82px; }
+      .section4 .ulul_circul div {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.24); }
+      .section4 .ulul_circul .cir_color {
+        background: #000; }
+>>>>>>> xiewen
+
+  .section5 {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-top: 24px;
+    padding: 32px 0 44px; }
+    .section5 .container {
+      max-width: 1025px; }
+    .section5 h2 {
+      font-size: 1.5rem; }
+    .section5 .sec5_tab {
+      display: none; }
+    .section5 .sec5_tab_mob {
+      display: block; }
+      .section5 .sec5_tab_mob ul {
+        width: 100%;
+        margin-top: 32px; }
+        .section5 .sec5_tab_mob ul li {
+          width: 100%;
+          margin-bottom: 16px; }
+          .section5 .sec5_tab_mob ul li h3 {
+            position: relative;
+            text-align: center;
+            max-width: 339px;
+            height: 60px;
+            background: rgba(0, 0, 0, 0.12);
+            font-family: Inter;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1rem;
+            line-height: 140%;
+            /* or 22px */
+            text-align: center;
+            /* 黑色 */
+            color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto; }
+            .section5 .sec5_tab_mob ul li h3 span {
+              position: relative;
+              right: 0;
+              width: 7px;
+              height: 7px;
+              margin-left: 8px;
+              background: url(../../images/bbw/mobile/black_arrow.png) no-repeat center center; }
+          .section5 .sec5_tab_mob ul li .sec5_div {
+            display: none;
+            padding: 0 26px;
+            box-sizing: border-box;
+            margin-top: 32px; }
+            .section5 .sec5_tab_mob ul li .sec5_div h4 {
+              font-family: Inter;
+              font-style: normal;
+              font-weight: bold;
+              font-size: .875rem;
+              line-height: 140%;
+              /* identical to box height, or 20px */
+              color: #000000;
+              position: relative; }
+              .section5 .sec5_tab_mob ul li .sec5_div h4 span {
+                width: 10px;
+                height: 10px;
+                background: url(../../images/bbw/add.png) no-repeat center center;
+                transition: all .2s;
+                display: inline-block;
+                position: absolute;
+                top: 28%;
+                right: 0; }
+            .section5 .sec5_tab_mob ul li .sec5_div div {
+              margin-top: 16px;
+              display: none; }
+              .section5 .sec5_tab_mob ul li .sec5_div div p {
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 140%;
+                /* or 20px */
+                color: rgba(0, 0, 0, 0.5);
+                margin-bottom: 16px; }
+                .section5 .sec5_tab_mob ul li .sec5_div div p b {
+                  color: black; }
+        .section5 .sec5_tab_mob ul .sec5_show h3 {
+          background: #000000;
+          color: white; }
+          .section5 .sec5_tab_mob ul .sec5_show h3 span {
+            background: url(../../images/bbw/mobile/white_arrow.png) no-repeat center center; }
+        .section5 .sec5_tab_mob ul .sec5_show .sec5_div {
+          display: block; }
+          .section5 .sec5_tab_mob ul .sec5_show .sec5_div .on h4 span {
+            height: 2px;
+            background: url(../../images/bbw/sub.png) no-repeat center center; }
+          .section5 .sec5_tab_mob ul .sec5_show .sec5_div .on div {
+            display: block; }
+
+  .section6 {
+    width: 100%;
+    height: auto;
+    background: url(../../images/bbw/mobile/sec6_bg_mob.png) no-repeat center center;
+    background-size: cover; }
+    .section6 .container {
+      padding: 62px 10px 80px; }
+    .section6 h2 {
+      font-size: 1.75rem; }
+    .section6 p {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: .875rem;
+      line-height: 140%;
+      /* or 20px */
+      text-align: center;
+      color: rgba(0, 0, 0, 0.5);
+      margin: 16px auto 0;
+      max-width: 722px; }
+    .section6 a {
+      width: 275px;
+      height: 62px;
+      background: #FF90E8;
+      box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      /* identical to box height, or 18px */
+      text-align: center;
+      letter-spacing: -0.02em;
+      /* 黑色 */
+      color: #000000;
+      background: #000000;
+      color: white;
+      margin: 25px auto 0;
+      box-shadow: 0px 9px 72px rgba(117, 18, 103, 0.46), 0px 3.75998px 30.0799px rgba(117, 18, 103, 0.330673), 0px 2.01027px 16.0821px rgba(117, 18, 103, 0.274209), 0px 1.12694px 9.01552px rgba(117, 18, 103, 0.23), 0px 0.598509px 4.78807px rgba(117, 18, 103, 0.185791), 0px 0.249053px 1.99242px rgba(117, 18, 103, 0.129327); }
+    .section6 .bbw-sec6-button {
+      position: relative;
+      box-sizing: border-box;
+      display: flex;
+      width: 248px;
+      height: 58px;
+      margin-top: 32px;
+      padding: 20px 40px 20px 38px; }
+      .section6 .bbw-sec6-button span {
+        color: white; }
+      .section6 .bbw-sec6-button::before {
+        position: absolute;
+        top: 20px;
+        left: 38px;
+        content: "Download PlusCupid";
+        font: normal normal 600 18px/18px Inter;
+        color: #000;
+        letter-spacing: -.02em;
+        color: white; }
+    .section6 .hover-effect3:hover {
+      box-shadow: none;
+      background: #000000; } }
