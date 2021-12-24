@@ -20,6 +20,7 @@ function getCookie(c_name) {
 //回到顶部
 function goBack(_dom) {
     $(window).bind('scroll', function() {
+        console.log('111')
         if ($(window).scrollTop() > 700) {
             $(_dom).addClass('active-goback')
         } else {
