@@ -62,6 +62,13 @@
     display: none;
 }
 
+.go_back {
+    transition: all .3s;
+    &.active-goback {
+        bottom: 17%;
+    }
+}
+
 @media (max-width: 768px) {
     .footer {
         height: initial;

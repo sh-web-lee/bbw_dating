@@ -647,32 +647,32 @@
     color: rgba(0, 0, 0, 0.5);
     margin: 16px auto 0;
     max-width: 722px; }
-  .section6 a {
-    width: 275px;
-    height: 62px;
-    background: #FF90E8;
-    box-shadow: 0px 4px 85px rgba(255, 126, 241, 0.34), 0px 1.6711px 35.511px rgba(255, 126, 241, 0.24441), 0px 0.893452px 18.9859px rgba(255, 126, 241, 0.202676), 0px 0.500862px 10.6433px rgba(255, 126, 241, 0.17), 0px 0.266004px 5.65259px rgba(255, 126, 241, 0.137324), 0px 0.11069px 2.35217px rgba(255, 126, 241, 0.0955895);
-    border-radius: 4px;
+  .section6 .bbw-subbanner-button {
+    position: relative;
+    box-sizing: border-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    /* identical to box height, or 18px */
-    text-align: center;
-    letter-spacing: -0.02em;
-    /* 黑色 */
-    color: #000000;
-    background: #000000;
-    color: white;
+    width: 248px;
+    height: 58px;
+    margin-top: 32px;
+    padding: 20px 36px;
     margin: 25px auto 0; }
+    .section6 .bbw-subbanner-button span {
+      font: normal normal 600 18px/18px Inter;
+      color: #fff;
+      letter-spacing: -.02em; }
+    .section6 .bbw-subbanner-button::before {
+      position: absolute;
+      top: 20px;
+      left: 36px;
+      content: "Download PlusCupid";
+      font: normal normal 600 18px/18px Inter;
+      color: #fff;
+      letter-spacing: -.02em; }
 
 .go_back {
   position: fixed;
   right: 13%;
-  bottom: 85px;
+  bottom: -5%;
   width: 46px;
   height: 46px;
   cursor: pointer;

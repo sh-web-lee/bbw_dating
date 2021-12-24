@@ -48,6 +48,11 @@
 .footer-mob {
   display: none; }
 
+.go_back {
+  transition: all .3s; }
+  .go_back.active-goback {
+    bottom: 17%; }
+
 @media (max-width: 768px) {
   .footer {
     height: initial;
