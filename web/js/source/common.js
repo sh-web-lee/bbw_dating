@@ -88,4 +88,4 @@ getGa = function(str1, str2, str3) {
     //   }
     //   window.location.href = androidUrl;
     // }
-  }
+}
