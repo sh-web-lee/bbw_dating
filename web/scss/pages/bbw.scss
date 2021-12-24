@@ -733,12 +733,6 @@
         @include button;
         padding: 20px 36px;
         margin: 25px auto 0;
-<<<<<<< HEAD
-        span {
-            font: normal normal 600 18px/18px Inter;
-            color: #fff;
-            letter-spacing: -.02em;
-=======
         box-shadow: 0px 9px 72px rgba(117, 18, 103, 0.46), 0px 3.75998px 30.0799px rgba(117, 18, 103, 0.330673), 0px 2.01027px 16.0821px rgba(117, 18, 103, 0.274209), 0px 1.12694px 9.01552px rgba(117, 18, 103, 0.23), 0px 0.598509px 4.78807px rgba(117, 18, 103, 0.185791), 0px 0.249053px 1.99242px rgba(117, 18, 103, 0.129327);
     }
     .bbw-sec6-button {
@@ -747,31 +741,10 @@
         span {
             // @include buttonFont;
             color: white;
->>>>>>> xiewen
         }
         &::before {
             position: absolute;
             top: 20px;
-<<<<<<< HEAD
-            left: 36px;
-            content: "Download PlusCupid";
-            font: normal normal 600 18px/18px Inter;
-            color: #fff;
-            letter-spacing: -.02em;
-        }
-    }
-}
-
-.go_back {
-    position: fixed;
-    right: 13%;
-    bottom: -5%;
-    width: 46px;
-    height: 46px;
-    cursor: pointer;
-    background: url(../../images/icon/top.png) no-repeat center center;
-    z-index: 99;
-=======
             left: 38px;
             content: "Download PlusCupid";
             @include buttonFont;
@@ -1539,5 +1512,4 @@
             background: #000000;
         }
     }
->>>>>>> xiewen
 }
